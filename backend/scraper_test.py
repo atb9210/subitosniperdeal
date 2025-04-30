@@ -463,6 +463,35 @@ class SubitoScraper:
                 
                 # Invia il messaggio combinato solo se ci sono nuovi annunci
                 if new_ads:
+                    # Prepara il messaggio combinato
+                    message = f"🔍 <b>Nuovi annunci trovati per {keyword}</b>\n\n"
+                    
+                    # Aggiungi i dettagli dei nuovi annunci
+                    for ad in new_ads:
+                        # Calcola le statistiche per questo annuncio
+                        available_ads = [a for a in all_ads if not a['sold']]
+                        sold_ads = [a for a in all_ads if a['sold']]
+                        str_rate = (len(sold_ads) / len(all_ads)) * 100 if all_ads else 0
+                        available_avg = sum(a['price'] for a in available_ads) / len(available_ads) if available_ads else 0
+                        sold_avg = sum(a['price'] for a in sold_ads) / len(sold_ads) if sold_ads else 0
+                        
+                        # Messaggio per singolo annuncio
+                        single_message = (
+                            f"📱 <b>{ad['title']}</b>\n"
+                            f"💰 €{ad['price']}\n"
+                            f"📍 {ad['location']}\n"
+                            f"📅 {ad['date']}\n"
+                            f"🔗 {ad['link']}\n\n"
+                            f"📊 <b>Mini Riepilogo</b>\n"
+                            f"📈 STR: {str_rate:.1f}%\n"
+                            f"💰 Prezzo medio disponibili: €{available_avg:.2f}\n"
+                            f"💰 Prezzo medio venduti: €{sold_avg:.2f}\n"
+                        )
+                        
+                        # Invia il messaggio per ogni singolo annuncio
+                        self._send_telegram_message(single_message)
+                    
+                    # Prepara il messaggio di riepilogo finale
                     available_ads = [ad for ad in all_ads if not ad['sold']]
                     sold_ads = [ad for ad in all_ads if ad['sold']]
                     ignored_ads = [ad for ad in all_ads if ad['price'] == 0]
@@ -484,22 +513,9 @@ class SubitoScraper:
                         newest_date = "N/A"
                         days_str = "N/A"
                     
-                    # Prepara il messaggio combinato
-                    message = f"🔍 <b>Nuovi annunci trovati per {keyword}</b>\n\n"
-                    
-                    # Aggiungi i dettagli dei nuovi annunci
-                    for ad in new_ads:
-                        message += (
-                            f"📱 {ad['title']}\n"
-                            f"💰 €{ad['price']}\n"
-                            f"📍 {ad['location']}\n"
-                            f"📅 {ad['date']}\n"
-                            f"🔗 {ad['link']}\n\n"
-                        )
-                    
-                    # Aggiungi il riassunto
-                    message += (
-                        f"📊 <b>Riepilogo</b>\n"
+                    # Messaggio di riepilogo finale
+                    summary_message = (
+                        f"📊 <b>Riepilogo Completo per {keyword}</b>\n\n"
                         f"📊 Annunci trovati: {len(all_ads)}\n"
                         f"📊 Disponibili: {len(available_ads)}\n"
                         f"📊 Venduti: {len(sold_ads)}\n"
@@ -511,8 +527,8 @@ class SubitoScraper:
                         f"<i>Dettagli completi nel file results.txt</i>"
                     )
                     
-                    # Invia il messaggio
-                    self._send_telegram_message(message)
+                    # Invia il messaggio di riepilogo
+                    self._send_telegram_message(summary_message)
             
             # Pulisci gli annunci vecchi e salva
             self.seen_ads = clean_old_ads(self.seen_ads)

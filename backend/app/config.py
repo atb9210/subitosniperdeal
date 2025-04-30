@@ -9,7 +9,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Search configuration
 KEYWORDS = ["xbox series s 512gb"]
-PREZZO_MAX = 250
+PREZZO_MAX = 150
 APPLY_PRICE_LIMIT = False  # Flag per controllare se applicare il limite di prezzo
 MAX_PAGES = 3  # Numero massimo di pagine da leggere
 # Execution interval (in minutes)
