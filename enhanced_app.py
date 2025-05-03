@@ -116,7 +116,13 @@ def show_statistics(keyword_id):
 # Funzione per leggere le configurazioni Telegram salvate
 def get_telegram_config():
     try:
-        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend', '.env')
+        # Prima controlla .env nella directory principale
+        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
+        
+        # Se non esiste, controlla nella cartella backend (percorso precedente)
+        if not os.path.exists(env_path):
+            env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend', '.env')
+        
         if os.path.exists(env_path):
             config = {}
             with open(env_path, 'r') as f:
@@ -124,8 +130,15 @@ def get_telegram_config():
                     if '=' in line:
                         key, value = line.strip().split('=', 1)
                         config[key] = value
-            return config.get('TELEGRAM_BOT_TOKEN', ''), config.get('TELEGRAM_CHAT_ID', '')
-        return '', ''
+            
+            token = config.get('TELEGRAM_BOT_TOKEN', '')
+            chat_id = config.get('TELEGRAM_CHAT_ID', '')
+            
+            logger.info(f"Configurazione Telegram letta: token presente: {bool(token)}, chat_id presente: {bool(chat_id)}")
+            return token, chat_id
+        else:
+            logger.warning(f"File di configurazione non trovato in: {env_path}")
+            return '', ''
     except Exception as e:
         logger.error(f"Errore durante la lettura della configurazione Telegram: {str(e)}")
         return '', ''
@@ -852,11 +865,8 @@ elif menu == "Impostazioni":
                 # Verifica che almeno uno dei due campi sia compilato
                 if telegram_token or telegram_chat_id:
                     try:
-                        # Crea o modifica il file .env nella directory backend
-                        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend', '.env')
-                        
-                        # Crea la directory se non esiste
-                        os.makedirs(os.path.dirname(env_path), exist_ok=True)
+                        # Crea o modifica il file .env nella directory principale
+                        env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
                         
                         # Se uno dei due campi è vuoto, usa il valore corrente se disponibile
                         if not telegram_token and current_token:
@@ -871,10 +881,10 @@ elif menu == "Impostazioni":
                         with open(env_path, 'w') as f:
                             f.write(env_content)
                         
-                        logger.info("Configurazione Telegram aggiornata")
+                        logger.info(f"Configurazione Telegram aggiornata - token: {telegram_token[:4]}***{telegram_token[-4:] if len(telegram_token) > 8 else ''}, chat_id: {telegram_chat_id}")
                         st.success("Configurazione Telegram salvata con successo!")
                         
-                        # Testa l'invio di un messaggio
+                        # Pulsante per testare la configurazione
                         if st.button("Testa Configurazione"):
                             import requests
                             url = f"https://api.telegram.org/bot{telegram_token}/sendMessage"

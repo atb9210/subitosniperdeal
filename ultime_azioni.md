@@ -1,5 +1,43 @@
 # Ultime Azioni Eseguite
 
+## Aggiornamento del 04/05/2025 (Parte 1)
+Le seguenti migliorie sono state implementate per risolvere il problema dei risultati duplicati:
+
+1. **Miglioramento del Sistema di Deduplicazione**
+   - Aggiunto campo `id_annuncio` nella tabella Risultato per memorizzare l'ID univoco da Subito.it
+   - Implementato un doppio controllo di deduplicazione: prima per ID, poi per URL
+   - Migliorato il processo di normalizzazione delle chiavi per evitare sovrapposizioni
+   - Creato script di migrazione del database per aggiungere la nuova colonna preservando i dati
+
+2. **Identificazione e Risoluzione della Causa dei Duplicati**
+   - Risolto un bug nel processo di normalizzazione che causava duplicazione dei dati
+   - Aggiunto logging dettagliato per monitorare il processo di salvataggio
+   - Implementata gestione degli errori con rollback in caso di fallimento
+
+3. **Miglioramenti nel Processo di Salvataggio**
+   - Ottimizzato l'algoritmo di ricerca per duplicati
+   - Aggiunto supporto per aggiornamento dell'ID per annunci già esistenti
+   - Migliorati i messaggi di log per il debug
+
+## Aggiornamento del 03/05/2025 (Parte 7)
+Le seguenti correzioni sono state implementate per risolvere problemi con le notifiche Telegram:
+
+1. **Correzione della Configurazione Telegram**
+   - Risolto il problema di lettura del file di configurazione `.env`
+   - Spostata la configurazione dalla directory `backend` alla directory principale
+   - Migliorato il logging per facilitare il debug delle configurazioni
+   - Aggiunta verifica dell'esistenza del file di configurazione con messaggi appropriati
+
+2. **Miglioramento del Sistema di Notifiche**
+   - Corretto problema che segnava gli annunci come "notificati" anche quando l'invio falliva
+   - I risultati vengono marcati come notificati SOLO in caso di risposta positiva da Telegram (codice 200)
+   - Mantenuto lo stato "non notificato" quando ci sono errori, così da riprovare l'invio in seguito
+   - Logging migliorato per tracciare meglio quando le notifiche falliscono
+
+3. **Visibilità dello Stato delle Notifiche**
+   - Il simbolo "✅" per notificato appare ora solo quando l'invio è effettivamente riuscito
+   - Mantenuta coerenza tra stato del database e stato visibile nell'interfaccia
+
 ## Aggiornamento del 03/05/2025 (Parte 6)
 Le seguenti correzioni sono state implementate:
 

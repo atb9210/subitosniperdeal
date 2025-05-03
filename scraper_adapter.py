@@ -570,49 +570,72 @@ class ScraperAdapter:
         new_results_count = 0
         
         try:
+            self._add_log("INFO", f"Inizio salvataggio di {len(ads)} risultati per keyword_id {keyword_id}")
+            
             # Per ogni annuncio trovato
             for ad in ads:
                 # Normalizza le chiavi del dizionario
-                # Lo scraper reale usa chiavi come 'link', 'title', mentre l'adapter si aspetta 'url', 'titolo', ecc.
                 normalized_ad = self._normalize_ad_keys(ad)
                 
-                # Verifica se l'annuncio esiste già
-                if "url" in normalized_ad:
+                # Verifica che ci siano URL e ID (necessari per l'identificazione)
+                if "url" not in normalized_ad:
+                    self._add_log("WARNING", f"Annuncio senza URL non salvato: {normalized_ad}")
+                    continue
+                    
+                # Verifica se l'annuncio esiste già tramite URL (per retrocompatibilità)
+                # o tramite l'ID dell'annuncio se disponibile (metodo più accurato)
+                existing = None
+                
+                # Prima cerca per ID se disponibile
+                if 'id' in normalized_ad and normalized_ad['id']:
+                    existing = session.query(Risultato).filter(
+                        Risultato.keyword_id == keyword_id,
+                        Risultato.id_annuncio == str(normalized_ad["id"])
+                    ).first()
+                
+                # Se non trova per ID, cerca per URL (retrocompatibilità)
+                if not existing:
                     existing = session.query(Risultato).filter(
                         Risultato.keyword_id == keyword_id,
                         Risultato.url == normalized_ad["url"]
                     ).first()
-                    
-                    if not existing:
-                        # Crea un nuovo record
-                        new_result = Risultato(
-                            keyword_id=keyword_id,
-                            titolo=normalized_ad.get("titolo", "Titolo non disponibile"),
-                            prezzo=normalized_ad.get("prezzo", 0.0),
-                            url=normalized_ad.get("url", ""),
-                            data_annuncio=normalized_ad.get("data_annuncio", ""),
-                            luogo=normalized_ad.get("luogo", ""),
-                            venduto=normalized_ad.get("venduto", False),
-                            notificato=False
-                        )
-                        session.add(new_result)
-                        new_results_count += 1
-                        self._add_log("INFO", f"Nuovo annuncio salvato: {normalized_ad.get('titolo', 'Titolo non disponibile')}")
-                    else:
-                        # Aggiorna lo stato di venduto se necessario
-                        if normalized_ad.get("venduto", False) and not existing.venduto:
-                            existing.venduto = True
-                            self._add_log("INFO", f"Annuncio aggiornato come venduto: {existing.titolo}")
+                
+                if not existing:
+                    # Crea un nuovo record
+                    new_result = Risultato(
+                        keyword_id=keyword_id,
+                        titolo=normalized_ad.get("titolo", "Titolo non disponibile"),
+                        prezzo=normalized_ad.get("prezzo", 0.0),
+                        url=normalized_ad.get("url", ""),
+                        data_annuncio=normalized_ad.get("data", normalized_ad.get("data_annuncio", "")),
+                        luogo=normalized_ad.get("luogo", ""),
+                        venduto=normalized_ad.get("venduto", False),
+                        notificato=False,
+                        id_annuncio=str(normalized_ad.get("id", ""))
+                    )
+                    session.add(new_result)
+                    new_results_count += 1
+                    self._add_log("INFO", f"Nuovo annuncio salvato: {normalized_ad.get('titolo', 'Titolo non disponibile')}")
                 else:
-                    self._add_log("WARNING", f"Annuncio senza URL non salvato: {ad}")
+                    # Aggiorna lo stato di venduto se necessario
+                    if normalized_ad.get("venduto", False) and not existing.venduto:
+                        existing.venduto = True
+                        self._add_log("INFO", f"Annuncio aggiornato come venduto: {existing.titolo}")
+                    
+                    # Aggiorna l'ID dell'annuncio se non era impostato
+                    if 'id' in normalized_ad and normalized_ad['id'] and not existing.id_annuncio:
+                        existing.id_annuncio = str(normalized_ad["id"])
+                        self._add_log("DEBUG", f"Aggiornato ID annuncio per {existing.titolo}: {existing.id_annuncio}")
             
             session.commit()
+            self._add_log("INFO", f"Salvati {new_results_count} nuovi risultati su {len(ads)} totali")
             return new_results_count
         except Exception as e:
             self._add_log("ERROR", f"Errore durante il salvataggio dei risultati: {str(e)}")
             self._add_log("ERROR", traceback.format_exc())
             logger.error(f"Errore durante il salvataggio dei risultati: {str(e)}")
             logger.error(traceback.format_exc())
+            session.rollback()
             return 0
         finally:
             session.close()
@@ -631,7 +654,17 @@ class ScraperAdapter:
             'link': 'url',
             'location': 'luogo',
             'date': 'data_annuncio',
-            'sold': 'venduto'
+            'sold': 'venduto',
+            # Aggiungiamo anche le mappature inverse per essere certi
+            'titolo': 'titolo',
+            'prezzo': 'prezzo',
+            'url': 'url',
+            'luogo': 'luogo',
+            'data': 'data_annuncio',
+            'data_annuncio': 'data_annuncio',
+            'venduto': 'venduto',
+            # Mappatura per le chiavi della versione attuale
+            'id': 'id'
         }
         
         # Copia i valori con le chiavi normalizzate
@@ -641,22 +674,7 @@ class ScraperAdapter:
             else:
                 normalized[key] = value
         
-        # Verifica se ci sono le chiavi necessarie negli oggetti restituiti dalla classe di fallback
-        if 'titolo' in ad:
-            normalized['titolo'] = ad['titolo']
-        if 'prezzo' in ad:
-            normalized['prezzo'] = ad['prezzo']
-        if 'url' in ad:
-            normalized['url'] = ad['url']
-        if 'luogo' in ad:
-            normalized['luogo'] = ad['luogo']
-        if 'data_annuncio' in ad:
-            normalized['data_annuncio'] = ad['data_annuncio']
-        if 'venduto' in ad:
-            normalized['venduto'] = ad['venduto']
-        
         # Log per il debug
-        self._add_log("DEBUG", f"Annuncio originale: {ad}")
         self._add_log("DEBUG", f"Annuncio normalizzato: {normalized}")
         
         return normalized
@@ -823,7 +841,7 @@ class ScraperAdapter:
                 self._add_log("DEBUG", f"Risposta: {response.text[:200]}")
                 
                 if response.status_code == 200:
-                    # Aggiorna lo stato del risultato come notificato
+                    # Aggiorna lo stato del risultato come notificato SOLO in caso di successo
                     risultato.notificato = True
                     session.commit()
                     success_msg = f"Notifica inviata con successo per {risultato.titolo}"
@@ -831,11 +849,13 @@ class ScraperAdapter:
                     self._add_cronjob_log("INFO", success_msg, keyword.id)
                     return True
                 else:
+                    # NON aggiornare lo stato del risultato come notificato in caso di errore
                     error_msg = f"Errore nell'invio della notifica Telegram: {response.status_code} - {response.text}"
                     self._add_log("ERROR", error_msg)
                     self._add_cronjob_log("ERROR", error_msg, keyword.id)
                     return False
             except requests.exceptions.RequestException as e:
+                # NON aggiornare lo stato del risultato come notificato in caso di errore
                 error_msg = f"Errore di connessione durante l'invio della notifica Telegram: {str(e)}"
                 self._add_log("ERROR", error_msg)
                 self._add_cronjob_log("ERROR", error_msg, keyword.id)

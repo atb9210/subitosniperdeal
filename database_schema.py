@@ -45,6 +45,7 @@ class Risultato(Base):
     luogo = Column(String)
     venduto = Column(Boolean, default=False)
     notificato = Column(Boolean, default=False)
+    id_annuncio = Column(String, nullable=True, index=True)  # ID univoco dell'annuncio da Subito.it
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
     
     keyword = relationship("Keyword", back_populates="risultati")

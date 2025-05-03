@@ -66,41 +66,50 @@ Un'interfaccia utente moderna che permette di:
 1. **Ricerca Automatica**: Cerca annunci su Subito.it usando parole chiave configurabili.
 2. **Filtro per Prezzo**: Filtra gli annunci in base a un prezzo massimo configurabile.
 3. **Statistiche di Mercato**: Calcola statistiche come prezzo medio e mediano.
-4. **Notifiche Telegram**: Invia notifiche per gli annunci più interessanti con monitoraggio dettagliato.
+4. **Notifiche Telegram Affidabili**: Invia notifiche con verifica della consegna e tentativi ripetuti in caso di fallimento.
 5. **Esclusione Automatica**: Esclude annunci senza prezzo o venduti.
 6. **Calcolo Sell Through Rate**: Traccia quanti annunci vengono venduti.
-7. **Persistenza Dati**: Salva gli annunci già visti per evitare duplicati.
+7. **Persistenza Dati Avanzata**: Sistema avanzato di deduplicazione per annunci già visti, basato su identificatori univoci.
 8. **Dashboard Grafica**: Visualizza statistiche e metriche con grafici interattivi.
 9. **Gestione Campagne**: Permette di avere multiple campagne di ricerca attive contemporaneamente.
-10. **Sistema di Logging**: Traccia gli eventi e gli errori con stack trace completi per facilitare il debug.
-11. **Diagnostica Cronjob**: Monitora l'esecuzione dei job in background con log dettagliati per campagna.
-12. **Visualizzazione Risultati**: Pagina dedicata alla visualizzazione di tutti i risultati con filtri e link cliccabili.
-13. **Diagnostica Avanzata**: Sistema di debug con tracciamento completo delle API calls e mascheramento dati sensibili.
-14. **Adattamento Intelligente**: Sistema di fallback che utilizza simulazioni in caso di errori con lo scraper originale.
-15. **Normalizzazione Dati**: Sistema di mappatura che converte i dati tra formati diversi per garantire compatibilità.
-16. **Validazione Risultati**: Verifica la pertinenza dei risultati con la keyword cercata ed evita risultati errati.
-17. **Simulazione Intelligente**: Genera risultati simulati che corrispondono alle caratteristiche specifiche del prodotto cercato.
-18. **Gestione Configurazione**: Salva e ripristina correttamente le configurazioni tra le diverse ricerche.
-19. **Resilienza agli Errori**: Continua a funzionare anche quando lo scraper reale non può essere inizializzato.
-20. **URL Autentici**: In modalità simulazione, estrae URL di annunci reali direttamente dal sito Subito.it.
-21. **Supporto Multi-Prodotto**: Classificazione intelligente per diverse categorie di prodotti (videogiochi, telefonia, ecc.).
-22. **Link Garantiti**: Tutti i link dei risultati portano sempre ad annunci specifici e reali, anche in modalità simulazione.
-23. **Estrazione Live**: Mini-scraper integrato che ottiene dati reali del mercato attuale per keyword specifiche.
-24. **Estrazione Geografica**: Estrazione precisa della città dall'annuncio, ottimizzata per una visualizzazione pulita.
-25. **Statistiche Avanzate**: Calcolo automatico di statistiche di prezzo (min, max, media, mediana) per ogni ricerca.
-26. **Modifica Campagne**: Interfaccia per modificare i parametri delle campagne dopo la creazione.
-27. **Eliminazione Controllata**: Eliminazione di campagne con processo a due fasi per prevenire cancellazioni accidentali.
-28. **Indicatori Visivi**: Visualizzazione migliorata dello stato dei parametri come il limite di prezzo attivo/inattivo.
-29. **Processo di Eliminazione Intuitivo**: Sistema di conferma che mostra prima la casella di conferma, poi il numero di risultati interessati, e infine il pulsante di eliminazione.
-30. **Feedback Contestuali**: Messaggi informativi che guidano l'utente durante operazioni critiche come l'eliminazione di campagne.
-31. **Cache Intelligente per Campagna**: Sistema di tracciamento degli annunci già visti separato per ogni campagna, che evita duplicati senza limitare i risultati tra campagne diverse.
-32. **Reset Cache Selettivo**: Possibilità di cancellare la cache degli annunci visti per una singola campagna, permettendo di riottenere tutti i risultati senza interferire con altre ricerche.
-33. **Persistenza Avanzata**: Salvatagio degli annunci già visti in database con associazione alla campagna specifica, mantenendo comunque un sistema di fallback su file per retrocompatibilità.
-34. **Gestione Limite Pagine**: Sistema migliorato che assicura il rispetto del parametro di limite pagine in tutte le modalità di ricerca (reale e simulata).
-35. **Simulazione Proporzionale**: Generazione intelligente di risultati simulati in proporzione al numero di pagine configurato per una migliore rappresentazione dei risultati attesi.
-36. **Trasparenza Parametri**: Logging dettagliato dei parametri effettivamente utilizzati durante le ricerche, con validazione esplicita della configurazione.
-37. **Diagnostica dei Limiti**: Verifiche automatiche che assicurano il corretto funzionamento dei limiti configurati sia in fase di ricerca che durante la simulazione.
-38. **Lista Annunci Visti**: Pagina dedicata alla visualizzazione e gestione della cache di annunci già visti per ogni campagna.
+10. **Sistema di Limiti Configurabili**: Limiti di prezzo e numero di pagine configurabili per ogni campagna.
+11. **Sistema Cache Intelligente**: Memorizza annunci già visti per campagna con possibilità di reset selettivo.
+12. **Interfaccia Admin**: Gestione completa delle campagne con opzioni per creare, modificare, eliminare e attivare/disattivare.
+13. **Simulazione**: Modalità di simulazione avanzata per test e sviluppo senza dipendere da Subito.it.
+14. **Geolocalizzazione**: Estrazione intelligente delle informazioni geografiche dagli annunci.
+15. **Sistema di Logging**: Registra tutte le operazioni con livelli di dettaglio configurabili.
+16. **Cache Intelligente per Campagna**: Traccia gli annunci visti separatamente per ogni campagna per massimizzare i risultati.
+17. **GUI per Gestione Campagne**: Interfaccia web per aggiungere, modificare, eliminare e gestire le campagne.
+18. **Configurazione Telegram**: Interfaccia per impostare le credenziali di notifica con test diretto di funzionamento.
+19. **Simulazione Avanzata**: Generazione di dati realistici quando lo scraping reale non è possibile.
+20. **Controllo Multipagina**: Supporto per impostare il numero di pagine da analizzare per ogni ricerca.
+21. **Diagnostica Cronjob**: Monitora l'esecuzione dei job in background con log dettagliati per campagna.
+22. **Visualizzazione Risultati**: Pagina dedicata alla visualizzazione di tutti i risultati con filtri e link cliccabili.
+23. **Diagnostica Avanzata**: Sistema di debug con tracciamento completo delle API calls e mascheramento dati sensibili.
+24. **Adattamento Intelligente**: Sistema di fallback che utilizza simulazioni in caso di errori con lo scraper originale.
+25. **Normalizzazione Dati**: Sistema di mappatura che converte i dati tra formati diversi per garantire compatibilità.
+26. **Validazione Risultati**: Verifica la pertinenza dei risultati con la keyword cercata ed evita risultati errati.
+27. **Simulazione Intelligente**: Genera risultati simulati che corrispondono alle caratteristiche specifiche del prodotto cercato.
+28. **Gestione Configurazione**: Salva e ripristina correttamente le configurazioni tra le diverse ricerche.
+29. **Resilienza agli Errori**: Continua a funzionare anche quando lo scraper reale non può essere inizializzato.
+30. **URL Autentici**: In modalità simulazione, estrae URL di annunci reali direttamente dal sito Subito.it.
+31. **Supporto Multi-Prodotto**: Classificazione intelligente per diverse categorie di prodotti (videogiochi, telefonia, ecc.).
+32. **Link Garantiti**: Tutti i link dei risultati portano sempre ad annunci specifici e reali, anche in modalità simulazione.
+33. **Estrazione Live**: Mini-scraper integrato che ottiene dati reali del mercato attuale per keyword specifiche.
+34. **Estrazione Geografica**: Estrazione precisa della città dall'annuncio, ottimizzata per una visualizzazione pulita.
+35. **Statistiche Avanzate**: Calcolo automatico di statistiche di prezzo (min, max, media, mediana) per ogni ricerca.
+36. **Modifica Campagne**: Interfaccia per modificare i parametri delle campagne dopo la creazione.
+37. **Eliminazione Controllata**: Eliminazione di campagne con processo a due fasi per prevenire cancellazioni accidentali.
+38. **Indicatori Visivi**: Visualizzazione migliorata dello stato dei parametri come il limite di prezzo attivo/inattivo.
+39. **Processo di Eliminazione Intuitivo**: Sistema di conferma che mostra prima la casella di conferma, poi il numero di risultati interessati, e infine il pulsante di eliminazione.
+40. **Feedback Contestuali**: Messaggi informativi che guidano l'utente durante operazioni critiche come l'eliminazione di campagne.
+41. **Reset Cache Selettivo**: Possibilità di cancellare la cache degli annunci visti per una singola campagna, permettendo di riottenere tutti i risultati senza interferire con altre ricerche.
+42. **Persistenza Avanzata**: Salvatagio degli annunci già visti in database con associazione alla campagna specifica, mantenendo comunque un sistema di fallback su file per retrocompatibilità.
+43. **Gestione Limite Pagine**: Sistema migliorato che assicura il rispetto del parametro di limite pagine in tutte le modalità di ricerca (reale e simulata).
+44. **Simulazione Proporzionale**: Generazione intelligente di risultati simulati in proporzione al numero di pagine configurato per una migliore rappresentazione dei risultati attesi.
+45. **Trasparenza Parametri**: Logging dettagliato dei parametri effettivamente utilizzati durante le ricerche, con validazione esplicita della configurazione.
+46. **Diagnostica dei Limiti**: Verifiche automatiche che assicurano il corretto funzionamento dei limiti configurati sia in fase di ricerca che durante la simulazione.
+47. **Lista Annunci Visti**: Pagina dedicata alla visualizzazione e gestione della cache di annunci già visti per ogni campagna.
 
 ## Tecnologie Utilizzate
 
