@@ -1,5 +1,25 @@
 # Ultime Azioni Eseguite
 
+## Aggiornamento del 04/05/2025 (Parte 2)
+Le seguenti migliorie sono state implementate per risolvere i problemi con le ricerche programmate:
+
+1. **Miglioramento del Sistema di Ricerche Programmate**
+   - Risolto il problema delle campagne attive che non eseguivano ricerche automatiche
+   - Implementata ricerca immediata all'attivazione di una campagna
+   - Semplificato il flusso del cronjob per concentrarsi solo sull'esecuzione delle ricerche programmate
+   - Migliorata l'interfaccia di visualizzazione dei log delle ricerche programmate
+
+2. **Interfaccia Utente Migliorata**
+   - Rinominato "Log Cronjob" in "Ricerche Programmate" per maggiore chiarezza
+   - Aggiunta formattazione visuale avanzata con emoji e colori per identificare facilmente le varie fasi
+   - Implementato filtro per mostrare solo i messaggi relativi alle esecuzioni programmate
+   - Riprogettato sistema di logging per distinguere tra log di sistema e log delle ricerche programmate
+
+3. **Gestione Stato Campagne**
+   - Migliorato il sistema di verifica dello stato attivo delle campagne
+   - Corretta l'interruzione dei job in background quando una campagna viene disattivata
+   - Ottimizzati i messaggi di log per una migliore comprensione del ciclo di vita delle ricerche
+
 ## Aggiornamento del 04/05/2025 (Parte 1)
 Le seguenti migliorie sono state implementate per risolvere il problema dei risultati duplicati:
 

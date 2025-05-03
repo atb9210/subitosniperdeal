@@ -223,13 +223,16 @@ class ScraperAdapter:
         if len(self.cronjob_logs) > 1000:
             self.cronjob_logs = self.cronjob_logs[-1000:]
         
-        # Log anche nel sistema principale
+        # Log anche nel sistema principale solo per errori o informazioni importanti sul cronjob
+        prefix = f"[CRONJOB-{keyword_id}]" if keyword_id else "[CRONJOB]"
         if level == "ERROR":
-            logger.error(f"[CRONJOB] {message}")
+            logger.error(f"{prefix} {message}")
         elif level == "WARNING":
-            logger.warning(f"[CRONJOB] {message}")
-        else:
-            logger.info(f"[CRONJOB] {message}")
+            logger.warning(f"{prefix} {message}")
+        elif "Avviato job" in message or "Terminato job" in message or "Esecuzione ricerca" in message:
+            # Logga solo i messaggi importanti relativi all'esecuzione delle ricerche programmate
+            logger.info(f"{prefix} {message}")
+        # Gli altri messaggi di dettaglio non vengono loggati nel log principale
     
     def get_logs(self, limit=100):
         """Restituisce gli ultimi N log dello scraper"""
@@ -895,60 +898,34 @@ class ScraperAdapter:
                 self._add_log("INFO", start_msg)
                 self._add_cronjob_log("INFO", start_msg, keyword_id)
                 
+                # Esegui immediatamente la prima ricerca all'avvio del job
+                self._add_cronjob_log("INFO", f"Esecuzione ricerca iniziale per: {keyword.keyword}", keyword_id)
+                # Esegui la prima ricerca senza inviarla al log principale
+                self.search_for_keyword(keyword_id)
+                
+                # Loop principale del cronjob
                 while keyword.attivo:
-                    # Log dell'esecuzione pianificata
-                    exec_msg = f"Esecuzione pianificata per keyword: {keyword.keyword}"
-                    self._add_cronjob_log("INFO", exec_msg, keyword_id)
-                    
-                    # Esegui la ricerca
-                    result = self.search_for_keyword(keyword_id)
-                    
-                    if result["status"] == "error":
-                        error_msg = f"Errore nella ricerca per job in background: {result['message']}"
-                        self._add_log("ERROR", error_msg)
-                        self._add_cronjob_log("ERROR", error_msg, keyword_id)
-                    else:
-                        success_msg = f"Ricerca completata: {result['message']}"
-                        self._add_cronjob_log("INFO", success_msg, keyword_id)
-                    
-                    # Invia notifiche per i nuovi risultati non notificati
-                    try:
-                        nuovi_risultati = session.query(Risultato).filter(
-                            Risultato.keyword_id == keyword_id,
-                            Risultato.notificato == False
-                        ).all()
-                        
-                        if nuovi_risultati:
-                            notify_msg = f"Trovati {len(nuovi_risultati)} nuovi risultati da notificare"
-                            self._add_cronjob_log("INFO", notify_msg, keyword_id)
-                            
-                            for risultato in nuovi_risultati:
-                                result = self.notify_telegram(risultato.id)
-                                if result:
-                                    self._add_cronjob_log("INFO", f"Notifica inviata per risultato ID {risultato.id}", keyword_id)
-                                else:
-                                    self._add_cronjob_log("ERROR", f"Fallito invio notifica per risultato ID {risultato.id}", keyword_id)
-                        else:
-                            self._add_cronjob_log("INFO", "Nessun nuovo risultato da notificare", keyword_id)
-                    except Exception as e:
-                        error_msg = f"Errore nell'invio delle notifiche: {str(e)}"
-                        self._add_log("ERROR", error_msg)
-                        self._add_cronjob_log("ERROR", error_msg, keyword_id)
-                    
                     # Attendi l'intervallo configurato
-                    wait_msg = f"Attesa di {keyword.intervallo_minuti} minuti prima della prossima ricerca"
-                    self._add_log("INFO", wait_msg)
+                    wait_msg = f"Prossima ricerca programmata tra {keyword.intervallo_minuti} minuti"
                     self._add_cronjob_log("INFO", wait_msg, keyword_id)
                     time.sleep(keyword.intervallo_minuti * 60)
                     
-                    # Ricarica lo stato della keyword
+                    # Ricarica lo stato della keyword per verificare se è ancora attiva
                     session.refresh(keyword)
+                    if not keyword.attivo:
+                        break
+                    
+                    # Log dell'esecuzione programmata (solo nel log cronjob)
+                    self._add_cronjob_log("INFO", f"Esecuzione ricerca programmata per: {keyword.keyword}", keyword_id)
+                    
+                    # Esegui la ricerca (senza duplicare i messaggi nel log cronjob)
+                    self.search_for_keyword(keyword_id)
+                    
             except Exception as e:
                 error_msg = f"Errore nel job in background: {str(e)}"
                 self._add_log("ERROR", error_msg)
                 self._add_log("ERROR", traceback.format_exc())
                 self._add_cronjob_log("ERROR", error_msg, keyword_id)
-                self._add_cronjob_log("ERROR", traceback.format_exc(), keyword_id)
                 logger.error(error_msg)
                 logger.error(traceback.format_exc())
             finally:

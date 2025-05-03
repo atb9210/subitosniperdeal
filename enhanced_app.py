@@ -215,7 +215,7 @@ st.sidebar.image("https://img.icons8.com/color/96/000000/price-tag--v1.png", wid
 # Menu nella barra laterale
 menu = st.sidebar.radio(
     "Menu",
-    ["Dashboard", "Risultati", "Gestione Campagne", "Log Scraper", "Log Cronjob", "Impostazioni", "Log Sistema", "Seen Ads"]
+    ["Dashboard", "Risultati", "Gestione Campagne", "Log Scraper", "Ricerche Programmate", "Impostazioni", "Log Sistema", "Seen Ads"]
 )
 
 # Ottieni tutti i risultati nel database
@@ -750,18 +750,18 @@ elif menu == "Log Scraper":
         logger.error(f"Errore nella pagina Log Scraper: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
     
-elif menu == "Log Cronjob":
-    st.title("Log dei Cronjob")
+elif menu == "Ricerche Programmate":
+    st.title("Log delle Ricerche Programmate")
     
     try:
         # Ottieni i log dei cronjob
         cronjob_logs = scraper_adapter.get_cronjob_logs()
         
         if not cronjob_logs:
-            st.info("Nessun log dei cronjob disponibile.")
+            st.info("Nessun log delle ricerche programmate disponibile.")
         else:
             # Crea un formato più leggibile
-            st.subheader(f"Log dei Cronjob ({len(cronjob_logs)} eventi)")
+            st.subheader(f"Log delle Ricerche Programmate ({len(cronjob_logs)} eventi)")
             
             # Opzioni di filtro
             log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
@@ -782,6 +782,10 @@ elif menu == "Log Cronjob":
             finally:
                 session.close()
             
+            # Filtra per parole chiave rilevanti che indicano ricerche programmate
+            show_only_executions = st.checkbox("Mostra solo le esecuzioni programmate", value=True, 
+                                              help="Mostra solo i messaggi relativi all'avvio e completamento delle ricerche programmate")
+            
             # Filtra i log
             if selected_level != "Tutti":
                 filtered_logs = [log for log in cronjob_logs if log["level"] == selected_level]
@@ -791,6 +795,11 @@ elif menu == "Log Cronjob":
             # Applica filtro per keyword
             if selected_keyword_id != 0:
                 filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
+            
+            # Applica filtro per ricerche programmate
+            if show_only_executions:
+                execution_keywords = ["Esecuzione ricerca", "Avviato job", "Terminato job", "Prossima ricerca programmata"]
+                filtered_logs = [log for log in filtered_logs if any(keyword in log["message"] for keyword in execution_keywords)]
             
             # Mostra numero di log per tipo
             error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
@@ -827,22 +836,56 @@ elif menu == "Log Cronjob":
                     elif val == "WARNING":
                         color = "background-color: rgba(255, 165, 0, 0.2)"
                     elif val == "INFO":
-                        color = "background-color: rgba(0, 128, 0, 0.1)"
+                        if any(keyword in val for keyword in ["Esecuzione ricerca", "Avviato job"]):
+                            color = "background-color: rgba(0, 128, 0, 0.3)"
+                        else:
+                            color = "background-color: rgba(0, 128, 0, 0.1)"
                     return color
                 
+                # Converti messaggi specifici per maggiore chiarezza
+                def format_message(row):
+                    message = row["Messaggio"]
+                    
+                    # Ricerca iniziale
+                    if "Esecuzione ricerca iniziale" in message:
+                        return "🚀 Ricerca iniziale avviata"
+                    
+                    # Ricerca programmata
+                    elif "Esecuzione ricerca programmata" in message:
+                        return "⏰ Ricerca programmata avviata"
+                    
+                    # Prossima ricerca
+                    elif "Prossima ricerca programmata" in message:
+                        minutes = message.split("tra")[1].strip().split(" ")[0]
+                        return f"⏳ Prossima ricerca tra {minutes} minuti"
+                    
+                    # Avvio job
+                    elif "Avviato job in background" in message:
+                        return "▶️ Avviato monitoraggio automatico"
+                    
+                    # Termine job
+                    elif "Terminato job in background" in message:
+                        return "⏹️ Terminato monitoraggio automatico"
+                    
+                    return message
+                
+                # Applica la formattazione dei messaggi
+                df["Messaggio"] = df.apply(format_message, axis=1)
+                
+                # Applica stili per evidenziare i livelli di log
                 styled_df = df.style.applymap(highlight_level, subset=["Livello"])
                 st.dataframe(styled_df, height=400)
                 
                 # Pulsante per cancellare i log
-                if st.button("Cancella Log dei Cronjob"):
+                if st.button("Cancella Log delle Ricerche Programmate"):
                     scraper_adapter.cronjob_logs = []
-                    st.success("Log dei cronjob cancellati con successo.")
+                    st.success("Log cancellati con successo.")
                     st.experimental_rerun()
             else:
                 st.info(f"Nessun log disponibile con i filtri selezionati.")
             
     except Exception as e:
-        logger.error(f"Errore nella visualizzazione dei log dei cronjob: {str(e)}")
+        logger.error(f"Errore nella visualizzazione dei log delle ricerche programmate: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
 
 elif menu == "Impostazioni":
