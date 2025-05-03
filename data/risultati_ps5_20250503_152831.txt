@@ -1,0 +1,889 @@
+RISULTATI RICERCA: 'ps5'
+Data: 2025-05-03 15:28:31
+Parametri: prezzo_max=400, filtro_attivo=True, pagine_max=3
+================================================================================
+
+TOTALE RISULTATI: 87
+- Disponibili: 86
+- Venduti: 1
+
+================================================================================
+
+STATISTICHE PREZZI:
+- Minimo: €3.00
+- Massimo: €400.00
+- Medio: €100.64
+- Mediano: €45.00
+
+================================================================================
+
+ANNUNCIO #1:
+Titolo: MotoGP 2024 One day Edition (Italiano)
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/motogp-2024-one-day-edition-italiano-varese-600534176.htm
+
+--------------------------------------------------
+
+ANNUNCIO #2:
+Titolo: Giochi nintendo switch Mario pokemon Kirby e altri
+Prezzo: €15.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-nintendo-switch-mario-pokemon-kirby-e-altri-genova-600533102.htm
+
+--------------------------------------------------
+
+ANNUNCIO #3:
+Titolo: ps5 digital seminuova + 2 jostick
+Prezzo: €380.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-digital-seminuova-2-jostick-padova-600533009.htm
+
+--------------------------------------------------
+
+ANNUNCIO #4:
+Titolo: Monster Hunter Wilds
+Prezzo: €35.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/monster-hunter-wilds-napoli-600532569.htm
+
+--------------------------------------------------
+
+ANNUNCIO #5:
+Titolo: SSD Samsung 980 pro da 1Tb con Heatsink
+Prezzo: €99.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/informatica/ssd-samsung-980-pro-da-1tb-con-heatsink-lodi-588413628.htm
+
+--------------------------------------------------
+
+ANNUNCIO #6:
+Titolo: Controller Sony Ps5
+Prezzo: €69.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/controller-sony-ps5-salerno-562986047.htm
+
+--------------------------------------------------
+
+ANNUNCIO #7:
+Titolo: Bleach Rebirth of souls ps5
+Prezzo: €50.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/bleach-rebirth-of-souls-ps5-macerata-600532290.htm
+
+--------------------------------------------------
+
+ANNUNCIO #8:
+Titolo: assassin's creed shadows - ps5
+Prezzo: €40.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/assassin-s-creed-shadows-ps5-torino-600531196.htm
+
+--------------------------------------------------
+
+ANNUNCIO #9:
+Titolo: God of War Ragnarok Ps5 nuovissimo
+Prezzo: €40.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/god-of-war-ragnarok-ps5-nuovissimo-brindisi-600530916.htm
+
+--------------------------------------------------
+
+ANNUNCIO #10:
+Titolo: Sony Play station 5 slim D Chassis con lettore cd
+Prezzo: €380.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/sony-play-station-5-slim-d-chassis-con-lettore-cd-milano-600530552.htm
+
+--------------------------------------------------
+
+ANNUNCIO #11:
+Titolo: Giochi ps5 ps4
+Prezzo: €137.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps5-ps4-trento-600530174.htm
+
+--------------------------------------------------
+
+ANNUNCIO #12:
+Titolo: Dashboard FLYSIM 12 tasti per PC , XBOX e PS5
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/dashboard-flysim-12-tasti-per-pc-xbox-e-ps5-milano-600530142.htm
+
+--------------------------------------------------
+
+ANNUNCIO #13:
+Titolo: mini tastiera e mouse game
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/informatica/mini-tastiera-e-mouse-game-torino-600529190.htm
+
+--------------------------------------------------
+
+ANNUNCIO #14:
+Titolo: PS5 Black Myth Wukong
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-black-myth-wukong-napoli-600529105.htm
+
+--------------------------------------------------
+
+ANNUNCIO #15:
+Titolo: PlayStation 4
+Prezzo: €130.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/playstation-4-palermo-600529043.htm
+
+--------------------------------------------------
+
+ANNUNCIO #16:
+Titolo: Ps5 Digital Edition 825gb
+Prezzo: €330.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-digital-edition-825gb-pavia-600528883.htm
+
+--------------------------------------------------
+
+ANNUNCIO #17:
+Titolo: Death stranding
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/death-stranding-napoli-600528673.htm
+
+--------------------------------------------------
+
+ANNUNCIO #18:
+Titolo: Ps5 Digital Edition
+Prezzo: €340.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-digital-edition-como-590313219.htm
+
+--------------------------------------------------
+
+ANNUNCIO #19:
+Titolo: FC 25 PS5
+Prezzo: €20.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fc-25-ps5-napoli-600527836.htm
+
+--------------------------------------------------
+
+ANNUNCIO #20:
+Titolo: PS5 Slim digital
+Prezzo: €330.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-slim-digital-venezia-600527577.htm
+
+--------------------------------------------------
+
+ANNUNCIO #21:
+Titolo: Gran turismo 7 ps5 nuovo sigillato
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gran-turismo-7-ps5-nuovo-sigillato--brindisi-600527548.htm
+
+--------------------------------------------------
+
+ANNUNCIO #22:
+Titolo: Spiderman Miles Morales ultimate edition ps5 Nuovo
+Prezzo: €49.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/spiderman-miles-morales-ultimate-edition-ps5-nuovo-brindisi-600527415.htm
+
+--------------------------------------------------
+
+ANNUNCIO #23:
+Titolo: DRAGON BALL: Sparking! ZERO - PS5
+Prezzo: €35.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/dragon-ball-sparking-zero-ps5-lecce-600526988.htm
+
+--------------------------------------------------
+
+ANNUNCIO #24:
+Titolo: gioco ps5
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gioco-ps5-palermo-600526242.htm
+
+--------------------------------------------------
+
+ANNUNCIO #25:
+Titolo: The last of us dualsense ps5
+Prezzo: €105.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/the-last-of-us-dualsense-ps5-cuneo-600526237.htm
+
+--------------------------------------------------
+
+ANNUNCIO #26:
+Titolo: Postazione guida completa PS4 PS5 PC Thrustmaster
+Prezzo: €350.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/postazione-guida-completa-ps4-ps5-pc-thrustmaster-roma-600526173.htm
+
+--------------------------------------------------
+
+ANNUNCIO #27:
+Titolo: videogiochi ps4 ps5
+Prezzo: €15.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/videogiochi-ps4-ps5-roma-600526027.htm
+
+--------------------------------------------------
+
+ANNUNCIO #28:
+Titolo: Star wars jedi survivor ps5
+Prezzo: €20.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/star-wars-jedi-survivor-ps5-agrigento-600516955.htm
+
+--------------------------------------------------
+
+ANNUNCIO #29:
+Titolo: Spiderman 2 ps5 Nuovo sigillato
+Prezzo: €50.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/spiderman-2-ps5-nuovo-sigillato-brindisi-600525263.htm
+
+--------------------------------------------------
+
+ANNUNCIO #30:
+Titolo: videogiochi prezzi vari dai 15 ai 35 euro
+Prezzo: €0.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/videogiochi-prezzi-vari-dai-15-ai-35-euro-roma-600524939.htm
+
+--------------------------------------------------
+
+ANNUNCIO #31:
+Titolo: gioco ps5 metaphor re fantazio
+Prezzo: €35.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gioco-ps5-metaphor-re-fantazio-roma-600524609.htm
+
+--------------------------------------------------
+
+ANNUNCIO #32:
+Titolo: final fantasy rebirth ps5
+Prezzo: €40.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/final-fantasy-rebirth-ps5-roma-600524402.htm
+
+--------------------------------------------------
+
+ANNUNCIO #33:
+Titolo: giochi PS5
+Prezzo: €10.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps5-cagliari-600524208.htm
+
+--------------------------------------------------
+
+ANNUNCIO #34:
+Titolo: PS4 SLIM 500G
+Prezzo: €100.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps4-slim-500g-pavia-596170944.htm
+
+--------------------------------------------------
+
+ANNUNCIO #35:
+Titolo: Gran turismo 7 PS5 sigillato
+Prezzo: €40.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gran-turismo-7-ps5-sigillato-cagliari-600523747.htm
+
+--------------------------------------------------
+
+ANNUNCIO #36:
+Titolo: Spider Man 2 PS5
+Prezzo: €37.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/spider-man-2-ps5-palermo-600523433.htm
+
+--------------------------------------------------
+
+ANNUNCIO #37:
+Titolo: NFS Unbound per PS5
+Prezzo: €15.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/nfs-unbound-per-ps5-milano-600523380.htm
+
+--------------------------------------------------
+
+ANNUNCIO #38:
+Titolo: giochi ps4 e ps5
+Prezzo: €80.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps4-e-ps5-bari-600523216.htm
+
+--------------------------------------------------
+
+ANNUNCIO #39:
+Titolo: MotoGp 25 PS5
+Prezzo: €52.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/motogp-25-ps5-lecco-600523069.htm
+
+--------------------------------------------------
+
+ANNUNCIO #40:
+Titolo: Playstation 5 Standard
+Prezzo: €370.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/playstation-5-standard-milano-600522965.htm
+
+--------------------------------------------------
+
+ANNUNCIO #41:
+Titolo: Giochi ps4 e ps5
+Prezzo: €80.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps4-e-ps5-bari-600522887.htm
+
+--------------------------------------------------
+
+ANNUNCIO #42:
+Titolo: Play Station 5
+Prezzo: €400.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/play-station-5-latina-600522607.htm
+
+--------------------------------------------------
+
+ANNUNCIO #43:
+Titolo: PS5 PIÙ 2 GIOCHI
+Prezzo: €360.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-piu-2-giochi-sassari-600522271.htm
+
+--------------------------------------------------
+
+ANNUNCIO #44:
+Titolo: Ratchet and clank Rift apart PS5
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ratchet-and-clank-rift-apart-ps5-varese-600521716.htm
+
+--------------------------------------------------
+
+ANNUNCIO #45:
+Titolo: Ps5 sony con lettore disco
+Prezzo: €250.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-sony-con-lettore-disco-bari-600521594.htm
+
+--------------------------------------------------
+
+ANNUNCIO #46:
+Titolo: F1 24 ps5
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/f1-24-ps5-milano-600521576.htm
+
+--------------------------------------------------
+
+ANNUNCIO #47:
+Titolo: PS5 PlayStation 825 GB FAT Disco + Gioco spiderman
+Prezzo: €300.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-playstation-825-gb-fat-disco-gioco-spiderman-palermo-600521367.htm
+
+--------------------------------------------------
+
+ANNUNCIO #48:
+Titolo: PlayStation portale
+Prezzo: €160.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/playstation-portale-milano-600520971.htm
+
+--------------------------------------------------
+
+ANNUNCIO #49:
+Titolo: Death Stranding - Director's Cut PS5
+Prezzo: €23.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/death-stranding-director-s-cut-ps5-agrigento-600520946.htm
+
+--------------------------------------------------
+
+ANNUNCIO #50:
+Titolo: PS5 MINECRAFT NUOVO SIGILLATO ITA
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-minecraft-nuovo-sigillato-ita-napoli-600520332.htm
+
+--------------------------------------------------
+
+ANNUNCIO #51:
+Titolo: caricatore
+Prezzo: €13.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/caricatore-torino-600520102.htm
+
+--------------------------------------------------
+
+ANNUNCIO #52:
+Titolo: God of War & Battlefield V per Ps4/Ps5
+Prezzo: €15.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/god-of-war-battlefield-v-per-ps4-ps5-frosinone-600520003.htm
+
+--------------------------------------------------
+
+ANNUNCIO #53:
+Titolo: ssd crucial 1tb per Ps5
+Prezzo: €90.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ssd-crucial-1tb-per-ps5-cagliari-600519045.htm
+
+--------------------------------------------------
+
+ANNUNCIO #54:
+Titolo: Playstation 5
+Prezzo: €400.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/playstation-5-monza-600510244.htm
+
+--------------------------------------------------
+
+ANNUNCIO #55:
+Titolo: Pes 2021
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/pes-2021-napoli-600518675.htm
+
+--------------------------------------------------
+
+ANNUNCIO #56:
+Titolo: ps5 Digital
+Prezzo: €380.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-digital-siena-600508039.htm
+
+--------------------------------------------------
+
+ANNUNCIO #57:
+Titolo: gioco ps5 elden ring sigillato
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gioco-ps5-elden-ring-sigillato-brindisi-600518491.htm
+
+--------------------------------------------------
+
+ANNUNCIO #58:
+Titolo: gioco ps5 expedition 33 sigillato
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: VENDUTO
+URL: https://www.subito.it/videogiochi/gioco-ps5-expedition-33-sigillato-brindisi-600518339.htm
+
+--------------------------------------------------
+
+ANNUNCIO #59:
+Titolo: Ps5 con lettore standard
+Prezzo: €350.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-con-lettore-standard-lodi-600507498.htm
+
+--------------------------------------------------
+
+ANNUNCIO #60:
+Titolo: Cornice ps5
+Prezzo: €10.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/cornice-ps5-cuneo-600518294.htm
+
+--------------------------------------------------
+
+ANNUNCIO #61:
+Titolo: giochi ps5 dragon dogma 2
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps5-dragon-dogma-2-brindisi-600518218.htm
+
+--------------------------------------------------
+
+ANNUNCIO #62:
+Titolo: Base controller ps5
+Prezzo: €13.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/base-controller-ps5-cuneo-600518151.htm
+
+--------------------------------------------------
+
+ANNUNCIO #63:
+Titolo: Giochi ps4
+Prezzo: €50.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-ps4-lecce-600516701.htm
+
+--------------------------------------------------
+
+ANNUNCIO #64:
+Titolo: SIMULATORE / VOLANTE GAMING
+Prezzo: €350.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/simulatore-volante-gaming-treviso-597802348.htm
+
+--------------------------------------------------
+
+ANNUNCIO #65:
+Titolo: MINI PROPRIETTORE FULLHD FORMATO COMPATTO CON HDMI
+Prezzo: €80.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/audio-video/mini-propriettore-fullhd-formato-compatto-con-hdmi-napoli-600516159.htm
+
+--------------------------------------------------
+
+ANNUNCIO #66:
+Titolo: Base joystic ps5 e ps4
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/base-joystic-ps5-e-ps4-cuneo-600515681.htm
+
+--------------------------------------------------
+
+ANNUNCIO #67:
+Titolo: Giochi per Ps-1-2-3-4-5-Wii-Psp-Ds-Xbox 360
+Prezzo: €3.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/giochi-per-ps-1-2-3-4-5-wii-psp-ds-xbox-360-roma-600514428.htm
+
+--------------------------------------------------
+
+ANNUNCIO #68:
+Titolo: volante  T80 Ferrari 488 GTB
+Prezzo: €55.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/volante-t80-ferrari-488-gtb-modena-600514001.htm
+
+--------------------------------------------------
+
+ANNUNCIO #69:
+Titolo: F1 24 PS5
+Prezzo: €30.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/f1-24-ps5-como-600513928.htm
+
+--------------------------------------------------
+
+ANNUNCIO #70:
+Titolo: Clair Obscur: Expedition 33 PS5 "NUOVO"
+Prezzo: €75.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/clair-obscur-expedition-33-ps5-nuovo-napoli-600513749.htm
+
+--------------------------------------------------
+
+ANNUNCIO #71:
+Titolo: Nba 2k25 Ps5 -Nuovo- Sigillato
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/nba-2k25-ps5-nuovo-sigillato-caserta-600513540.htm
+
+--------------------------------------------------
+
+ANNUNCIO #72:
+Titolo: demon's souls ps5
+Prezzo: €29.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/demon-s-souls-ps5-frosinone-600513417.htm
+
+--------------------------------------------------
+
+ANNUNCIO #73:
+Titolo: Controller Ps4 nuovo
+Prezzo: €50.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/controller-ps4-nuovo-bergamo-600513414.htm
+
+--------------------------------------------------
+
+ANNUNCIO #74:
+Titolo: Persona 3 Reload Strikers PlayStation 4 5 ps4 ps5
+Prezzo: €45.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/persona-3-reload-strikers-playstation-4-5-ps4-ps5-bari-600512902.htm
+
+--------------------------------------------------
+
+ANNUNCIO #75:
+Titolo: Gta 5 e Call of Duty Modern Warfare Xbox One x-s
+Prezzo: €10.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/gta-5-e-call-of-duty-modern-warfare-xbox-one-x-s-bari-600512849.htm
+
+--------------------------------------------------
+
+ANNUNCIO #76:
+Titolo: Marvel Spider-Man PS4
+Prezzo: €16.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/marvel-spider-man-ps4-napoli-600512664.htm
+
+--------------------------------------------------
+
+ANNUNCIO #77:
+Titolo: LOTTO Crash Bandicoot Ps4 ps5 PlayStation 4 5 PS
+Prezzo: €65.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/lotto-crash-bandicoot-ps4-ps5-playstation-4-5-ps-bari-600512660.htm
+
+--------------------------------------------------
+
+ANNUNCIO #78:
+Titolo: Tom Clancy's Ghost Recon Wildlands PS4
+Prezzo: €12.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/tom-clancy-s-ghost-recon-wildlands-ps4-napoli-600512518.htm
+
+--------------------------------------------------
+
+ANNUNCIO #79:
+Titolo: FIFA 21 PS4
+Prezzo: €8.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fifa-21-ps4-napoli-600512379.htm
+
+--------------------------------------------------
+
+ANNUNCIO #80:
+Titolo: FIFA 20 PS4
+Prezzo: €9.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fifa-20-ps4-napoli-600512121.htm
+
+--------------------------------------------------
+
+ANNUNCIO #81:
+Titolo: FIFA 18 Ronaldo Edition PS4
+Prezzo: €9.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fifa-18-ronaldo-edition-ps4-napoli-600511994.htm
+
+--------------------------------------------------
+
+ANNUNCIO #82:
+Titolo: FIFA 17 PS4
+Prezzo: €8.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fifa-17-ps4-napoli-600511821.htm
+
+--------------------------------------------------
+
+ANNUNCIO #83:
+Titolo: FIFA 16 PS4
+Prezzo: €9.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/fifa-16-ps4-napoli-600511436.htm
+
+--------------------------------------------------
+
+ANNUNCIO #84:
+Titolo: Ps5 Playstation
+Prezzo: €310.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/ps5-playstation-cuneo-600511069.htm
+
+--------------------------------------------------
+
+ANNUNCIO #85:
+Titolo: Dualsense Joystick Sony PS5 the last of us nuovo
+Prezzo: €109.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/dualsense-joystick-sony-ps5-the-last-of-us-nuovo-reggio-emilia-600510766.htm
+
+--------------------------------------------------
+
+ANNUNCIO #86:
+Titolo: Elden Ring PS5 PAL
+Prezzo: €25.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/elden-ring-ps5-pal-napoli-600509917.htm
+
+--------------------------------------------------
+
+ANNUNCIO #87:
+Titolo: Assassin’s creed Shadows
+Prezzo: €70.00
+Luogo: Luogo non specificato
+Data: ID: unknown
+Stato: DISPONIBILE
+URL: https://www.subito.it/videogiochi/assassin-s-creed-shadows-barletta-andria-trani-600509702.htm
+
+--------------------------------------------------
+

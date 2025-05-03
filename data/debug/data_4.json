@@ -1,0 +1,5941 @@
+{
+  "system": {
+    "preventPopstate": false
+  },
+  "search": {
+    "id": null,
+    "query": "xbox series s 512gb",
+    "category": {
+      "id": "0",
+      "label": "Tutte le categorie",
+      "friendly": "usato",
+      "orders": [
+        "datedesc",
+        "relevance",
+        "priceasc",
+        "pricedesc"
+      ],
+      "adTypes": [
+        "s",
+        "g",
+        "u",
+        "h",
+        "k"
+      ],
+      "defaultAdType": "s",
+      "categories": []
+    },
+    "adType": "s",
+    "geo": {
+      "region": {
+        "id": "0",
+        "friendlyName": "italia",
+        "label": "Regione",
+        "level": 0,
+        "uri": "/geo/region",
+        "value": "Tutta Italia"
+      }
+    },
+    "qso": false,
+    "includeShippableOnly": false,
+    "includeUrgent": false,
+    "filters": {},
+    "filtersLabels": {
+      "lim": "",
+      "q": "xbox series s 512gb",
+      "qso": "No",
+      "shp": "No",
+      "sort": "",
+      "start": "",
+      "t": "In vendita",
+      "urg": ""
+    },
+    "page": 4,
+    "orderIndex": 0,
+    "isUpdating": false,
+    "filtersDialogOpen": false,
+    "radiusDialogOpen": false,
+    "filterOrigin": "ServersideSearch",
+    "searchNearRegions": false,
+    "radiusSearch": null
+  },
+  "items": {
+    "list": [
+      {
+        "before": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "202px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-above"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "BeforePosition"
+            }
+          },
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-above"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "BeforePosition"
+            }
+          }
+        ],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:c2dcc4ed-0ec9-417c-83d6-b881ca89ae3c:list:587933794",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s con batterie ricaricabili 512gb",
+          "body": "Xbox Series S dotata di un controller due batterie ricaricabili",
+          "date": "2025-01-30 22:37:45",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/cc/cc2aad1d-1f81-4d82-875d-c1831f0c67a0"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "200",
+                  "value": "200 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "118674484",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "6",
+              "value": "Veneto",
+              "friendlyName": "veneto",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "6,4,5,7,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Treviso",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "treviso",
+              "istat": "026",
+              "regionId": "6",
+              "shortName": "TV"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "026050",
+              "value": "Nervesa della Battaglia",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "nervesa-della-battaglia",
+              "istat": "026050",
+              "cityId": "4",
+              "hasZone": false,
+              "regionId": "6"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-con-batterie-ricaricabili-512gb-treviso-587933794.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-con-batterie-ricaricabili-512gb-treviso-587933794.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "id": "listing-native-1",
+                "style": {
+                  "minHeight": "250px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                }
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:c5bb9f09-a6d0-4821-8348-6549264025ca:list:587651757",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series S 512gb",
+          "body": "Vendo xbox series s con due controller originali senza fili.\nBox non presente \nPrezzo non trattabile",
+          "date": "2025-01-28 22:27:38",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/09/09643237-81ac-4f01-9370-2697f6e202fb"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/9e/9e5a4d0d-e0dc-426f-b02c-1afc88ddbc34"
+            }
+          ],
+          "features": {
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "123827726",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "6",
+              "value": "Veneto",
+              "friendlyName": "veneto",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "6,4,5,7,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "2",
+              "value": "Padova",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "padova",
+              "istat": "028",
+              "regionId": "6",
+              "shortName": "PD"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "028003",
+              "value": "Albignasego",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "albignasego",
+              "istat": "028003",
+              "cityId": "2",
+              "hasZone": false,
+              "regionId": "6"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-padova-587651757.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-padova-587651757.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:5c79c0b4-900e-4b0a-855d-d9660785321d:list:587363737",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Microsoft Xbox Series S 512GB Console - Bianco",
+          "body": "Xbox perfettamente funzionante ancora in garanzia euronics",
+          "date": "2025-01-27 08:39:06",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/03/03b5b617-ddbc-4867-9b7f-f1b6b27dc1a2"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f9/f98da0db-2e36-429b-9aaa-e07338a6851b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/54/54e47b33-7097-4ade-a9d8-60d24255080e"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/db/dbd4b091-d4a1-4ea4-b32a-02734023f7e6"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c9/c9c67ea0-df55-4f0b-a831-ff0d88bb5484"
+            }
+          ],
+          "features": {
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "200",
+                  "value": "200 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "21472668",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "3",
+              "value": "Liguria",
+              "friendlyName": "liguria",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "3,2,8,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Genova",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "genova",
+              "istat": "010",
+              "regionId": "3",
+              "shortName": "GE"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "010016",
+              "value": "Cicagna",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "cicagna",
+              "istat": "010016",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "3"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/microsoft-xbox-series-s-512gb-console-bianco-genova-587363737.htm",
+            "mobile": "https://www.subito.it/videogiochi/microsoft-xbox-series-s-512gb-console-bianco-genova-587363737.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-native-1",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "display": "flex"
+                }
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:e024976f-eb74-4fc7-80f7-4b15fd3e0022:list:587333987",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512gb",
+          "body": "Come da titolo, vendo xbox one s ancora impacchettata vinta da concorso, vendo perche ho pc da gaming e non me ne faccio di nulla",
+          "date": "2025-01-26 20:27:13",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1d/1db6dca9-20a4-4848-afe5-613a6fd8a720"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e2/e2277081-8341-4920-afae-3d8f3e3e619a"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Nuovo - mai usato in confezione originale",
+                  "weight": 1,
+                  "description": "Oggetto nuovo con cartellino o confezione originale mai utilizzato e senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "105623330",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "9",
+              "value": "Toscana",
+              "friendlyName": "toscana",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "9,10,11,12,3,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Arezzo",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "arezzo",
+              "istat": "051",
+              "regionId": "9",
+              "shortName": "AR"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "051002",
+              "value": "Arezzo",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "arezzo",
+              "istat": "051002",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "9"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-arezzo-587333987.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-arezzo-587333987.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "id": "listing-box-1",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                }
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:071b3485-806a-421e-bb36-f07a523f17f9:list:587282161",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512gb COME NUOVA",
+          "body": "Vendo xbox series s pari al nuovo usata pochissimo, include tutti i cavi e confezione originale, pad incluso\nModello da 512gb di memoria",
+          "date": "2025-01-26 14:53:38",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/00/0052ed45-7c92-41db-b665-776630e940d2"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1a/1ac78f8a-3d91-48a7-938a-b4470f8ad1bc"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e4/e42afc09-c57d-469d-bac6-267d7acc32b6"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/70/70e762e6-578a-4037-bc68-e8ef028cc0e2"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/50/50512a93-3cb5-45f2-bd36-ed986f90d39b"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "170",
+                  "value": "170 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "114208368",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "8",
+              "value": "Emilia-Romagna",
+              "friendlyName": "emilia-romagna",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "8,12,2,3,4,6,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "5",
+              "value": "Parma",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "parma",
+              "istat": "034",
+              "regionId": "8",
+              "shortName": "PR"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "034027",
+              "value": "Parma",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "parma",
+              "istat": "034027",
+              "cityId": "5",
+              "hasZone": false,
+              "regionId": "8"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-come-nuova-parma-587282161.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-come-nuova-parma-587282161.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:de5ebde4-9277-44da-8476-8eaf64029055:list:587182459",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "xbox series s 512gb + 2 controller ",
+          "body": "buono stato, preferibile scambio a mano + 2 controller di cui uno xbox elite series 2 e l'altro standard ",
+          "date": "2025-01-25 17:06:07",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0e/0e63729a-ade5-4ebe-85b5-26eceadca081"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/51/51b394bc-dd66-4464-937f-ec2ee1e64737"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/5c/5c532b3b-6924-4eb4-a2c1-b4c5e2837f4c"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0a/0a8c9ce4-6893-475e-83c0-0e1f2195bafa"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "200",
+                  "value": "200 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "67874",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "15",
+              "value": "Campania",
+              "friendlyName": "campania",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "15,11,14,16,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Caserta",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "caserta",
+              "istat": "061",
+              "regionId": "15",
+              "shortName": "CE"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "061005",
+              "value": "Aversa",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "aversa",
+              "istat": "061005",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "15"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-2-controller-caserta-587182459.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-2-controller-caserta-587182459.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-1",
+                "style": {
+                  "minHeight": "202px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                }
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:bbadbd53-7f1c-4c8f-a265-b95469e88ffa:list:586896007",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox s series con controller nuovo mai usato.",
+          "body": "Vendo causa inutilizzo xbox seie s paragonabile al nuovo, Utilizzata pochissimo.\nVendo con scatola oroginale in buono stato e controller originale mai utilizzato.\nConsole next gen 512gb, dalle prestazioni eccezionali.",
+          "date": "2025-01-23 16:11:40",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/20/205a3c76-3934-459d-9592-5f769f286e2f"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/76/76c8e849-5666-44a7-80de-1d480116ce95"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/59/59d19bc7-212b-49e8-b341-aa8c690135c0"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/59/597ba38b-3533-4fbc-ab09-18c6dbf4d09e"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c8/c80cc274-7401-4e02-be2c-33cf97a8bfb1"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a1/a14cb325-769c-474e-9b0c-8410b59943c4"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "199",
+                  "value": "199 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "16327384",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "2",
+              "value": "Piemonte",
+              "friendlyName": "piemonte",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "2,1,3,4,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Alessandria",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "alessandria",
+              "istat": "006",
+              "regionId": "2",
+              "shortName": "AL"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "006003",
+              "value": "Alessandria",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "alessandria",
+              "istat": "006003",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "2"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-s-series-con-controller-nuovo-mai-usato-alessandria-586896007.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-s-series-con-controller-nuovo-mai-usato-alessandria-586896007.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-1"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:415e70f3-24fa-4ebb-8952-9850a3785857:list:585902424",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s 512gb",
+          "body": "Nuova mai usata, ancora imballata nella scatola originale.",
+          "date": "2025-01-16 14:02:52",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/51/51e18587-9f6e-4825-91f8-391fd240406f"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/5f/5fc2c33c-fd18-44b3-a15d-47e823c4a0a5"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "250",
+                  "value": "250 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Nuovo - mai usato in confezione originale",
+                  "weight": 1,
+                  "description": "Oggetto nuovo con cartellino o confezione originale mai utilizzato e senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "912366",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "7",
+              "value": "Friuli-Venezia Giulia",
+              "friendlyName": "friuli-venezia-giulia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "7,6"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Trieste",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "trieste",
+              "istat": "032",
+              "regionId": "7",
+              "shortName": "TS"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "032006",
+              "value": "Trieste",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "trieste",
+              "istat": "032006",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "7"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-trieste-585902424.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-trieste-585902424.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:4e304c4f-7016-42f8-b920-9f0bcea65a1c:list:585533190",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series x/s",
+          "body": "Vendo Xbox serie S 512gb bianca per inutilizzo. Prezzo trattabile.",
+          "date": "2025-01-13 19:51:17",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b7/b79e79c4-7a0c-4f89-9289-1ed73deed98a"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/3d/3ddfea0c-c180-49db-9863-8298b8f4064f"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/4d/4d34c06f-5dc1-4f8f-9ceb-13d3418056bc"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ce/cef70ac0-d5d0-4e4a-a854-d8d005de0d3e"
+            }
+          ],
+          "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "200",
+                  "value": "200 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "124545037",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "16",
+              "value": "Puglia",
+              "friendlyName": "puglia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "16,14,15,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Bari",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "bari",
+              "istat": "072",
+              "regionId": "16",
+              "shortName": "BA"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "072030",
+              "value": "Monopoli",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "monopoli",
+              "istat": "072030",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "16"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-x-s-bari-585533190.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-x-s-bari-585533190.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "alignItems": "center",
+                  "display": "flex"
+                },
+                "id": "listing-native-2"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:0c3c5e22-0a10-4ff8-b2e4-7beeca3a4e8f:list:585129316",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s 512gb bianca",
+          "body": "Xbox Series S come nuova. Con cavi e controller in buone condizioni.",
+          "date": "2025-01-10 18:52:09",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ce/cea35d20-a95b-4ae2-87dd-86efb1b2c5fa"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/4c/4caa68d5-753c-4d9f-8f15-0003685523af"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a2/a2aa4c49-869c-401b-8cd5-a0ee25400849"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0d/0d78f343-96f2-4267-87b6-ba37d5ab713b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f2/f27067d3-ded3-4921-866c-05f3237ffa41"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "170",
+                  "value": "170 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "116086014",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "5",
+              "value": "Trentino-Alto Adige",
+              "friendlyName": "trentino-alto-adige",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "5,4,6"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Bolzano",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "bolzano",
+              "istat": "021",
+              "regionId": "5",
+              "shortName": "BZ"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "021105",
+              "value": "Vadena",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "vadena",
+              "istat": "021105",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "5"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-bianca-bolzano-585129316.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-bianca-bolzano-585129316.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                },
+                "id": "listing-native-2"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:092633b1-ded6-4fc6-b4e5-33412a4c4021:list:585088134",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S",
+          "body": "Vendo console per errato acquisto, ancora possiede 1 anno di garanzia GameStop.\nConsole da 512gb compresa di cavo HDMI ultra high speed, cavo di alimentazione ed il suo Joypad originale. \nPrezzo leggermente trattabile.",
+          "date": "2025-01-10 14:34:57",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c7/c7f0f594-b012-4ea6-b3e5-4fc25e3ed3c0"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/87/87c2dbed-b330-42c1-84f4-7641465bb2fd"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/3d/3d6e9dd0-f9df-4c61-9e69-274a88ee30f5"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "260",
+                  "value": "260 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "101132563",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "4",
+              "value": "Lombardia",
+              "friendlyName": "lombardia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "4,2,5,6,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "7",
+              "value": "Mantova",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "mantova",
+              "istat": "020",
+              "regionId": "4",
+              "shortName": "MN"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "020003",
+              "value": "Bagnolo San Vito",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "bagnolo-san-vito",
+              "istat": "020003",
+              "cityId": "7",
+              "hasZone": false,
+              "regionId": "4"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-mantova-585088134.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-mantova-585088134.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:703f796f-f1a4-4713-aae6-41bfd2c56cb6:list:584711441",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s 512gb",
+          "body": "Causa regalo sbagliato vendo Xbox series s con 512  GB di hard disk 1 joypad cavo HDMI cavo di alimentazione scatola originale e scontrino di garanzia acquistata il 5 di questo mese praticamente nuova. Il tutto non trattabile no perditempo non scambi",
+          "date": "2025-01-07 20:33:02",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/fe/feba8e13-dc2f-40c1-81f5-8bfa11d0c103"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b5/b53feae6-56e5-4138-abf7-85b5299168a4"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/02/025af378-c2c8-40ac-8ff8-8a788128e46a"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2c/2cf5004f-f772-4553-a652-352ba80c6c68"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/63/63560784-3172-4bb9-9eff-2eca165cb00b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/3b/3b3936df-f671-455c-a7d3-aa56b315b970"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "150",
+                  "value": "150 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "123986732",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "7",
+              "value": "Friuli-Venezia Giulia",
+              "friendlyName": "friuli-venezia-giulia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "7,6"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Udine",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "udine",
+              "istat": "031",
+              "regionId": "7",
+              "shortName": "UD"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "030129",
+              "value": "Udine",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "udine",
+              "istat": "030129",
+              "cityId": "4",
+              "hasZone": false,
+              "regionId": "7"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-udine-584711441.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-udine-584711441.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "202px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-2"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:e8ab3349-6b19-466e-87b7-fab3b77bc2bc:list:584528290",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "xbox series s",
+          "body": "vendo xbox series s con espansione memoria di 512gb senza joystick.",
+          "date": "2025-01-06 18:05:53",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2e/2e960f2f-734e-4cad-be7b-716dacbeb2c8"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2e/2e711915-da60-406d-be7e-6e4c7b1507ed"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/cf/cfecaddb-052e-4703-840f-d18f9173dcb9"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2c/2cada3a7-46b8-430d-833d-699d8ad57425"
+            }
+          ],
+          "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "150",
+                  "value": "150 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "111517424",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "6",
+              "value": "Veneto",
+              "friendlyName": "veneto",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "6,4,5,7,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Treviso",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "treviso",
+              "istat": "026",
+              "regionId": "6",
+              "shortName": "TV"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "026012",
+              "value": "Castelfranco Veneto",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "castelfranco-veneto",
+              "istat": "026012",
+              "cityId": "4",
+              "hasZone": false,
+              "regionId": "6"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-treviso-584528290.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-treviso-584528290.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                },
+                "id": "listing-box-2"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:1d43686f-0e84-406f-861a-e93e427883ee:list:584035109",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s + Mouse + Tastiera + Cuffie + Stick",
+          "body": "Xbox Series S da 512gb perfettamente funzionante\nCavo di alimentazione originale\nCavo HDMI originale\nController Originale Xbox series s perfettamente funzionante con delle macchie\nMouse da gaming Logitech G G203 come nuovo\nTastiera da gaming Logitech G413 come nuova\nCuffie da gaming Turtle Beach Recon 70P\nKontrolFreek viola",
+          "date": "2025-01-02 22:04:59",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a4/a4e6373e-42a2-4655-ae98-c301111712e9"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/46/46e912f4-fa5d-4862-9adb-11e17950dcb8"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e0/e0a3beae-b5b4-4004-b6db-d169d3b4d718"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/97/97851707-d60c-485d-9b34-b1abf25b35d0"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6d/6d6ae2aa-256e-4d37-8404-b45f792a29de"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c6/c6e332d3-630e-41f3-ab0e-165e9195e9b9"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "16,99",
+                  "value": "16,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "190",
+                  "value": "190 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "117646105",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "11",
+              "value": "Lazio",
+              "friendlyName": "lazio",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "11,10,12,13,14,15,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Roma",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "roma",
+              "istat": "058",
+              "regionId": "11",
+              "shortName": "RM"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "058091",
+              "value": "Roma",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "roma",
+              "istat": "058091",
+              "cityId": "4",
+              "hasZone": true,
+              "regionId": "11"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-mouse-tastiera-cuffie-stick-roma-584035109.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-mouse-tastiera-cuffie-stick-roma-584035109.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:e9b39c8f-a436-43b2-9622-63f550112b45:list:584014016",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series S + monitor 27\u201d + pad",
+          "body": "Vendo xbox series s 512gb + monitor aoc 27\u201d + Pad Xbox elite series 2 con levette. Vendo per inutilizzo prezzo trattabile",
+          "date": "2025-01-02 18:48:21",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/20/201bb789-ea05-4236-9afd-9d37a2f0d504"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b1/b1cd2085-d7a1-463c-be09-36b8efed8b6f"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b0/b05f37a8-8ae6-4b80-b96d-0233cde03f1a"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/5a/5a142dcf-2396-4467-8d64-409362af8deb"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d9/d9ca5a88-69ad-40e2-af2d-c2cf4f65e30a"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "170",
+                  "value": "170 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "121965367",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "15",
+              "value": "Campania",
+              "friendlyName": "campania",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "15,11,14,16,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Napoli",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "napoli",
+              "istat": "063",
+              "regionId": "15",
+              "shortName": "NA"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "063049",
+              "value": "Napoli",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "napoli",
+              "istat": "063049",
+              "cityId": "4",
+              "hasZone": true,
+              "regionId": "15"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-monitor-27-pad-napoli-584014016.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-monitor-27-pad-napoli-584014016.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-3"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:4e47e7bc-a2c9-475a-ac69-7e414b40e5c8:list:583888278",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512gb",
+          "body": "Xbox Series S 512gb, come nuova usata solo un mese.",
+          "date": "2025-01-01 19:57:24",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/09/0922d8cb-a405-42b3-acf9-8e04fd47815f"
+            }
+          ],
+          "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "200",
+                  "value": "200 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "114929346",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "11",
+              "value": "Lazio",
+              "friendlyName": "lazio",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "11,10,12,13,14,15,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Roma",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "roma",
+              "istat": "058",
+              "regionId": "11",
+              "shortName": "RM"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "058098",
+              "value": "Sant'Angelo Romano",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "sant-angelo-romano",
+              "istat": "058098",
+              "cityId": "4",
+              "hasZone": false,
+              "regionId": "11"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-roma-583888278.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-roma-583888278.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                },
+                "id": "listing-box-3"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:0cc10174-c296-492c-b289-9eaaa6d2e9ab:list:583819709",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S",
+          "body": "Vendo Xbox series S 512gb, usata pochissimo, praticamente nuova",
+          "date": "2024-12-31 16:52:27",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2d/2d758223-3868-4c58-987f-6803463b3c43"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f6/f6e2ed19-c56d-456a-ad00-ef3a8aee163c"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/17/17d7fa7e-fc76-4c52-87c2-e618edf6cb8b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/80/80ae57f1-ad9a-4f9f-a573-455ea945abe6"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2f/2f2432da-ffad-4ed6-ab74-5edc57a8ef86"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ee/ee62a73c-195d-4627-bf3a-7278b80f8565"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "260",
+                  "value": "260 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "15817323",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "4",
+              "value": "Lombardia",
+              "friendlyName": "lombardia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "4,2,5,6,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "8",
+              "value": "Milano",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "milano",
+              "istat": "015",
+              "regionId": "4",
+              "shortName": "MI"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "015220",
+              "value": "Trezzano sul Naviglio",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "trezzano-sul-naviglio",
+              "istat": "015220",
+              "cityId": "8",
+              "hasZone": false,
+              "regionId": "4"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-milano-583819709.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-milano-583819709.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:f77da452-466e-4846-acf2-8e6e8b8e93fe:list:583648454",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series x + due joystick ",
+          "body": "Vendo causa inutilizzo\nXBOX SERIE S 512GB SSD\nCOMPLETA DI:\n2 JOYSTICK \n1 CAVO DI ALIMENTAZIONE ORIGINALE\n1 CAVO HDMI\nSCATOLA ORIGINALE",
+          "date": "2024-12-29 23:05:20",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d7/d7763335-e1e1-4113-a566-be86afa430b5"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/eb/ebe86265-74d1-4906-92fa-7885584e5438"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "11926743",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "4",
+              "value": "Lombardia",
+              "friendlyName": "lombardia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "4,2,5,6,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "5",
+              "value": "Lecco",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "lecco",
+              "istat": "097",
+              "regionId": "4",
+              "shortName": "LC"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "097042",
+              "value": "Lecco",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "lecco",
+              "istat": "097042",
+              "cityId": "5",
+              "hasZone": false,
+              "regionId": "4"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-x-due-joystick-lecco-583648454.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-x-due-joystick-lecco-583648454.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-4"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:4c623f95-5502-4513-a58e-5dc3f22b9569:list:583648193",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox  series s + 2 joystick ",
+          "body": "Vendo causa inutilizzo\nXBOX SERIE S 512GB SSD\nCOMPLETA DI:\n2 JOYSTICK \n1 CAVO DI ALIMENTAZIONE ORIGINALE\n1 CAVO HDMI\nSCATOLA ORIGINALE",
+          "date": "2024-12-29 23:05:11",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/5b/5b08790c-2e4f-4819-b7e0-86887eca7253"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d3/d3e09d43-8421-46e3-b32b-9bc0c167f7b2"
+            }
+          ],
+          "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "11926743",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "4",
+              "value": "Lombardia",
+              "friendlyName": "lombardia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "4,2,5,6,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "5",
+              "value": "Lecco",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "lecco",
+              "istat": "097",
+              "regionId": "4",
+              "shortName": "LC"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "097042",
+              "value": "Lecco",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "lecco",
+              "istat": "097042",
+              "cityId": "5",
+              "hasZone": false,
+              "regionId": "4"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-2-joystick-lecco-583648193.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-2-joystick-lecco-583648193.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-2"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:4f362017-a41a-40f6-b0ce-96b1d37b49d8:list:582367578",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series S 512 gb",
+          "body": "Console Xbox series S 512gb\nCondizioni ottime, funzionante alla perfezione, vendo per inutilizzo.\nPad funzionate alla perfezione.\nIn aggiunta; cavo alimentatore pad, hdmI.",
+          "date": "2024-12-16 21:31:48",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/4f/4f49a035-6840-482c-8ba3-d2a973ea2644"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/81/813d033b-ee3a-4fbc-9f2c-f492a55062ad"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/32/324fd63e-bcda-4a6e-902d-05d923e88c69"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d5/d5d3c81e-ce25-4bee-96b5-d83fd5ed9f2d"
+            }
+          ],
+          "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "123142314",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "9",
+              "value": "Toscana",
+              "friendlyName": "toscana",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "9,10,11,12,3,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "7",
+              "value": "Pisa",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "pisa",
+              "istat": "050",
+              "regionId": "9",
+              "shortName": "PI"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "050009",
+              "value": "Castelfranco di Sotto",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "castelfranco-di-sotto",
+              "istat": "050009",
+              "cityId": "7",
+              "hasZone": false,
+              "regionId": "9"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512-gb-pisa-582367578.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512-gb-pisa-582367578.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:75fcad76-a7f8-4ec2-bd59-29ae15d2882d:list:582147917",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series s ",
+          "body": "Scopri la nuovissima Xbox Series S, la nostra Xbox pi\u00f9 compatta di tutti i tempi, 100% Digitale, una console next-gen ad un prezzo accessibile. Immergiti in universi ultra dettagliati con risoluzione interna 1080p HDR. Compatibile con la tecnologia 4K HDR collegando la tua Xbox Series S al televisore 4K per giocare in condizioni migliori grazie alla ridimensionamento (2160p). Xbox Series S consente un rendering ancora pi\u00f9 fluido e dinamico fino a 120 fotogrammi al secondo (compatibile con Fortnite, Call of Duty: Warzone, Rocket League ecc). Approfitta dell'unit\u00e0 SSD da 512GB per carichi quasi istantanei. Ancora pi\u00f9 immersione con il Raytracing che consente di visualizzare luci e riflessi realistici, per ambienti pi\u00f9 reali della vita sui giochi Xbox compatibili. Scopri la nuova generazione di tecnologia audio che ti mettono al centro della tua esperienza di gioco con il Dolby Atmos per i giochi compatibili.",
+          "date": "2024-12-15 00:26:31",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c8/c8df598e-57c5-4c5d-91e0-8954b2015836"
+            }
+          ],
+          "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "260",
+                  "value": "260 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Nuovo - mai usato in confezione originale",
+                  "weight": 1,
+                  "description": "Oggetto nuovo con cartellino o confezione originale mai utilizzato e senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "106111873",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "18",
+              "value": "Calabria",
+              "friendlyName": "calabria",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "18,17,20"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "5",
+              "value": "Vibo Valentia",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "vibo-valentia",
+              "istat": "102",
+              "regionId": "18",
+              "shortName": "VV"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "102030",
+              "value": "Ricadi",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "ricadi",
+              "istat": "102030",
+              "cityId": "5",
+              "hasZone": false,
+              "regionId": "18"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-vibo-valentia-582147917.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-vibo-valentia-582147917.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-5"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:9799f4a6-d3a5-4142-be8c-88fcdf24c5da:list:580968465",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S",
+          "body": "Xbox Series S, 512GB, con pad originale, usata in ottime condizioni, scatolo e cavetteria originali.",
+          "date": "2024-12-05 20:23:13",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/dd/dd56b5f5-a3cf-434c-b56b-7a4d0a465230"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/8d/8de5c969-6d88-40c8-bad6-1ad1e8c3841b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/49/4956000c-1df0-4d83-8459-94d239fe870f"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a3/a39834df-3969-42c4-95f2-2f679e4d0a42"
+            }
+          ],
+          "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "199",
+                  "value": "199 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "124149175",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "15",
+              "value": "Campania",
+              "friendlyName": "campania",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "15,11,14,16,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Caserta",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "caserta",
+              "istat": "061",
+              "regionId": "15",
+              "shortName": "CE"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "061095",
+              "value": "Vairano Patenora",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "vairano-patenora",
+              "istat": "061095",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "15"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-caserta-580968465.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-caserta-580968465.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-3"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:a5899418-9f96-4d4d-a1c3-2910da0b29e4:list:580451052",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Serie S 512GB SSD",
+          "body": "Vendo Xbox SerieS 512GB SSD perfettamente funzionante per inutilizzo.  Usata pochissimo e tenuta in maniera perfetta,. In dotazione: cavi, joypad compreso nella confezione, ed un secondo joypad di colore rosso acquistato separatamente sempre originale.",
+          "date": "2024-12-02 13:46:17",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ba/ba8bc73d-de92-4f32-aa03-def7642a22f3"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6b/6b518fde-b1a5-43f9-bfd1-a371413c053d"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/1b/1b3ad729-2a50-42f7-aa19-376a9d328964"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "250",
+                  "value": "250 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "11129888",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "11",
+              "value": "Lazio",
+              "friendlyName": "lazio",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "11,10,12,13,14,15,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Roma",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "roma",
+              "istat": "058",
+              "regionId": "11",
+              "shortName": "RM"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "058091",
+              "value": "Roma",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "roma",
+              "istat": "058091",
+              "cityId": "4",
+              "hasZone": true,
+              "regionId": "11"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-serie-s-512gb-ssd-roma-580451052.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-serie-s-512gb-ssd-roma-580451052.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:f9251333-468e-44cb-b1d5-897f1101205d:list:580292419",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "XBOX Series S 512 Gb",
+          "body": "Vendo per passaggio a PC gaming Xbox Series S 512Gb anno 2023, garanzia valida fino a marzo 2025.\nLa console \u00e8 perfettamente funzionante e completa di:\n- scatola originale\n- controller acquistato nuovo nel 2024\n- cavi alimentazione e HDMI\nnel prezzo comprese anche:\n- 4 batterie ricaricabili Amazon Basics\n- Carica batterie con cavo di alimentazione\n- Cuffie Corisair VOID ELITE",
+          "date": "2024-12-01 10:30:46",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f6/f6863ba5-5f47-4dc9-97ad-4c3c4e728b47"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/cf/cfdfe620-e532-43c5-a1af-258931c4506d"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/99/99b10713-3a33-490b-9cb8-cfec6918a127"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c9/c99def1a-2d33-41dc-b570-bbececdaacb8"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/3b/3bb16758-1bb9-4539-a7da-94f984499537"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0d/0d15a9a5-7633-437f-aacf-55972932babf"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "170",
+                  "value": "170 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "11798870",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "6",
+              "value": "Veneto",
+              "friendlyName": "veneto",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "6,4,5,7,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "6",
+              "value": "Verona",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "verona",
+              "istat": "023",
+              "regionId": "6",
+              "shortName": "VR"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "023073",
+              "value": "San Martino Buon Albergo",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "san-martino-buon-albergo",
+              "istat": "023073",
+              "cityId": "6",
+              "hasZone": false,
+              "regionId": "6"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512-gb-verona-580292419.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512-gb-verona-580292419.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-6"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:d9a1d406-1089-4c3b-905e-eb025dd1b121:list:579874826",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "xbox series s 512gb",
+          "body": "vendo urgentemente xbox series s 512 gb con cavo HDMI , alimentatore e 1 joystick, per qualsiasi informazione contattatemi in privato",
+          "date": "2024-11-28 05:16:57",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/4d/4d3de3ca-b637-43b6-aa9c-4dfff57f6eac"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/80/80afff3b-a633-4967-bf83-72fdce4aa607"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/65/65918da4-3838-48a0-8ef2-e33774d968ca"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "160",
+                  "value": "160 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "123960699",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "4",
+              "value": "Lombardia",
+              "friendlyName": "lombardia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "4,2,5,6,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "10",
+              "value": "Pavia",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "pavia",
+              "istat": "018",
+              "regionId": "4",
+              "shortName": "PV"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "018076",
+              "value": "Gropello Cairoli",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "gropello-cairoli",
+              "istat": "018076",
+              "cityId": "10",
+              "hasZone": false,
+              "regionId": "4"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-pavia-579874826.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-pavia-579874826.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-4"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:a9700240-e7c9-4b5b-99d5-85d57daeb20b:list:579798556",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series S 512GB",
+          "body": "Vendo Xbox series S 512GB come nuovo.\nAncora 1 anno e mezzo di garanzia con CONTROLLER, batterie ancora originali mai usate, in pi\u00f9 kit play(sarebbe la batteria ricaricabile mentre puoi giocare e non estraibile con carica).\nConsole come nuova usata pochissimo, vendo per inutilizzo.\nVendo con formula vista e piaciuta e ritiro a mano.\nNo affaristi e perditempo.",
+          "date": "2024-11-27 15:09:25",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c2/c2640509-afe4-4b4c-818f-9fb952381388"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0b/0b432e4c-05ff-4b29-925a-a11d04cce9fd"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f3/f33d185b-9618-413e-a790-74fb14b6147b"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0d/0dbfbe07-bf09-44c6-bab3-2455a32b239c"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/88/884b66da-498d-4504-98ee-40745f05aba6"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "180",
+                  "value": "180 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "115196330",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "16",
+              "value": "Puglia",
+              "friendlyName": "puglia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "16,14,15,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Foggia",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "foggia",
+              "istat": "071",
+              "regionId": "16",
+              "shortName": "FG"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "071033",
+              "value": "Monte Sant'Angelo",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "monte-sant-angelo",
+              "istat": "071033",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "16"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-foggia-579798556.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-foggia-579798556.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:e613d387-b7f0-41aa-a583-1aa5e8978d2b:list:579703291",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox series S+ 2 controller+ hard disk esterno",
+          "body": "vendo causa inutilizzo xbox series S 512gb ottime condizione, solo polvere. alimentatore e cavo hdmi originali.\n2 controller series X|S originali potrebbero avere problemi all analogico destro.\nhard disk esterno 1TB originale microsoft per xbox con cavo.\nnel caso non foste interessati a una o pi\u00f9 cose contattami\n",
+          "date": "2024-11-26 19:18:23",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/06/067d37b5-241f-469b-b1e2-7c3c7580e7d5"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/85/85a30c51-06ec-4db1-a314-6b71f1950c07"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/88/88e88df9-ecd3-419e-b8f4-d5bc8d1285ad"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c8/c8e9e743-2a4c-441b-98ea-89909b7c1369"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "300",
+                  "value": "300 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "124043054",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "11",
+              "value": "Lazio",
+              "friendlyName": "lazio",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "11,10,12,13,14,15,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Roma",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "roma",
+              "istat": "058",
+              "regionId": "11",
+              "shortName": "RM"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "058091",
+              "value": "Roma",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "roma",
+              "istat": "058091",
+              "cityId": "4",
+              "hasZone": true,
+              "regionId": "11"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-2-controller-hard-disk-esterno-roma-579703291.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-2-controller-hard-disk-esterno-roma-579703291.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-7"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:d4751ef8-0fdf-4fe9-a6c8-667759d5db81:list:579657766",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512Gb",
+          "body": "Xbox comprata a novembre 2022 ancora in garanzia microsoft e munita di scontrino, controller mai usato avendo comprato insieme ad essa un xbox controller elit\u00e8 2, \nNO SPEDIZIONE, RITIRO A MANO",
+          "date": "2024-11-26 14:55:25",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/60/606cfa2a-c760-476c-aeef-a1981def49c6"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/9c/9c0bc5ea-da06-4882-b54f-243b330274d3"
+            }
+          ],
+          "features": {
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "160",
+                  "value": "160 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "111368168",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "13",
+              "value": "Abruzzo",
+              "friendlyName": "abruzzo",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "13,11,12,14"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Teramo",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "teramo",
+              "istat": "067",
+              "regionId": "13",
+              "shortName": "TE"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "067025",
+              "value": "Giulianova",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "giulianova",
+              "istat": "067025",
+              "cityId": "4",
+              "hasZone": false,
+              "regionId": "13"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-teramo-579657766.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-teramo-579657766.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-5"
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:004ef5ae-9bd2-4e89-acd0-ec24a5333101:list:579616040",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512GB",
+          "body": "Console usata pochissimo, in ottime condizioni, come nuova. Consegno con scatola originale, controller originale, cavo alimentazione e HDMI originali.",
+          "date": "2024-11-26 10:30:58",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a0/a01935d9-3056-44d5-bd34-5f29538474c5"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "160",
+                  "value": "160 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "107744031",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "8",
+              "value": "Emilia-Romagna",
+              "friendlyName": "emilia-romagna",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "8,12,2,3,4,6,9"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "9",
+              "value": "Rimini",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "rimini",
+              "istat": "099",
+              "regionId": "8",
+              "shortName": "RN"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "099005",
+              "value": "Misano Adriatico",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "misano-adriatico",
+              "istat": "099005",
+              "cityId": "9",
+              "hasZone": false,
+              "regionId": "8"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-rimini-579616040.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-rimini-579616040.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:84be234a-6ea4-4e60-af2f-4a6a506f166d:list:579538955",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Xbox Series S 512gb + cuffie Logitech g335",
+          "body": "Xbox series S in ottime condizioni, includo scatola originale e cuffie Logitech g355, vendo per non utilizzo.",
+          "date": "2024-11-25 17:35:57",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2e/2ee32a44-5b7c-4c1e-8f59-3dd7aa2d5a92"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/40/40b9247a-29db-4512-b09b-27494c2b8258"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/97/97b9f14d-da44-4327-8830-d7ab3f28ff84"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/bb/bb3a41cb-675b-49ce-a99a-d1af4105da37"
+            }
+          ],
+          "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
+              "values": [
+                {
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "170",
+                  "value": "170 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "100422735",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "9",
+              "value": "Toscana",
+              "friendlyName": "toscana",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "9,10,11,12,3,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Firenze",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "firenze",
+              "istat": "048",
+              "regionId": "9",
+              "shortName": "FI"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "048017",
+              "value": "Firenze",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "firenze",
+              "istat": "048017",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "9"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/xbox-series-s-512gb-cuffie-logitech-g335-firenze-579538955.htm",
+            "mobile": "https://www.subito.it/videogiochi/xbox-series-s-512gb-cuffie-logitech-g335-firenze-579538955.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      }
+    ],
+    "rankedList": [
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:c2dcc4ed-0ec9-417c-83d6-b881ca89ae3c:list:587933794"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:c5bb9f09-a6d0-4821-8348-6549264025ca:list:587651757"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:5c79c0b4-900e-4b0a-855d-d9660785321d:list:587363737"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:e024976f-eb74-4fc7-80f7-4b15fd3e0022:list:587333987"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:071b3485-806a-421e-bb36-f07a523f17f9:list:587282161"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:de5ebde4-9277-44da-8476-8eaf64029055:list:587182459"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:bbadbd53-7f1c-4c8f-a265-b95469e88ffa:list:586896007"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:415e70f3-24fa-4ebb-8952-9850a3785857:list:585902424"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:4e304c4f-7016-42f8-b920-9f0bcea65a1c:list:585533190"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:0c3c5e22-0a10-4ff8-b2e4-7beeca3a4e8f:list:585129316"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:092633b1-ded6-4fc6-b4e5-33412a4c4021:list:585088134"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:703f796f-f1a4-4713-aae6-41bfd2c56cb6:list:584711441"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:e8ab3349-6b19-466e-87b7-fab3b77bc2bc:list:584528290"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:1d43686f-0e84-406f-861a-e93e427883ee:list:584035109"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:e9b39c8f-a436-43b2-9622-63f550112b45:list:584014016"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:4e47e7bc-a2c9-475a-ac69-7e414b40e5c8:list:583888278"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:0cc10174-c296-492c-b289-9eaaa6d2e9ab:list:583819709"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:f77da452-466e-4846-acf2-8e6e8b8e93fe:list:583648454"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:4c623f95-5502-4513-a58e-5dc3f22b9569:list:583648193"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:4f362017-a41a-40f6-b0ce-96b1d37b49d8:list:582367578"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:75fcad76-a7f8-4ec2-bd59-29ae15d2882d:list:582147917"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:9799f4a6-d3a5-4142-be8c-88fcdf24c5da:list:580968465"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:a5899418-9f96-4d4d-a1c3-2910da0b29e4:list:580451052"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:f9251333-468e-44cb-b1d5-897f1101205d:list:580292419"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:d9a1d406-1089-4c3b-905e-eb025dd1b121:list:579874826"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:a9700240-e7c9-4b5b-99d5-85d57daeb20b:list:579798556"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:e613d387-b7f0-41aa-a583-1aa5e8978d2b:list:579703291"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:d4751ef8-0fdf-4fe9-a6c8-667759d5db81:list:579657766"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:004ef5ae-9bd2-4e89-acd0-ec24a5333101:list:579616040"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:84be234a-6ea4-4e60-af2f-4a6a506f166d:list:579538955"
+      }
+    ],
+    "total": 160,
+    "totalPages": 6,
+    "hasError": false,
+    "loading": false
+  },
+  "env": {
+    "id": null
+  },
+  "filtersConfig": {
+    "filtersStore": {
+      "filters": [
+        {
+          "uri": "/query/subject_only",
+          "type": "bool",
+          "label": "Ricerca solo nel titolo",
+          "queryString": "qso"
+        },
+        {
+          "uri": "/item_shippable",
+          "type": "bool",
+          "label": "Spedizione disponibile",
+          "queryString": "shp",
+          "subLabel": "Solo annunci con spedizione disponibile"
+        },
+        {
+          "uri": "/category",
+          "type": "category",
+          "label": "Categoria",
+          "dataSource": "/v1/values/categories",
+          "queryString": "c"
+        },
+        {
+          "uri": "/type",
+          "type": "adtype",
+          "label": "Tipo di annuncio",
+          "dataSource": "/v1/values/categories/0/adtypes",
+          "queryString": "t"
+        }
+      ],
+      "sparseFilters": [
+        {
+          "uri": "/query/subject_only",
+          "type": "bool",
+          "label": "Ricerca solo nel titolo",
+          "queryString": "qso"
+        },
+        {
+          "uri": "/item_shippable",
+          "type": "bool",
+          "label": "Spedizione disponibile",
+          "queryString": "shp",
+          "subLabel": "Solo annunci con spedizione disponibile"
+        },
+        {
+          "uri": "/category",
+          "type": "category",
+          "label": "Categoria",
+          "dataSource": "/v1/values/categories",
+          "queryString": "c"
+        },
+        {
+          "uri": "/type",
+          "type": "adtype",
+          "label": "Tipo di annuncio",
+          "dataSource": "/v1/values/categories/0/adtypes",
+          "queryString": "t"
+        }
+      ],
+      "mappedByQS": {},
+      "mappedByURI": {}
+    },
+    "loading": false
+  }
+}
