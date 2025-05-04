@@ -112,6 +112,12 @@ Un'interfaccia utente moderna che permette di:
 47. **Lista Annunci Visti**: Pagina dedicata alla visualizzazione e gestione della cache di annunci già visti per ogni campagna.
 48. **Filtro Prezzi Robusto**: Sistema avanzato di filtro prezzi che converte esplicitamente i valori in formato numerico, scarta risultati non validi o fuori range e documenta dettagliatamente il processo nei log.
 49. **Ordinamento Personalizzabile**: Possibilità di ordinare i risultati per data (più vecchi/recenti) e prezzo (crescente/decrescente) con ordinamento predefinito configurabile.
+50. **Prevenzione Annunci Duplicati**: Sistema avanzato di deduplicazione a due livelli che impedisce l'inserimento di annunci con URL identici sia all'interno di una singola esecuzione che in esecuzioni precedenti, prevenendo completamente le notifiche duplicate.
+51. **Rilevamento Accurato Stato Venduto**: Sistema bidirezionale per il rilevamento e l'aggiornamento corretto dello stato "venduto" degli annunci, con sincronizzazione tra dati raw e campi strutturati per garantire consistenza e accuratezza.
+52. **Analisi di Mercato in Tempo Reale**: Pagina dedicata alla ricerca e analisi di mercato in tempo reale con dashboard statistica, grafici comparativi e metriche avanzate (prezzi medi disponibili/venduti, sell through rate) senza salvare dati nel database.
+53. **Analisi Geografica di Mercato**: Sistema di analisi per località che mostra statistiche dettagliate per ogni città, ordinando in base alle vendite e consentendo l'identificazione dei mercati geografici più redditizi.
+54. **Ricerca Avanzata con Parametri Specifici**: Possibilità di eseguire ricerche più precise con il parametro "qso=true" tramite l'opzione "Ricerca Specifica", migliorando la pertinenza dei risultati.
+55. **Visualizzazione Grafica dei Dati Geografici**: Rappresentazione visiva della distribuzione geografica degli annunci con grafici a torta e della performance di vendita per località con grafici a barre.
 
 ## Tecnologie Utilizzate
 

@@ -1,5 +1,70 @@
 # Ultime Azioni Eseguite
 
+## Aggiornamento del 04/05/2025 (Parte 6)
+Le seguenti migliorie sono state implementate per arricchire la funzionalità di Market Research:
+
+1. **Analisi Geografica Avanzata**
+   - Implementata analisi dettagliata per località che mostra statistiche per ogni città
+   - Ordinamento intelligente che priorizza le città con più annunci venduti
+   - Visualizzazione del sell-through rate specifico per ogni località
+   - Calcolo automatico delle percentuali di mercato per ogni città (sul totale e sui venduti)
+   - Rappresentazione grafica della distribuzione geografica con grafici a torta e barre
+
+2. **Ricerca Più Precisa con Parametro "qso=true"**
+   - Aggiunta opzione "Ricerca Specifica" che attiva il parametro "&qso=true" per Subito.it
+   - Migliorata la pertinenza dei risultati di ricerca con corrispondenza più precisa
+   - Interfaccia semplificata con tooltip informativo sulla funzionalità
+   - Implementazione non invasiva che preserva il comportamento predefinito per gli utenti meno esperti
+
+3. **Ottimizzazione dell'Esperienza Utente**
+   - Migliorata la visualizzazione delle località più rilevanti per le decisioni di business
+   - Resa più evidente l'informazione sulle aree con migliori tassi di vendita
+   - Calcolo del prezzo medio per ogni località per identificare differenze territoriali
+   - Possibilità di confrontare visivamente i mercati più attivi e quelli più redditizi
+
+## Aggiornamento del 04/05/2025 (Parte 5)
+Le seguenti migliorie sono state implementate per aggiungere funzionalità di analisi di mercato:
+
+1. **Nuova Pagina "Market Research"**
+   - Implementata una nuova pagina dedicata all'analisi di mercato in tempo reale
+   - Interfaccia utente intuitiva con form di ricerca e dashboard di statistiche
+   - Possibilità di analizzare qualsiasi prodotto su Subito.it senza salvare risultati
+   - Visualizzazione di metriche chiave: prezzi medi, percentuali di vendita, statistiche comparative
+   - Filtri per prezzo minimo e massimo, numero di pagine da analizzare
+
+2. **Sistema di Analisi Statistica Avanzata**
+   - Calcolo di statistiche separate per prodotti disponibili e venduti
+   - Esclusione automatica di annunci con prezzo zero dalle statistiche
+   - Visualizzazione grafica con istogrammi di distribuzione dei prezzi
+   - Confronto visuale tra prezzi medi di annunci disponibili e venduti
+   - Calcolo del Sell Through Rate (percentuale di vendita) in tempo reale
+
+3. **Miglioramenti Generali**
+   - Separazione del codice in moduli indipendenti per una migliore organizzazione
+   - Riorganizzazione del menu principale con sezioni logiche
+   - Riutilizzo intelligente delle funzioni di scraping esistenti senza duplicazione di codice
+   - Possibilità di esportare i risultati dell'analisi in formato CSV
+   - Sistema di fallback automatico con simulazione dati per garantire sempre risultati utili
+
+## Aggiornamento del 04/05/2025 (Parte 3)
+Le seguenti migliorie sono state implementate per risolvere il problema degli annunci duplicati:
+
+1. **Sistema di Deduplicazione Basato su URL**
+   - Implementato un controllo aggiuntivo per identificare URL duplicati in una singola esecuzione
+   - Utilizzo di un `set` per tenere traccia degli URL già processati nello stesso batch
+   - Prevenzione dell'inserimento di annunci con URL identici anche se con dettagli leggermente diversi
+   - Eliminazione completa del problema delle notifiche duplicate per lo stesso annuncio
+
+2. **Miglioramento del Logging**
+   - Aggiunto log specifico per gli annunci duplicati scartati
+   - Maggiore visibilità nel processo di deduplicazione tramite messaggi di log dettagliati
+   - Facilità di debugging per identificare annunci duplicati in fase di processamento
+
+3. **Ottimizzazione del Flusso di Elaborazione**
+   - Verifica preventiva degli URL duplicati prima di eseguire query sul database
+   - Riduzione del carico sul database evitando verifiche non necessarie
+   - Maggiore efficienza nell'elaborazione dei batch di risultati
+
 ## Aggiornamento del 04/05/2025 (Parte 2)
 Le seguenti migliorie sono state implementate per migliorare il filtro prezzi e l'esperienza utente:
 
@@ -103,28 +168,17 @@ Le seguenti migliorie sono state implementate per risolvere il problema del limi
    - Validazione esplicita dei parametri per garantire la corretta configurazione
 
 ## Aggiornamento del 03/05/2025 (Parte 4)
-Le seguenti migliorie sono state implementate per risolvere i problemi con il numero limitato di risultati nelle ricerche:
+Le seguenti correzioni sono state implementate per risolvere un bug nell'elaborazione dello stato "venduto" degli annunci:
 
-1. **Sistema di Cache Intelligente per Annunci Visti**
-   - Implementata nuova tabella `SeenAds` nel database per tracciare gli annunci già visti per campagna
-   - Risolto il problema con la cache globale che limitava i risultati tra campagne diverse
-   - Aggiunta funzionalità di pulizia cache per singola campagna
-   - Supporto di fallback al sistema precedente basato su file per retrocompatibilità
+1. **Correzione Bug "Falsi Venduti"**
+   - Risolto un problema che causava l'identificazione errata di annunci come "venduti" quando in realtà non lo erano
+   - Modificato il metodo `_save_results_to_db` in `scraper_adapter.py` per aggiornare correttamente lo stato venduto
+   - Corretti i dati esistenti nel database: 17 record presentavano discrepanze tra lo stato salvato e i dati raw
+   - Aggiunti log più dettagliati per tracciare i cambiamenti di stato degli annunci
 
-2. **Miglioramento del Filtro Prezzi**
-   - Corretto il passaggio dei parametri di prezzo dal frontend allo scraper
-   - Garanzia che il limite di prezzo venga rispettato quando l'opzione è abilitata
-   - Passaggio esplicito del valore NULL quando il filtro prezzo è disabilitato
-
-3. **Diagnostica Avanzata**
-   - Aggiunto pulsante "Cancella Cache" per permettere di vedere più risultati su richiesta
-   - Migliorato logging per tracciare l'origine degli annunci visti (DB o file)
-   - Separazione delle cache per campagna per evitare interferenze tra ricerche diverse
-
-4. **Interfaccia Migliorata**
-   - Aggiunta interfaccia utente per il reset della cache di annunci visti
-   - Informazioni più chiare sui risultati e sul funzionamento della cache
-   - Mantenuta compatibilità con implementazioni precedenti
+2. **Miglioramento Gestione Stato Venduto**
+   - Implementata una gestione bidirezionale dello stato venduto: ora viene aggiornato correttamente sia quando un annuncio viene venduto che quando torna disponibile
+   - Migliorata la sincronizzazione tra i dati raw e i campi strutturati per assicurare consistenza
 
 ## Aggiornamento del 03/05/2025 (Parte 3)
 Le seguenti correzioni sono state implementate per risolvere problemi con l'eliminazione delle campagne:

@@ -575,6 +575,9 @@ class ScraperAdapter:
         try:
             self._add_log("INFO", f"Inizio salvataggio di {len(ads)} risultati per keyword_id {keyword_id}")
             
+            # Set per tracciare gli URL già processati in questo batch
+            processed_urls = set()
+            
             # Ottieni i limiti di prezzo dalla keyword
             keyword = session.query(Keyword).filter(Keyword.id == keyword_id).first()
             if keyword and keyword.applica_limite_prezzo:
@@ -607,6 +610,13 @@ class ScraperAdapter:
                 if "url" not in normalized_ad:
                     self._add_log("WARNING", f"Annuncio senza URL non salvato: {normalized_ad}")
                     continue
+                
+                # Controlla se l'URL è già stato processato in questo batch
+                if normalized_ad["url"] in processed_urls:
+                    self._add_log("INFO", f"Annuncio duplicato (URL già processato in questo batch): {normalized_ad['url']}")
+                    continue
+                
+                processed_urls.add(normalized_ad["url"])
                     
                 # Verifica se l'annuncio esiste già tramite URL (per retrocompatibilità)
                 # o tramite l'ID dell'annuncio se disponibile (metodo più accurato)
@@ -652,10 +662,12 @@ class ScraperAdapter:
                     new_results_count += 1
                     self._add_log("INFO", f"Nuovo annuncio salvato: {normalized_ad.get('titolo', 'Titolo non disponibile')}")
                 else:
-                    # Aggiorna lo stato di venduto se necessario
-                    if normalized_ad.get("venduto", False) and not existing.venduto:
-                        existing.venduto = True
-                        self._add_log("INFO", f"Annuncio aggiornato come venduto: {existing.titolo}")
+                    # Aggiorna lo stato di venduto con il valore corrente
+                    is_sold = normalized_ad.get("venduto", False)
+                    if existing.venduto != is_sold:
+                        existing.venduto = is_sold
+                        sold_status = "venduto" if is_sold else "non venduto"
+                        self._add_log("INFO", f"Annuncio aggiornato come {sold_status}: {existing.titolo}")
                     # Aggiorna l'ID dell'annuncio se non era impostato
                     if 'id' in normalized_ad and normalized_ad['id'] and not existing.id_annuncio:
                         existing.id_annuncio = str(normalized_ad["id"])

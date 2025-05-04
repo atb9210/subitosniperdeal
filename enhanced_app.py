@@ -12,6 +12,9 @@ import logging
 import glob
 from sqlalchemy import func
 
+# Import della pagina di Market Research
+import market_research
+
 # Configura il logging
 logging.basicConfig(
     level=logging.INFO,
@@ -215,7 +218,7 @@ st.sidebar.image("https://img.icons8.com/color/96/000000/price-tag--v1.png", wid
 # Menu nella barra laterale
 menu = st.sidebar.radio(
     "Menu",
-    ["Dashboard", "Risultati", "Gestione Campagne", "Log Scraper", "Log Cronjob", "Job Logs", "Impostazioni", "Log Sistema", "Seen Ads"]
+    ["Dashboard", "Risultati", "Gestione Campagne", "Market Research", "Impostazioni", "Seen Ads", "Log Scraper", "Log Jobs", "Log Sistema"]
 )
 
 # Ottieni tutti i risultati nel database
@@ -310,7 +313,7 @@ elif menu == "Risultati":
         sold_filter = st.radio("Stato:", ["Tutti", "Venduti", "Non venduti"], horizontal=True)
         
         # Ordinamento
-        sort_by = st.selectbox("Ordina per:", ["Data (più recenti)", "Data (più vecchi)", "Prezzo (crescente)", "Prezzo (decrescente)"], index=1)
+        sort_by = st.selectbox("Ordina per:", ["Data (più recenti)", "Data (più vecchi)", "Prezzo (crescente)", "Prezzo (decrescente)"], index=0)
         
         # Costruisci la query in base ai filtri
         query = session.query(Risultato)
@@ -701,266 +704,9 @@ elif menu == "Gestione Campagne":
         logger.error(f"Errore nella gestione campagne: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
 
-elif menu == "Log Scraper":
-    st.title("Log del Core Scraper")
-    
-    try:
-        st.write("Questa pagina mostra i log interni del core dello scraper, utili per diagnosticare problemi di importazione o funzionamento.")
-        
-        # Visualizza i log dello scraper
-        show_scraper_logs()
-        
-        # Verifica dello stato di importazione dello scraper
-        st.subheader("Stato del Core Scraper")
-        
-        # Controlla se è stata usata la classe di fallback o quella reale
-        if hasattr(scraper_adapter.scraper, "search_ads") and callable(scraper_adapter.scraper.search_ads):
-            # Verifica se è la classe reale o quella di fallback
-            if scraper_adapter.scraper.__class__.__name__ == "SubitoScraper":
-                if hasattr(scraper_adapter.scraper, "BASE_URL"):
-                    st.success("✅ Il core dello scraper è stato importato correttamente.")
-                    
-                    # Mostra le informazioni sul modulo importato
-                    import inspect
-                    try:
-                        module_path = inspect.getmodule(scraper_adapter.scraper.__class__).__file__
-                        st.info(f"Modulo importato da: {module_path}")
-                    except:
-                        st.info("Non è stato possibile determinare il percorso del modulo.")
-                    
-                    # Verifica delle configurazioni Telegram
-                    token, chat_id = get_telegram_config()
-                    if token and chat_id:
-                        st.success("✅ Le credenziali Telegram sono configurate.")
-                    else:
-                        st.warning("⚠️ Le credenziali Telegram non sono configurate. Le notifiche non funzioneranno.")
-                else:
-                    st.warning("⚠️ Il core dello scraper sembra essere stato importato, ma potrebbero esserci problemi di compatibilità.")
-        else:
-            st.error("❌ Il core dello scraper non è stato importato correttamente. Viene utilizzata una versione di fallback che simula i risultati.")
-            
-            # Suggerimenti per la risoluzione dei problemi
-            st.subheader("Suggerimenti per la risoluzione")
-            st.markdown("""
-            Se stai riscontrando problemi con l'importazione dello scraper, prova a:
-            
-            1. **Verificare il percorso del file**: Assicurati che il file `scraper_test.py` sia presente nella directory `backend/`
-            2. **Controllare le dipendenze**: Assicurati che tutte le dipendenze richieste siano installate
-            3. **Riavviare l'applicazione**: Esegui nuovamente lo script `run.sh`
-            4. **Controllare i log di sistema**: Controlla la sezione "Log Sistema" per errori più dettagliati
-            """)
-            
-            # Mostra i percorsi di ricerca Python
-            st.subheader("Percorsi di ricerca Python")
-            st.code("\n".join(sys.path))
-            
-            # Verifica la presenza del file scraper_test.py
-            backend_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend')
-            scraper_file = os.path.join(backend_path, 'scraper_test.py')
-            
-            if os.path.exists(scraper_file):
-                st.success(f"✅ Il file {scraper_file} esiste.")
-            else:
-                st.error(f"❌ Il file {scraper_file} non esiste.")
-                
-                # Cerca il file nel sistema
-                st.subheader("Ricerca del file scraper_test.py")
-                with st.spinner("Ricerca in corso..."):
-                    # Cerca nella directory del progetto
-                    project_dir = os.path.dirname(os.path.abspath(__file__))
-                    found_files = []
-                    
-                    for root, dirs, files in os.walk(project_dir):
-                        if 'scraper_test.py' in files:
-                            found_files.append(os.path.join(root, 'scraper_test.py'))
-                    
-                    if found_files:
-                        st.success(f"Trovati {len(found_files)} file 'scraper_test.py':")
-                        for file_path in found_files:
-                            st.code(file_path)
-                    else:
-                        st.error("Nessun file 'scraper_test.py' trovato nel progetto.")
-            
-            # Elenco dei file nella directory backend
-            if os.path.exists(backend_path):
-                st.subheader("Contenuto della directory backend")
-                backend_files = os.listdir(backend_path)
-                st.code("\n".join(backend_files))
-            else:
-                st.error(f"La directory {backend_path} non esiste.")
-    
-    except Exception as e:
-        logger.error(f"Errore nella pagina Log Scraper: {str(e)}")
-        st.error(f"Si è verificato un errore: {str(e)}")
-    
-elif menu == "Log Cronjob":
-    st.title("Log dei Cronjob")
-    
-    try:
-        # Ottieni i log dei cronjob
-        cronjob_logs = scraper_adapter.get_cronjob_logs()
-        
-        if not cronjob_logs:
-            st.info("Nessun log dei cronjob disponibile.")
-        else:
-            # Crea un formato più leggibile
-            st.subheader(f"Log dei Cronjob ({len(cronjob_logs)} eventi)")
-            
-            # Opzioni di filtro
-            log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
-            selected_level = st.selectbox("Filtra per livello", log_levels)
-            
-            # Filtro per campagna
-            session = get_session()
-            try:
-                keywords = session.query(Keyword).all()
-                keyword_options = [(0, "Tutte le campagne")] + [(kw.id, kw.keyword) for kw in keywords]
-                
-                selected_keyword_id = st.selectbox(
-                    "Filtra per campagna:", 
-                    options=[id for id, _ in keyword_options],
-                    format_func=lambda x: next((name for id, name in keyword_options if id == x), ""),
-                    key="cronjob_keyword_filter"
-                )
-            finally:
-                session.close()
-            
-            # Filtra i log
-            if selected_level != "Tutti":
-                filtered_logs = [log for log in cronjob_logs if log["level"] == selected_level]
-            else:
-                filtered_logs = cronjob_logs
-                
-            # Applica filtro per keyword
-            if selected_keyword_id != 0:
-                filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
-            
-            # Mostra numero di log per tipo
-            error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
-            warning_count = len([log for log in filtered_logs if log["level"] == "WARNING"])
-            info_count = len([log for log in filtered_logs if log["level"] == "INFO"])
-            
-            counts_col1, counts_col2, counts_col3 = st.columns(3)
-            counts_col1.metric("Errori", error_count, delta=None, delta_color="inverse")
-            counts_col2.metric("Avvisi", warning_count, delta=None, delta_color="inverse")
-            counts_col3.metric("Info", info_count, delta=None, delta_color="normal")
-            
-            # Crea una tabella con i log
-            if filtered_logs:
-                log_data = []
-                for log in filtered_logs:
-                    # Ottieni il nome della keyword
-                    keyword_id = log.get("keyword_id")
-                    keyword_name = next((name for id, name in keyword_options if id == keyword_id), "N/A")
-                    
-                    log_data.append({
-                        "Timestamp": log["timestamp"],
-                        "Livello": log["level"],
-                        "Campagna": keyword_name,
-                        "Messaggio": log["message"]
-                    })
-                
-                df = pd.DataFrame(log_data)
-                
-                # Applica stili per evidenziare i livelli di log
-                def highlight_level(val):
-                    color = ""
-                    if val == "ERROR":
-                        color = "background-color: rgba(255, 0, 0, 0.2)"
-                    elif val == "WARNING":
-                        color = "background-color: rgba(255, 165, 0, 0.2)"
-                    elif val == "INFO":
-                        color = "background-color: rgba(0, 128, 0, 0.1)"
-                    return color
-                
-                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
-                st.dataframe(styled_df, height=400)
-                
-                # Pulsante per cancellare i log
-                if st.button("Cancella Log dei Cronjob"):
-                    scraper_adapter.cronjob_logs = []
-                    st.success("Log dei cronjob cancellati con successo.")
-                    st.experimental_rerun()
-            else:
-                st.info(f"Nessun log disponibile con i filtri selezionati.")
-            
-    except Exception as e:
-        logger.error(f"Errore nella visualizzazione dei log dei cronjob: {str(e)}")
-        st.error(f"Si è verificato un errore: {str(e)}")
-
-elif menu == "Job Logs":
-    st.title("Job Logs - Esecuzione in Background")
-    try:
-        # Ottieni i log dei cronjob
-        cronjob_logs = scraper_adapter.get_cronjob_logs(1000)
-        if not cronjob_logs:
-            st.info("Nessun log dei job in background disponibile.")
-        else:
-            st.subheader(f"Log dei Job in Background ({len(cronjob_logs)} eventi)")
-            # Opzioni di filtro
-            log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
-            selected_level = st.selectbox("Filtra per livello", log_levels, key="joblogs_level")
-            # Filtro per campagna
-            session = get_session()
-            try:
-                keywords = session.query(Keyword).all()
-                keyword_options = [(0, "Tutte le campagne")] + [(kw.id, kw.keyword) for kw in keywords]
-                selected_keyword_id = st.selectbox(
-                    "Filtra per campagna:",
-                    options=[id for id, _ in keyword_options],
-                    format_func=lambda x: next((name for id, name in keyword_options if id == x), ""),
-                    key="joblogs_keyword_filter"
-                )
-            finally:
-                session.close()
-            # Filtra i log
-            filtered_logs = cronjob_logs
-            if selected_level != "Tutti":
-                filtered_logs = [log for log in filtered_logs if log["level"] == selected_level]
-            if selected_keyword_id != 0:
-                filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
-            # Mostra numero di log per tipo
-            error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
-            warning_count = len([log for log in filtered_logs if log["level"] == "WARNING"])
-            info_count = len([log for log in filtered_logs if log["level"] == "INFO"])
-            counts_col1, counts_col2, counts_col3 = st.columns(3)
-            counts_col1.metric("Errori", error_count)
-            counts_col2.metric("Avvisi", warning_count)
-            counts_col3.metric("Info", info_count)
-            # Tabella log
-            if filtered_logs:
-                log_data = []
-                for log in filtered_logs:
-                    keyword_id = log.get("keyword_id")
-                    keyword_name = next((name for id, name in keyword_options if id == keyword_id), "N/A")
-                    log_data.append({
-                        "Timestamp": log["timestamp"],
-                        "Livello": log["level"],
-                        "Campagna": keyword_name,
-                        "Messaggio": log["message"]
-                    })
-                df = pd.DataFrame(log_data)
-                def highlight_level(val):
-                    color = ""
-                    if val == "ERROR":
-                        color = "background-color: rgba(255, 0, 0, 0.2)"
-                    elif val == "WARNING":
-                        color = "background-color: rgba(255, 165, 0, 0.2)"
-                    elif val == "INFO":
-                        color = "background-color: rgba(0, 128, 0, 0.1)"
-                    return color
-                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
-                st.dataframe(styled_df, height=500)
-                # Pulsante per cancellare i log
-                if st.button("Cancella Job Logs"):
-                    scraper_adapter.cronjob_logs = []
-                    st.success("Log dei job in background cancellati con successo.")
-                    st.experimental_rerun()
-            else:
-                st.info(f"Nessun log disponibile con i filtri selezionati.")
-    except Exception as e:
-        logger.error(f"Errore nella visualizzazione dei job logs: {str(e)}")
-        st.error(f"Si è verificato un errore: {str(e)}")
+elif menu == "Market Research":
+    # Esegui la pagina di Market Research
+    market_research.run_market_research_page()
 
 elif menu == "Impostazioni":
     st.title("Impostazioni")
@@ -1101,109 +847,6 @@ elif menu == "Impostazioni":
     except Exception as e:
         logger.error(f"Errore nelle impostazioni: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
-
-elif menu == "Log Sistema":
-    st.title("Log di Sistema")
-    
-    try:
-        # File di log
-        log_file = "data/snipedeal.log"
-        # Verifica se il file di log esiste
-        if os.path.exists(log_file):
-            # Leggi tutte le righe e prendi le ultime 200
-            with open(log_file, 'r') as f:
-                lines = f.readlines()
-                last_lines = lines[-200:] if len(lines) > 200 else lines
-            # Parsing log: separa timestamp, livello, messaggio
-            log_rows = []
-            for line in last_lines:
-                # Esempio formato: 2025-05-04 01:34:20,301 - SnipeDeal.Scraper - INFO - Messaggio
-                parts = line.strip().split(' - ', 3)
-                if len(parts) == 4:
-                    timestamp, logger_name, level, message = parts
-                else:
-                    timestamp, level, message = '', '', line.strip()
-                log_rows.append({
-                    "Timestamp": timestamp,
-                    "Livello": level,
-                    "Messaggio": message
-                })
-            if log_rows:
-                import pandas as pd
-                df = pd.DataFrame(log_rows)
-                # Ordina per timestamp decrescente se possibile
-                if 'Timestamp' in df.columns and df['Timestamp'].str.len().max() > 0:
-                    try:
-                        df['Timestamp_dt'] = pd.to_datetime(df['Timestamp'], errors='coerce')
-                        df = df.sort_values('Timestamp_dt', ascending=False).drop(columns=['Timestamp_dt'])
-                    except Exception:
-                        df = df.iloc[::-1]  # fallback: inverti solo l'ordine
-                else:
-                    df = df.iloc[::-1]
-                def highlight_level(val):
-                    color = ""
-                    if val == "ERROR":
-                        color = "background-color: rgba(255, 0, 0, 0.2)"
-                    elif val == "WARNING":
-                        color = "background-color: rgba(255, 165, 0, 0.2)"
-                    elif val == "INFO":
-                        color = "background-color: rgba(0, 128, 0, 0.1)"
-                    return color
-                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
-                st.dataframe(styled_df, height=600)
-            else:
-                st.info("Nessun evento di log trovato.")
-            # Pulsante per scaricare il file di log completo
-            with open(log_file, 'r') as log_file_handle:
-                st.download_button(
-                    label="Scarica File di Log Completo",
-                    data=log_file_handle,
-                    file_name="snipedeal_log.txt",
-                    mime="text/plain"
-                )
-        else:
-            st.info("Nessun file di log trovato. Il file verrà creato automaticamente quando si verificheranno eventi da registrare.")
-        # Pulsante per cancellare i log
-        if st.button("Cancella Log"):
-            try:
-                # Crea un backup del log corrente
-                if os.path.exists(log_file):
-                    backup_dir = "data/log_backups"
-                    os.makedirs(backup_dir, exist_ok=True)
-                    backup_file = f"{backup_dir}/snipedeal_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-                    with open(log_file, 'r') as src, open(backup_file, 'w') as dst:
-                        dst.write(src.read())
-                    # Cancella il file di log
-                    with open(log_file, 'w') as f:
-                        f.write("")
-                    logger.info("File di log cancellato e salvato come backup")
-                    st.success("File di log cancellato con successo. Un backup è stato salvato.")
-                else:
-                    st.info("Nessun file di log da cancellare.")
-            except Exception as e:
-                logger.error(f"Errore durante la cancellazione del log: {str(e)}")
-                st.error(f"Si è verificato un errore durante la cancellazione del log: {str(e)}")
-        # Mostra i backup disponibili
-        backup_dir = "data/log_backups"
-        if os.path.exists(backup_dir):
-            backup_files = sorted(glob.glob(f"{backup_dir}/snipedeal_log_*.txt"), reverse=True)
-            if backup_files:
-                st.subheader("Backup dei Log Disponibili")
-                for bf in backup_files:
-                    file_name = os.path.basename(bf)
-                    file_size = os.path.getsize(bf) / 1024  # KB
-                    col1, col2 = st.columns([3, 1])
-                    col1.write(f"{file_name} ({file_size:.1f} KB)")
-                    with open(bf, 'r') as f:
-                        col2.download_button(
-                            label="Scarica",
-                            data=f,
-                            file_name=file_name,
-                            mime="text/plain",
-                            key=f"download_{file_name}"
-                        )
-    except Exception as e:
-        st.error(f"Si è verificato un errore nella pagina di log: {str(e)}")
 
 elif menu == "Seen Ads":
     st.title("Annunci Già Visti (Seen Ads)")
@@ -1363,6 +1006,280 @@ elif menu == "Seen Ads":
     except Exception as e:
         logger.error(f"Errore nella pagina Seen Ads: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
+
+elif menu == "Log Scraper":
+    st.title("Log del Core Scraper")
+    
+    try:
+        st.write("Questa pagina mostra i log interni del core dello scraper, utili per diagnosticare problemi di importazione o funzionamento.")
+        
+        # Visualizza i log dello scraper
+        show_scraper_logs()
+        
+        # Verifica dello stato di importazione dello scraper
+        st.subheader("Stato del Core Scraper")
+        
+        # Controlla se è stata usata la classe di fallback o quella reale
+        if hasattr(scraper_adapter.scraper, "search_ads") and callable(scraper_adapter.scraper.search_ads):
+            # Verifica se è la classe reale o quella di fallback
+            if scraper_adapter.scraper.__class__.__name__ == "SubitoScraper":
+                if hasattr(scraper_adapter.scraper, "BASE_URL"):
+                    st.success("✅ Il core dello scraper è stato importato correttamente.")
+                    
+                    # Mostra le informazioni sul modulo importato
+                    import inspect
+                    try:
+                        module_path = inspect.getmodule(scraper_adapter.scraper.__class__).__file__
+                        st.info(f"Modulo importato da: {module_path}")
+                    except:
+                        st.info("Non è stato possibile determinare il percorso del modulo.")
+                    
+                    # Verifica delle configurazioni Telegram
+                    token, chat_id = get_telegram_config()
+                    if token and chat_id:
+                        st.success("✅ Le credenziali Telegram sono configurate.")
+                    else:
+                        st.warning("⚠️ Le credenziali Telegram non sono configurate. Le notifiche non funzioneranno.")
+                else:
+                    st.warning("⚠️ Il core dello scraper sembra essere stato importato, ma potrebbero esserci problemi di compatibilità.")
+        else:
+            st.error("❌ Il core dello scraper non è stato importato correttamente. Viene utilizzata una versione di fallback che simula i risultati.")
+            
+            # Suggerimenti per la risoluzione dei problemi
+            st.subheader("Suggerimenti per la risoluzione")
+            st.markdown("""
+            Se stai riscontrando problemi con l'importazione dello scraper, prova a:
+            
+            1. **Verificare il percorso del file**: Assicurati che il file `scraper_test.py` sia presente nella directory `backend/`
+            2. **Controllare le dipendenze**: Assicurati che tutte le dipendenze richieste siano installate
+            3. **Riavviare l'applicazione**: Esegui nuovamente lo script `run.sh`
+            4. **Controllare i log di sistema**: Controlla la sezione "Log Sistema" per errori più dettagliati
+            """)
+            
+            # Mostra i percorsi di ricerca Python
+            st.subheader("Percorsi di ricerca Python")
+            st.code("\n".join(sys.path))
+            
+            # Verifica la presenza del file scraper_test.py
+            backend_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'backend')
+            scraper_file = os.path.join(backend_path, 'scraper_test.py')
+            
+            if os.path.exists(scraper_file):
+                st.success(f"✅ Il file {scraper_file} esiste.")
+            else:
+                st.error(f"❌ Il file {scraper_file} non esiste.")
+                
+                # Cerca il file nel sistema
+                st.subheader("Ricerca del file scraper_test.py")
+                with st.spinner("Ricerca in corso..."):
+                    # Cerca nella directory del progetto
+                    project_dir = os.path.dirname(os.path.abspath(__file__))
+                    found_files = []
+                    
+                    for root, dirs, files in os.walk(project_dir):
+                        if 'scraper_test.py' in files:
+                            found_files.append(os.path.join(root, 'scraper_test.py'))
+                    
+                    if found_files:
+                        st.success(f"Trovati {len(found_files)} file 'scraper_test.py':")
+                        for file_path in found_files:
+                            st.code(file_path)
+                    else:
+                        st.error("Nessun file 'scraper_test.py' trovato nel progetto.")
+            
+            # Elenco dei file nella directory backend
+            if os.path.exists(backend_path):
+                st.subheader("Contenuto della directory backend")
+                backend_files = os.listdir(backend_path)
+                st.code("\n".join(backend_files))
+            else:
+                st.error(f"La directory {backend_path} non esiste.")
+    
+    except Exception as e:
+        logger.error(f"Errore nella pagina Log Scraper: {str(e)}")
+        st.error(f"Si è verificato un errore: {str(e)}")
+    
+elif menu == "Log Jobs":
+    st.title("Log Jobs - Esecuzione in Background")
+    try:
+        # Ottieni i log dei cronjob
+        cronjob_logs = scraper_adapter.get_cronjob_logs(1000)
+        if not cronjob_logs:
+            st.info("Nessun log dei job in background disponibile.")
+        else:
+            st.subheader(f"Log dei Job in Background ({len(cronjob_logs)} eventi)")
+            # Opzioni di filtro
+            log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
+            selected_level = st.selectbox("Filtra per livello", log_levels, key="joblogs_level")
+            # Filtro per campagna
+            session = get_session()
+            try:
+                keywords = session.query(Keyword).all()
+                keyword_options = [(0, "Tutte le campagne")] + [(kw.id, kw.keyword) for kw in keywords]
+                selected_keyword_id = st.selectbox(
+                    "Filtra per campagna:",
+                    options=[id for id, _ in keyword_options],
+                    format_func=lambda x: next((name for id, name in keyword_options if id == x), ""),
+                    key="joblogs_keyword_filter"
+                )
+            finally:
+                session.close()
+            # Filtra i log
+            filtered_logs = cronjob_logs
+            if selected_level != "Tutti":
+                filtered_logs = [log for log in filtered_logs if log["level"] == selected_level]
+            if selected_keyword_id != 0:
+                filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
+                
+            # Inverti l'ordine per mostrare i più recenti in alto
+            filtered_logs = filtered_logs[::-1]
+            
+            # Mostra numero di log per tipo
+            error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
+            warning_count = len([log for log in filtered_logs if log["level"] == "WARNING"])
+            info_count = len([log for log in filtered_logs if log["level"] == "INFO"])
+            
+            counts_col1, counts_col2, counts_col3 = st.columns(3)
+            counts_col1.metric("Errori", error_count)
+            counts_col2.metric("Avvisi", warning_count)
+            counts_col3.metric("Info", info_count)
+            # Tabella log
+            if filtered_logs:
+                log_data = []
+                for log in filtered_logs:
+                    keyword_id = log.get("keyword_id")
+                    keyword_name = next((name for id, name in keyword_options if id == keyword_id), "N/A")
+                    log_data.append({
+                        "Timestamp": log["timestamp"],
+                        "Livello": log["level"],
+                        "Campagna": keyword_name,
+                        "Messaggio": log["message"]
+                    })
+                df = pd.DataFrame(log_data)
+                def highlight_level(val):
+                    color = ""
+                    if val == "ERROR":
+                        color = "background-color: rgba(255, 0, 0, 0.2)"
+                    elif val == "WARNING":
+                        color = "background-color: rgba(255, 165, 0, 0.2)"
+                    elif val == "INFO":
+                        color = "background-color: rgba(0, 128, 0, 0.1)"
+                    return color
+                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
+                st.dataframe(styled_df, height=500)
+                # Pulsante per cancellare i log
+                if st.button("Cancella Job Logs"):
+                    scraper_adapter.cronjob_logs = []
+                    st.success("Log dei job in background cancellati con successo.")
+                    st.experimental_rerun()
+            else:
+                st.info(f"Nessun log disponibile con i filtri selezionati.")
+    except Exception as e:
+        logger.error(f"Errore nella visualizzazione dei job logs: {str(e)}")
+        st.error(f"Si è verificato un errore: {str(e)}")
+
+elif menu == "Log Sistema":
+    st.title("Log di Sistema")
+    
+    try:
+        # File di log
+        log_file = "data/snipedeal.log"
+        # Verifica se il file di log esiste
+        if os.path.exists(log_file):
+            # Leggi tutte le righe e prendi le ultime 200
+            with open(log_file, 'r') as f:
+                lines = f.readlines()
+                last_lines = lines[-200:] if len(lines) > 200 else lines
+            # Parsing log: separa timestamp, livello, messaggio
+            log_rows = []
+            for line in last_lines:
+                # Esempio formato: 2025-05-04 01:34:20,301 - SnipeDeal.Scraper - INFO - Messaggio
+                parts = line.strip().split(' - ', 3)
+                if len(parts) == 4:
+                    timestamp, logger_name, level, message = parts
+                else:
+                    timestamp, level, message = '', '', line.strip()
+                log_rows.append({
+                    "Timestamp": timestamp,
+                    "Livello": level,
+                    "Messaggio": message
+                })
+            if log_rows:
+                import pandas as pd
+                df = pd.DataFrame(log_rows)
+                # Ordina per timestamp decrescente se possibile
+                if 'Timestamp' in df.columns and df['Timestamp'].str.len().max() > 0:
+                    try:
+                        df['Timestamp_dt'] = pd.to_datetime(df['Timestamp'], errors='coerce')
+                        df = df.sort_values('Timestamp_dt', ascending=False).drop(columns=['Timestamp_dt'])
+                    except Exception:
+                        df = df.iloc[::-1]  # fallback: inverti solo l'ordine
+                else:
+                    df = df.iloc[::-1]
+                def highlight_level(val):
+                    color = ""
+                    if val == "ERROR":
+                        color = "background-color: rgba(255, 0, 0, 0.2)"
+                    elif val == "WARNING":
+                        color = "background-color: rgba(255, 165, 0, 0.2)"
+                    elif val == "INFO":
+                        color = "background-color: rgba(0, 128, 0, 0.1)"
+                    return color
+                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
+                st.dataframe(styled_df, height=600)
+            else:
+                st.info("Nessun evento di log trovato.")
+            # Pulsante per scaricare il file di log completo
+            with open(log_file, 'r') as log_file_handle:
+                st.download_button(
+                    label="Scarica File di Log Completo",
+                    data=log_file_handle,
+                    file_name="snipedeal_log.txt",
+                    mime="text/plain"
+                )
+        else:
+            st.info("Nessun file di log trovato. Il file verrà creato automaticamente quando si verificheranno eventi da registrare.")
+        # Pulsante per cancellare i log
+        if st.button("Cancella Log"):
+            try:
+                # Crea un backup del log corrente
+                if os.path.exists(log_file):
+                    backup_dir = "data/log_backups"
+                    os.makedirs(backup_dir, exist_ok=True)
+                    backup_file = f"{backup_dir}/snipedeal_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+                    with open(log_file, 'r') as src, open(backup_file, 'w') as dst:
+                        dst.write(src.read())
+                    # Cancella il file di log
+                    with open(log_file, 'w') as f:
+                        f.write("")
+                    logger.info("File di log cancellato e salvato come backup")
+                    st.success("File di log cancellato con successo. Un backup è stato salvato.")
+                else:
+                    st.info("Nessun file di log da cancellare.")
+            except Exception as e:
+                logger.error(f"Errore durante la cancellazione del log: {str(e)}")
+                st.error(f"Si è verificato un errore durante la cancellazione del log: {str(e)}")
+        # Mostra i backup disponibili
+        backup_dir = "data/log_backups"
+        if os.path.exists(backup_dir):
+            backup_files = sorted(glob.glob(f"{backup_dir}/snipedeal_log_*.txt"), reverse=True)
+            if backup_files:
+                st.subheader("Backup dei Log Disponibili")
+                for bf in backup_files:
+                    file_name = os.path.basename(bf)
+                    file_size = os.path.getsize(bf) / 1024  # KB
+                    col1, col2 = st.columns([3, 1])
+                    col1.write(f"{file_name} ({file_size:.1f} KB)")
+                    with open(bf, 'r') as f:
+                        col2.download_button(
+                            label="Scarica",
+                            data=f,
+                            file_name=file_name,
+                            mime="text/plain",
+                            key=f"download_{file_name}"
+                        )
+    except Exception as e:
+        st.error(f"Si è verificato un errore nella pagina di log: {str(e)}")
 
 # Footer
 st.sidebar.markdown("---")
