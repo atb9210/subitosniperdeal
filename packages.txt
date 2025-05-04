@@ -1,0 +1,10 @@
+python3-dev
+libffi-dev
+gcc
+libc-dev
+libgcc-10-dev
+build-essential
+libfreetype-dev
+libpng-dev
+libqhull-dev
+pkg-config 
