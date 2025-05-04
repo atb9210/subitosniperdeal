@@ -110,6 +110,8 @@ Un'interfaccia utente moderna che permette di:
 45. **Trasparenza Parametri**: Logging dettagliato dei parametri effettivamente utilizzati durante le ricerche, con validazione esplicita della configurazione.
 46. **Diagnostica dei Limiti**: Verifiche automatiche che assicurano il corretto funzionamento dei limiti configurati sia in fase di ricerca che durante la simulazione.
 47. **Lista Annunci Visti**: Pagina dedicata alla visualizzazione e gestione della cache di annunci già visti per ogni campagna.
+48. **Filtro Prezzi Robusto**: Sistema avanzato di filtro prezzi che converte esplicitamente i valori in formato numerico, scarta risultati non validi o fuori range e documenta dettagliatamente il processo nei log.
+49. **Ordinamento Personalizzabile**: Possibilità di ordinare i risultati per data (più vecchi/recenti) e prezzo (crescente/decrescente) con ordinamento predefinito configurabile.
 
 ## Tecnologie Utilizzate
 

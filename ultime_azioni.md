@@ -1,24 +1,32 @@
 # Ultime Azioni Eseguite
 
 ## Aggiornamento del 04/05/2025 (Parte 2)
-Le seguenti migliorie sono state implementate per risolvere i problemi con le ricerche programmate:
+Le seguenti migliorie sono state implementate per migliorare il filtro prezzi e l'esperienza utente:
 
-1. **Miglioramento del Sistema di Ricerche Programmate**
-   - Risolto il problema delle campagne attive che non eseguivano ricerche automatiche
-   - Implementata ricerca immediata all'attivazione di una campagna
-   - Semplificato il flusso del cronjob per concentrarsi solo sull'esecuzione delle ricerche programmate
-   - Migliorata l'interfaccia di visualizzazione dei log delle ricerche programmate
+1. **Miglioramento del Filtro Prezzi nello Scraper Adapter**
+   - Implementato un filtro prezzi più robusto nel metodo `_save_results_to_db` di `scraper_adapter.py`
+   - Aggiunta conversione esplicita del prezzo in formato numerico con gestione degli errori
+   - Log dettagliato di tutti gli annunci scartati per prezzo fuori range
+   - Prevenzione del salvataggio di annunci con prezzo non numerico o fuori dai limiti impostati
+   - Maggiore trasparenza nei log per tracciare il funzionamento del filtro prezzi
 
-2. **Interfaccia Utente Migliorata**
-   - Rinominato "Log Cronjob" in "Ricerche Programmate" per maggiore chiarezza
-   - Aggiunta formattazione visuale avanzata con emoji e colori per identificare facilmente le varie fasi
-   - Implementato filtro per mostrare solo i messaggi relativi alle esecuzioni programmate
-   - Riprogettato sistema di logging per distinguere tra log di sistema e log delle ricerche programmate
+2. **Miglioramento dell'Ordinamento dei Risultati**
+   - Modificato l'ordinamento di default nella pagina risultati: ora mostra prima i più vecchi
+   - Pre-selezionato "Data (più vecchi)" come ordinamento predefinito nella selectbox
+   - Migliorato il flusso di visualizzazione degli annunci per dare priorità a quelli meno recenti
+   - Mantenuta compatibilità con gli altri tipi di ordinamento (prezzo crescente/decrescente, data più recenti)
 
-3. **Gestione Stato Campagne**
-   - Migliorato il sistema di verifica dello stato attivo delle campagne
-   - Corretta l'interruzione dei job in background quando una campagna viene disattivata
-   - Ottimizzati i messaggi di log per una migliore comprensione del ciclo di vita delle ricerche
+3. **Pulizia del Database**
+   - Aggiunta funzionalità per cancellare tutti i record dalla tabella risultati
+   - Permette di ripartire da zero con le ricerche senza eliminare le campagne
+   - Semplificazione dei test delle modifiche al filtro prezzi
+   - Maggiore controllo sulla gestione dei dati storici
+
+4. **Verifiche e Test**
+   - Testato approfonditamente il filtro prezzi con diverse keyword (Xbox Series S, PS5, B450)
+   - Verificato il corretto funzionamento con vari range di prezzo (min=100, max=150)
+   - Confermato il funzionamento dell'ordinamento predefinito per data (più vecchi)
+   - Documentato tramite log dettagliati il processo di filtraggio
 
 ## Aggiornamento del 04/05/2025 (Parte 1)
 Le seguenti migliorie sono state implementate per risolvere il problema dei risultati duplicati:

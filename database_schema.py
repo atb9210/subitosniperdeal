@@ -1,5 +1,5 @@
 import os
-from sqlalchemy import create_engine, Column, Integer, String, Boolean, Float, DateTime, ForeignKey
+from sqlalchemy import create_engine, Column, Integer, String, Boolean, Float, DateTime, ForeignKey, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 import datetime
@@ -20,6 +20,7 @@ class Keyword(Base):
     id = Column(Integer, primary_key=True, index=True)
     keyword = Column(String, nullable=False)
     limite_prezzo = Column(Integer, default=0)
+    limite_prezzo_min = Column(Integer, default=0)
     applica_limite_prezzo = Column(Boolean, default=False)
     limite_pagine = Column(Integer, default=1)
     intervallo_minuti = Column(Integer, default=2)
@@ -47,6 +48,7 @@ class Risultato(Base):
     notificato = Column(Boolean, default=False)
     id_annuncio = Column(String, nullable=True, index=True)  # ID univoco dell'annuncio da Subito.it
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    raw_data = Column(Text, nullable=True)  # <-- Nuova colonna per i dati raw
     
     keyword = relationship("Keyword", back_populates="risultati")
     

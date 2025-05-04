@@ -112,6 +112,772 @@
         ],
         "item": {
           "kind": "AdItem",
+          "urn": "id:ad:045940b0-245e-4a84-b9cb-dfb95ea6f859:list:600586410",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Far cry 6 ps4",
+          "body": "Far cry 6 ps4. Perfette condizioni",
+          "date": "2025-05-04 01:40:39",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f3/f367c929-92df-42d9-8ccb-af2c1b54c8ea"
+            }
+          ],
+          "features": {
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "5,99",
+                  "value": "5,99 \u20ac"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "15",
+                  "value": "15 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "6079374",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "13",
+              "value": "Abruzzo",
+              "friendlyName": "abruzzo",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "13,11,12,14"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "3",
+              "value": "Pescara",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "pescara",
+              "istat": "068",
+              "regionId": "13",
+              "shortName": "PE"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "068028",
+              "value": "Pescara",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "pescara",
+              "istat": "068028",
+              "cityId": "3",
+              "hasZone": false,
+              "regionId": "13"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/far-cry-6-ps4-pescara-600586410.htm",
+            "mobile": "https://www.subito.it/videogiochi/far-cry-6-ps4-pescara-600586410.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "id": "listing-native-1",
+                "style": {
+                  "minHeight": "250px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                }
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:ae59979c-589a-44a5-905d-87e09681c44a:list:600586250",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "ps4 consolle+ giochi ",
+          "body": "Vendo causa inutilizzo completamente funzionante con 2 joystick cavo HDMI e i giochi come in foto ,prezzo leggermente trattabile ",
+          "date": "2025-05-04 01:22:28",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d2/d260235e-8cf9-49bb-aca2-7ab31fc0e479"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/56/56c5240e-66a0-4a68-90a0-253eb6f61996"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e5/e5b517cb-cad3-40fc-bc45-4d9bdc44fe79"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/85/85a3e044-cb15-458c-abed-fced89cde90b"
+            }
+          ],
+          "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "70",
+                  "value": "70 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "userId": "124646183",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "15",
+              "value": "Campania",
+              "friendlyName": "campania",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "15,11,14,16,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "4",
+              "value": "Napoli",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "napoli",
+              "istat": "063",
+              "regionId": "15",
+              "shortName": "NA"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "063049",
+              "value": "Napoli",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "napoli",
+              "istat": "063049",
+              "cityId": "4",
+              "hasZone": true,
+              "regionId": "15"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/ps4-consolle-giochi-napoli-600586250.htm",
+            "mobile": "https://www.subito.it/videogiochi/ps4-consolle-giochi-napoli-600586250.htm"
+          }
+        },
+        "after": [],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:b37ff35f-d4d6-49a4-9618-66a1a63f34fb:list:600585577",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Ace Attorney Investigations Collection PS4",
+          "body": "Vendo per inutilizzo gioco per PlayStation 4 Ace Attorney Investigations Collection.\nGioco funzionante con custodia in italiano",
+          "date": "2025-05-04 00:56:15",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/cc/cc78364c-0538-403b-b7d3-35a72448bae5"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/a3/a3dbcac4-b77a-46d2-a0c9-0ab693deb568"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/7a/7a63b455-124f-41a9-8431-9cc93c465f8a"
+            }
+          ],
+          "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                }
+              ]
+            },
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "5,99",
+                  "value": "5,99 \u20ac"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "25",
+                  "value": "25 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "103339359",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "9",
+              "value": "Toscana",
+              "friendlyName": "toscana",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "9,10,11,12,3,8"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "8",
+              "value": "Pistoia",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "pistoia",
+              "istat": "047",
+              "regionId": "9",
+              "shortName": "PT"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "047012",
+              "value": "Pescia",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "pescia",
+              "istat": "047012",
+              "cityId": "8",
+              "hasZone": false,
+              "regionId": "9"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/ace-attorney-investigations-collection-ps4-pistoia-600585577.htm",
+            "mobile": "https://www.subito.it/videogiochi/ace-attorney-investigations-collection-ps4-pistoia-600585577.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-native-1",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "display": "flex"
+                }
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
+          "urn": "id:ad:6d2db8c8-6a2e-447c-bc1e-8f0510a6a3ee:list:600584715",
+          "type": {
+            "key": "s",
+            "value": "In vendita",
+            "weight": 0
+          },
+          "category": {
+            "id": "44",
+            "label": "Console e Videogiochi",
+            "parentId": "9",
+            "friendlyName": "videogiochi",
+            "weight": 24
+          },
+          "subject": "Volante HORI RWA",
+          "body": "Vendo volante HORI RWA compatibile con PS4 e PS3perfettamente funzionante",
+          "date": "2025-05-04 00:29:35",
+          "images": [
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/fa/faf2e76c-cdc1-429e-9570-8ad777d3ecb6"
+            },
+            {
+              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/42/422424b3-5902-4992-847c-16b17728caa9"
+            }
+          ],
+          "features": {
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "60",
+                  "value": "60 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "poste_italiane",
+                  "value": "poste_italiane"
+                },
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "inpost",
+                  "value": "inpost"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
+                }
+              ]
+            }
+          },
+          "advertiser": {
+            "name": "",
+            "type": 0,
+            "phone": "0",
+            "userId": "113700916",
+            "company": false
+          },
+          "geo": {
+            "uri": "/geo",
+            "type": "geo",
+            "label": "Comune",
+            "region": {
+              "uri": "/geo/region",
+              "id": "16",
+              "value": "Puglia",
+              "friendlyName": "puglia",
+              "label": "Regione",
+              "level": 0,
+              "neighbors": "16,14,15,17"
+            },
+            "city": {
+              "uri": "/geo/city",
+              "id": "1",
+              "value": "Bari",
+              "label": "Provincia",
+              "level": 1,
+              "friendlyName": "bari",
+              "istat": "072",
+              "regionId": "16",
+              "shortName": "BA"
+            },
+            "town": {
+              "uri": "/geo/town",
+              "id": "072029",
+              "value": "Molfetta",
+              "label": "Comune",
+              "level": 2,
+              "friendlyName": "molfetta",
+              "istat": "072029",
+              "cityId": "1",
+              "hasZone": false,
+              "regionId": "16"
+            }
+          },
+          "urls": {
+            "default": "https://www.subito.it/videogiochi/volante-hori-rwa-bari-600584715.htm",
+            "mobile": "https://www.subito.it/videogiochi/volante-hori-rwa-bari-600584715.htm"
+          }
+        },
+        "after": [
+          {
+            "model": {
+              "desktop": null,
+              "msite": {
+                "source": "lira",
+                "id": "listing-box-1",
+                "style": {
+                  "minHeight": "200px",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                }
+              },
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
+        "kind": "DecoratedItem"
+      },
+      {
+        "before": [],
+        "item": {
+          "kind": "AdItem",
           "urn": "id:ad:78ae90f5-edad-4f88-b0b1-64600d10226e:list:600584379",
           "type": {
             "key": "s",
@@ -140,6 +906,18 @@
             }
           ],
           "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -174,15 +952,15 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "20",
-                  "value": "Medio - fino a 5kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
                 }
               ]
             },
@@ -197,15 +975,16 @@
                 }
               ]
             },
-            "/item_shipping_type": {
+            "/item_condition": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_condition",
+              "label": "Condizione",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
                 }
               ]
             },
@@ -217,19 +996,6 @@
                 {
                   "key": "1",
                   "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "30",
-                  "value": "Ottimo - poco usato e ben conservato",
-                  "weight": 3,
-                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
                 }
               ]
             }
@@ -286,19 +1052,487 @@
         "after": [
           {
             "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "id": "listing-native-1",
-                "style": {
-                  "minHeight": "250px",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "display": "flex",
-                  "flexWrap": "wrap"
-                }
+              "adItem": {
+                "kind": "AdItem",
+                "urn": "id:ad:f224126c-60f9-4bda-b25f-7a1d7972f674:list:596170944",
+                "type": {
+                  "key": "s",
+                  "value": "In vendita",
+                  "weight": 0
+                },
+                "category": {
+                  "id": "44",
+                  "label": "Console e Videogiochi",
+                  "parentId": "9",
+                  "friendlyName": "videogiochi",
+                  "weight": 24
+                },
+                "subject": "PS4 SLIM 500G",
+                "body": "Vendo PS4 SLIM 500G per passaggio a PS5. \nConsegna a mano a Vigevano o zone limitrofe.\nPrezzo 100 euro.",
+                "date": "2025-04-28 13:30:37",
+                "images": [
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/8e/8eafef88-6537-40e7-8c81-247240a1c667"
+                  }
+                ],
+                "features": {
+                  "/price": {
+                    "type": "number",
+                    "uri": "/price",
+                    "label": "Prezzo",
+                    "values": [
+                      {
+                        "key": "100",
+                        "value": "100 \u20ac"
+                      }
+                    ]
+                  },
+                  "/item_shippable": {
+                    "type": "bool",
+                    "uri": "/item_shippable",
+                    "label": "Disponibile alla spedizione",
+                    "values": [
+                      {
+                        "key": "0",
+                        "value": "No"
+                      }
+                    ]
+                  },
+                  "/item_condition": {
+                    "type": "list",
+                    "uri": "/item_condition",
+                    "label": "Condizione",
+                    "values": [
+                      {
+                        "key": "40",
+                        "value": "Buono - usato ma ben conservato",
+                        "weight": 4,
+                        "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                      }
+                    ]
+                  }
+                },
+                "advertiser": {
+                  "name": "",
+                  "type": 0,
+                  "phone": "0",
+                  "userId": "108771984",
+                  "company": false
+                },
+                "geo": {
+                  "uri": "/geo",
+                  "type": "geo",
+                  "label": "Comune",
+                  "region": {
+                    "uri": "/geo/region",
+                    "id": "4",
+                    "value": "Lombardia",
+                    "friendlyName": "lombardia",
+                    "label": "Regione",
+                    "level": 0,
+                    "neighbors": "4,2,5,6,8"
+                  },
+                  "city": {
+                    "uri": "/geo/city",
+                    "id": "10",
+                    "value": "Pavia",
+                    "label": "Provincia",
+                    "level": 1,
+                    "friendlyName": "pavia",
+                    "istat": "018",
+                    "regionId": "4",
+                    "shortName": "PV"
+                  },
+                  "town": {
+                    "uri": "/geo/town",
+                    "id": "018177",
+                    "value": "Vigevano",
+                    "label": "Comune",
+                    "level": 2,
+                    "friendlyName": "vigevano",
+                    "istat": "018177",
+                    "cityId": "10",
+                    "hasZone": false,
+                    "regionId": "4"
+                  }
+                },
+                "visibilityOptions": {
+                  "gallery": true,
+                  "urgent": false
+                },
+                "urls": {
+                  "default": "https://www.subito.it/videogiochi/ps4-slim-500g-pavia-596170944.htm",
+                  "mobile": "https://www.subito.it/videogiochi/ps4-slim-500g-pavia-596170944.htm"
+                },
+                "gallerized": true
               },
-              "kind": "SmartADVItem"
+              "kind": "GalleryItem"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            }
+          },
+          {
+            "model": {
+              "adItem": {
+                "kind": "AdItem",
+                "urn": "id:ad:91157378-bc37-47a4-bba0-9155ef5a50b7:list:583408366",
+                "type": {
+                  "key": "s",
+                  "value": "In vendita",
+                  "weight": 0
+                },
+                "category": {
+                  "id": "44",
+                  "label": "Console e Videogiochi",
+                  "parentId": "9",
+                  "friendlyName": "videogiochi",
+                  "weight": 24
+                },
+                "subject": "Bundle PS4 supporto verticale, giochi e controller",
+                "body": "Vendesi bundle PS4, in perfette condizioni, cos\u00ec composto:\n\n- PS4 da 1 TB di memoria (prodotto originale; no modifiche), comprensivo di cavo di alimentazione\n- Base supporto per tenere la console in verticale\n- 2 controller originali Sony (uno \u00e8 quello standard di colore nero e l'altro \u00e8 il \"20th Anniversary Special Limited Edition\")\n- 3 giochi in ottimo stato e con la confezione originale:\n  * Far Cry 5\n  * Borderlands 3\n  * Fifa 16 (confezione originale + Steelbook edition)\n\nLa console \u00e8 in perfette condizioni e sia joystick che giochi non presentano danni o anomalie.",
+                "date": "2025-04-27 15:43:20",
+                "images": [
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6a/6af60881-2ba0-4c68-847d-f0ee8a6dbbfe"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/ed/ed9c8261-9142-44d0-ae27-5d5a1cd7ecc1"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/87/87346194-e7d1-41e1-9e92-e7592195d5ff"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/8b/8bccde02-c394-4924-95e3-f9d26cf9a0c0"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/f6/f6dec31f-2028-4ac0-b3a2-1628f1afe9f5"
+                  }
+                ],
+                "features": {
+                  "/item_shipping_type": {
+                    "type": "list",
+                    "uri": "/item_shipping_type",
+                    "label": "Metodo di spedizione",
+                    "values": [
+                      {
+                        "key": "0",
+                        "value": "Spedizione con TuttoSubito",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "/item_shipping_cost_tuttosubito": {
+                    "type": "number",
+                    "uri": "/item_shipping_cost_tuttosubito",
+                    "label": "Costo della spedizione",
+                    "values": [
+                      {
+                        "key": "7,99",
+                        "value": "7,99 \u20ac"
+                      }
+                    ]
+                  },
+                  "/item_shipping_package_size": {
+                    "type": "list",
+                    "uri": "/item_shipping_package_size",
+                    "label": "Peso del pacco",
+                    "values": [
+                      {
+                        "key": "20",
+                        "value": "Medio - fino a 5kg",
+                        "weight": 0
+                      }
+                    ]
+                  },
+                  "/price": {
+                    "type": "number",
+                    "uri": "/price",
+                    "label": "Prezzo",
+                    "values": [
+                      {
+                        "key": "180",
+                        "value": "180 \u20ac"
+                      }
+                    ]
+                  },
+                  "/item_shippable": {
+                    "type": "bool",
+                    "uri": "/item_shippable",
+                    "label": "Disponibile alla spedizione",
+                    "values": [
+                      {
+                        "key": "1",
+                        "value": "S\u00ec"
+                      }
+                    ]
+                  },
+                  "/shipping_carriers": {
+                    "type": "list",
+                    "uri": "/shipping_carriers",
+                    "label": "Corrieri per la spedizione",
+                    "values": [
+                      {
+                        "key": "poste_italiane",
+                        "value": "poste_italiane"
+                      },
+                      {
+                        "key": "ups",
+                        "value": "ups"
+                      },
+                      {
+                        "key": "inpost",
+                        "value": "inpost"
+                      },
+                      {
+                        "key": "bartolini",
+                        "value": "bartolini"
+                      }
+                    ]
+                  },
+                  "/item_condition": {
+                    "type": "list",
+                    "uri": "/item_condition",
+                    "label": "Condizione",
+                    "values": [
+                      {
+                        "key": "20",
+                        "value": "Come nuovo - perfetto o ricondizionato",
+                        "weight": 2,
+                        "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                      }
+                    ]
+                  }
+                },
+                "advertiser": {
+                  "name": "",
+                  "type": 0,
+                  "userId": "115522325",
+                  "company": false
+                },
+                "geo": {
+                  "uri": "/geo",
+                  "type": "geo",
+                  "label": "Comune",
+                  "region": {
+                    "uri": "/geo/region",
+                    "id": "4",
+                    "value": "Lombardia",
+                    "friendlyName": "lombardia",
+                    "label": "Regione",
+                    "level": 0,
+                    "neighbors": "4,2,5,6,8"
+                  },
+                  "city": {
+                    "uri": "/geo/city",
+                    "id": "8",
+                    "value": "Milano",
+                    "label": "Provincia",
+                    "level": 1,
+                    "friendlyName": "milano",
+                    "istat": "015",
+                    "regionId": "4",
+                    "shortName": "MI"
+                  },
+                  "town": {
+                    "uri": "/geo/town",
+                    "id": "015146",
+                    "value": "Milano",
+                    "label": "Comune",
+                    "level": 2,
+                    "friendlyName": "milano",
+                    "istat": "015146",
+                    "cityId": "8",
+                    "hasZone": true,
+                    "regionId": "4"
+                  }
+                },
+                "visibilityOptions": {
+                  "gallery": true,
+                  "urgent": false
+                },
+                "urls": {
+                  "default": "https://www.subito.it/videogiochi/bundle-ps4-supporto-verticale-giochi-e-controller-milano-583408366.htm",
+                  "mobile": "https://www.subito.it/videogiochi/bundle-ps4-supporto-verticale-giochi-e-controller-milano-583408366.htm"
+                },
+                "gallerized": true
+              },
+              "kind": "GalleryItem"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            }
+          },
+          {
+            "model": {
+              "adItem": {
+                "kind": "AdItem",
+                "urn": "id:ad:c4d3a3d2-3d2c-4f4a-a750-77c7cbb4b45e:list:593544790",
+                "type": {
+                  "key": "s",
+                  "value": "In vendita",
+                  "weight": 0
+                },
+                "category": {
+                  "id": "21",
+                  "label": "Collezionismo",
+                  "parentId": "18",
+                  "friendlyName": "hobby-collezionismo",
+                  "weight": 42
+                },
+                "subject": "Action figure Kratos God of War",
+                "body": "Action figure dal videogioco PS4 God of War. Venduta come in foto,  ottime condizioni.\n\ncodice: 1065882\n\nDisponibile presso il Mercatino di Tradate \"Lo Spazio dell'Usato\", preferibile contatto telefonico in orario di apertura del negozio al numero 0331 843034.",
+                "date": "2025-05-01 09:53:36",
+                "images": [
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/47/47a40bf5-cd10-4b9e-b406-991321c45006"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/0f/0fdf999d-712f-4ec2-8bc5-5aab79b41a1f"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/bb/bb18b96b-6de4-415a-9487-c0d17349f2d1"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/e4/e450854c-5ea7-427f-a870-e1b73372cc98"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/14/14d0b41b-bc68-46de-8a39-bccd2d719578"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/12/12ab9d0f-7a94-48e7-9eb5-f3cff4ce5492"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/99/99c06d9c-0316-4789-9dfb-de100189e9a5"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/21/217a090b-8eae-4306-af6e-b2dd75c4a8ef"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/34/34113d82-9622-4d21-a6c0-2b95c025b263"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/43/43947696-3973-406e-a971-e37fdd111068"
+                  },
+                  {
+                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/81/8100577e-a1bd-4b5d-898a-89f1d2531575"
+                  }
+                ],
+                "features": {
+                  "/price": {
+                    "type": "number",
+                    "uri": "/price",
+                    "label": "Prezzo",
+                    "values": [
+                      {
+                        "key": "169",
+                        "value": "169 \u20ac"
+                      }
+                    ]
+                  },
+                  "/hobby_type": {
+                    "type": "list",
+                    "uri": "/hobby_type",
+                    "label": "Tipologia della collezione",
+                    "values": [
+                      {
+                        "key": "7",
+                        "value": "Altro",
+                        "weight": 10
+                      }
+                    ]
+                  },
+                  "/item_condition": {
+                    "type": "list",
+                    "uri": "/item_condition",
+                    "label": "Condizione",
+                    "values": [
+                      {
+                        "key": "30",
+                        "value": "Ottimo - poco usato e ben conservato",
+                        "weight": 3,
+                        "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                      }
+                    ]
+                  }
+                },
+                "advertiser": {
+                  "name": "",
+                  "type": 1,
+                  "phone": "0",
+                  "userId": "117857402",
+                  "company": true,
+                  "shopId": "48877",
+                  "shopName": "LO SPAZIO DELL'USATO - MERCATINO DI TRADATE"
+                },
+                "geo": {
+                  "uri": "/geo",
+                  "type": "geo",
+                  "label": "Comune",
+                  "region": {
+                    "uri": "/geo/region",
+                    "id": "4",
+                    "value": "Lombardia",
+                    "friendlyName": "lombardia",
+                    "label": "Regione",
+                    "level": 0,
+                    "neighbors": "4,2,5,6,8"
+                  },
+                  "city": {
+                    "uri": "/geo/city",
+                    "id": "12",
+                    "value": "Varese",
+                    "label": "Provincia",
+                    "level": 1,
+                    "friendlyName": "varese",
+                    "istat": "012",
+                    "regionId": "4",
+                    "shortName": "VA"
+                  },
+                  "town": {
+                    "uri": "/geo/town",
+                    "id": "012127",
+                    "value": "Tradate",
+                    "label": "Comune",
+                    "level": 2,
+                    "friendlyName": "tradate",
+                    "istat": "012127",
+                    "cityId": "12",
+                    "hasZone": false,
+                    "regionId": "4"
+                  }
+                },
+                "visibilityOptions": {
+                  "gallery": true,
+                  "urgent": false
+                },
+                "urls": {
+                  "default": "https://www.subito.it/hobby-collezionismo/action-figure-kratos-god-of-war-varese-593544790.htm",
+                  "mobile": "https://www.subito.it/hobby-collezionismo/action-figure-kratos-god-of-war-varese-593544790.htm"
+                },
+                "gallerized": true
+              },
+              "kind": "GalleryItem"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            }
+          },
+          {
+            "model": {
+              "kind": "GalleryCTAItem"
             },
             "categories": {
               "elements": [],
@@ -346,17 +1580,6 @@
             }
           ],
           "features": {
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -367,6 +1590,17 @@
                   "value": "Buono - usato ma ben conservato",
                   "weight": 4,
                   "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             },
@@ -431,7 +1665,31 @@
             "mobile": "https://www.subito.it/videogiochi/giochi-ps4-cagliari-600584002.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-1",
+                "style": {
+                  "minHeight": "202px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                }
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -474,17 +1732,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -495,6 +1742,17 @@
                   "value": "Come nuovo - perfetto o ricondizionato",
                   "weight": 2,
                   "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -550,16 +1808,17 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-native-1",
                 "style": {
-                  "minHeight": "200px",
-                  "alignItems": "center",
-                  "display": "flex"
-                }
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-1"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
@@ -608,30 +1867,6 @@
             }
           ],
           "features": {
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                }
-              ]
-            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -666,15 +1901,15 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "20",
-                  "value": "Medio - fino a 5kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
                 }
               ]
             },
@@ -689,15 +1924,39 @@
                 }
               ]
             },
-            "/item_shipping_type": {
+            "/item_condition": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_condition",
+              "label": "Condizione",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
                 }
               ]
             }
@@ -751,32 +2010,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-vari-titoli-singolo-o-blocco-cagliari-600583743.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "id": "listing-box-1",
-                "style": {
-                  "minHeight": "200px",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "display": "flex",
-                  "flexWrap": "wrap"
-                }
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -816,17 +2050,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -837,6 +2060,17 @@
                   "value": "Nuovo - mai usato in confezione originale",
                   "weight": 1,
                   "description": "Oggetto nuovo con cartellino o confezione originale mai utilizzato e senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -892,506 +2126,17 @@
         "after": [
           {
             "model": {
-              "adItem": {
-                "kind": "AdItem",
-                "urn": "id:ad:80b9b451-4101-4585-9cf1-00b6a454c5a7:list:595042182",
-                "type": {
-                  "key": "s",
-                  "value": "In vendita",
-                  "weight": 0
+              "desktop": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "150px",
+                  "alignItems": "center",
+                  "display": "flex"
                 },
-                "category": {
-                  "id": "44",
-                  "label": "Console e Videogiochi",
-                  "parentId": "9",
-                  "friendlyName": "videogiochi",
-                  "weight": 24
-                },
-                "subject": "PS4 PRO+26 giochi in memoria ",
-                "body": "Non offro il ritiro di persona \nPlaystation 4 Pro perfettamente funzionante + 26 giochi installati in memoria, joystick , cavo hdmi \n1300 euro di giochi !\nlista dei giochi:\nBattlefield V\nCall of duty 4 giochi: Cold war+ Vanguard+ Modern warfare 1 e 2\nDead or Alive 6\nF1 22+F1 23\nDriveclub\nFifa 16+Fifa 18+ Fifa19+Fifa 21+Fifa 22\nFinal Fantasy VII Remake\nGran Turismo Sport+ Gran Turismo 7\nMedievil \nMortal Kombat 11\nNeed for speed hot pursuit remastered\nProject Cars 3\nResident evil 6+ resident evil 7 biohazard\nTekken 7\nWolfenstein : the new order\nWWE 2K22\nDirt Rally 2.0",
-                "date": "2025-05-02 12:52:56",
-                "images": [
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/46/46227a93-b212-48af-85d2-38f0f828bfe2"
-                  },
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/19/1902f712-9ee3-4603-96dc-ba430093163d"
-                  },
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/fa/faef2786-4dad-497c-8784-ff2f579b6c47"
-                  },
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c4/c446644c-bb25-4a9b-afcd-ab70b15f96de"
-                  }
-                ],
-                "features": {
-                  "/price": {
-                    "type": "number",
-                    "uri": "/price",
-                    "label": "Prezzo",
-                    "values": [
-                      {
-                        "key": "380",
-                        "value": "380 \u20ac"
-                      }
-                    ]
-                  },
-                  "/item_condition": {
-                    "type": "list",
-                    "uri": "/item_condition",
-                    "label": "Condizione",
-                    "values": [
-                      {
-                        "key": "30",
-                        "value": "Ottimo - poco usato e ben conservato",
-                        "weight": 3,
-                        "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
-                      }
-                    ]
-                  },
-                  "/shipping_carriers": {
-                    "type": "list",
-                    "uri": "/shipping_carriers",
-                    "label": "Corrieri per la spedizione",
-                    "values": [
-                      {
-                        "key": "poste_italiane",
-                        "value": "poste_italiane"
-                      },
-                      {
-                        "key": "ups",
-                        "value": "ups"
-                      },
-                      {
-                        "key": "inpost",
-                        "value": "inpost"
-                      },
-                      {
-                        "key": "bartolini",
-                        "value": "bartolini"
-                      }
-                    ]
-                  },
-                  "/item_shipping_type": {
-                    "type": "list",
-                    "uri": "/item_shipping_type",
-                    "label": "Metodo di spedizione",
-                    "values": [
-                      {
-                        "key": "0",
-                        "value": "Spedizione con TuttoSubito",
-                        "weight": 1
-                      }
-                    ]
-                  },
-                  "/item_shippable": {
-                    "type": "bool",
-                    "uri": "/item_shippable",
-                    "label": "Disponibile alla spedizione",
-                    "values": [
-                      {
-                        "key": "1",
-                        "value": "S\u00ec"
-                      }
-                    ]
-                  },
-                  "/item_shipping_package_size": {
-                    "type": "list",
-                    "uri": "/item_shipping_package_size",
-                    "label": "Peso del pacco",
-                    "values": [
-                      {
-                        "key": "20",
-                        "value": "Medio - fino a 5kg",
-                        "weight": 0
-                      }
-                    ]
-                  },
-                  "/item_shipping_cost_tuttosubito": {
-                    "type": "number",
-                    "uri": "/item_shipping_cost_tuttosubito",
-                    "label": "Costo della spedizione",
-                    "values": [
-                      {
-                        "key": "7,99",
-                        "value": "7,99 \u20ac"
-                      }
-                    ]
-                  }
-                },
-                "advertiser": {
-                  "name": "",
-                  "type": 0,
-                  "phone": "0",
-                  "userId": "121015605",
-                  "company": false
-                },
-                "geo": {
-                  "uri": "/geo",
-                  "type": "geo",
-                  "label": "Comune",
-                  "region": {
-                    "uri": "/geo/region",
-                    "id": "12",
-                    "value": "Marche",
-                    "friendlyName": "marche",
-                    "label": "Regione",
-                    "level": 0,
-                    "neighbors": "12,10,11,13,8,9"
-                  },
-                  "city": {
-                    "uri": "/geo/city",
-                    "id": "1",
-                    "value": "Ancona",
-                    "label": "Provincia",
-                    "level": 1,
-                    "friendlyName": "ancona",
-                    "istat": "042",
-                    "regionId": "12",
-                    "shortName": "AN"
-                  },
-                  "town": {
-                    "uri": "/geo/town",
-                    "id": "042045",
-                    "value": "Senigallia",
-                    "label": "Comune",
-                    "level": 2,
-                    "friendlyName": "senigallia",
-                    "istat": "042045",
-                    "cityId": "1",
-                    "hasZone": false,
-                    "regionId": "12"
-                  }
-                },
-                "visibilityOptions": {
-                  "gallery": true,
-                  "urgent": false
-                },
-                "urls": {
-                  "default": "https://www.subito.it/videogiochi/ps4-pro-26-giochi-in-memoria-ancona-595042182.htm",
-                  "mobile": "https://www.subito.it/videogiochi/ps4-pro-26-giochi-in-memoria-ancona-595042182.htm"
-                },
-                "gallerized": true
+                "id": "listing-native-2"
               },
-              "kind": "GalleryItem"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            }
-          },
-          {
-            "model": {
-              "adItem": {
-                "kind": "AdItem",
-                "urn": "id:ad:eb39d14d-cb59-4cf6-b6cf-bfe70335619b:list:563007270",
-                "type": {
-                  "key": "s",
-                  "value": "In vendita",
-                  "weight": 0
-                },
-                "category": {
-                  "id": "44",
-                  "label": "Console e Videogiochi",
-                  "parentId": "9",
-                  "friendlyName": "videogiochi",
-                  "weight": 24
-                },
-                "subject": "Volante ps5/ps4",
-                "body": "Tecnocell SRL \nRoccapiemonte (SA) \nVia Filomena Galdieri 35 \n\nCerchiaml di offrire sempre il miglior prezzo e la massima quakita dei prodotti..!! \n\nIN OMAGGIO COVER E PELLICOLA IN VETRO TEMPERATO ..!! \n\nSuper valutazione fel tuo smartphone Usato ..!! \n\nPer info : 3458213650 Gerardo",
-                "date": "2025-05-01 16:56:34",
-                "images": [
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/73/73081ce4-cc67-4d1e-9c2d-7d22c642d544"
-                  }
-                ],
-                "features": {
-                  "/price": {
-                    "type": "number",
-                    "uri": "/price",
-                    "label": "Prezzo",
-                    "values": [
-                      {
-                        "key": "119",
-                        "value": "119 \u20ac"
-                      }
-                    ]
-                  },
-                  "/item_condition": {
-                    "type": "list",
-                    "uri": "/item_condition",
-                    "label": "Condizione",
-                    "values": [
-                      {
-                        "key": "10",
-                        "value": "Nuovo - mai usato in confezione originale",
-                        "weight": 1,
-                        "description": "Oggetto nuovo con cartellino o confezione originale mai utilizzato e senza difetti."
-                      }
-                    ]
-                  }
-                },
-                "advertiser": {
-                  "name": "",
-                  "type": 1,
-                  "phone": "0",
-                  "userId": "18245287",
-                  "company": true,
-                  "shopId": "11724",
-                  "shopName": "Tecnocell - telefonia- elettrodomestici"
-                },
-                "geo": {
-                  "uri": "/geo",
-                  "type": "geo",
-                  "label": "Comune",
-                  "region": {
-                    "uri": "/geo/region",
-                    "id": "15",
-                    "value": "Campania",
-                    "friendlyName": "campania",
-                    "label": "Regione",
-                    "level": 0,
-                    "neighbors": "15,11,14,16,17"
-                  },
-                  "city": {
-                    "uri": "/geo/city",
-                    "id": "5",
-                    "value": "Salerno",
-                    "label": "Provincia",
-                    "level": 1,
-                    "friendlyName": "salerno",
-                    "istat": "065",
-                    "regionId": "15",
-                    "shortName": "SA"
-                  },
-                  "town": {
-                    "uri": "/geo/town",
-                    "id": "065108",
-                    "value": "Roccapiemonte",
-                    "label": "Comune",
-                    "level": 2,
-                    "friendlyName": "roccapiemonte",
-                    "istat": "065108",
-                    "cityId": "5",
-                    "hasZone": false,
-                    "regionId": "15"
-                  }
-                },
-                "visibilityOptions": {
-                  "gallery": true,
-                  "urgent": false
-                },
-                "urls": {
-                  "default": "https://www.subito.it/videogiochi/volante-ps5-ps4-salerno-563007270.htm",
-                  "mobile": "https://www.subito.it/videogiochi/volante-ps5-ps4-salerno-563007270.htm"
-                },
-                "gallerized": true
-              },
-              "kind": "GalleryItem"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            }
-          },
-          {
-            "model": {
-              "adItem": {
-                "kind": "AdItem",
-                "urn": "id:ad:4dc182b9-f85e-4201-beda-6f143ed8aaf3:list:598666637",
-                "type": {
-                  "key": "s",
-                  "value": "In vendita",
-                  "weight": 0
-                },
-                "category": {
-                  "id": "44",
-                  "label": "Console e Videogiochi",
-                  "parentId": "9",
-                  "friendlyName": "videogiochi",
-                  "weight": 24
-                },
-                "subject": "Ps4 pro1TB stile the last con 4 controler e giochi",
-                "body": "vendo ps4 pro 1TB stile the last of us perfettamente funzionante con 3 controler originari e 1 perfettamente compattibile ma non originare 2 di loro si caricano da sotto solo con la base di ricarica dei controler piu fifa 19 e the last of us, volendo posso aggiungere l'ottimo monitor odysey g3 della samsung 24 polici con casse a 80 euro in piu che si vedono nella foto, vendo di persona a brescia , se volete posso caricare video test dei giochi che mostrano perfetamente il funzionamento della ps4 pro.",
-                "date": "2025-04-27 18:49:34",
-                "images": [
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/63/637c9da6-8a2a-4416-8b91-c8f842628979"
-                  },
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/92/92a2c477-ead9-494f-a83d-21d750fb48ed"
-                  },
-                  {
-                    "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/9c/9c234c74-7081-4476-8f3d-619864547e61"
-                  }
-                ],
-                "features": {
-                  "/item_shippable": {
-                    "type": "bool",
-                    "uri": "/item_shippable",
-                    "label": "Disponibile alla spedizione",
-                    "values": [
-                      {
-                        "key": "1",
-                        "value": "S\u00ec"
-                      }
-                    ]
-                  },
-                  "/item_shipping_package_size": {
-                    "type": "list",
-                    "uri": "/item_shipping_package_size",
-                    "label": "Peso del pacco",
-                    "values": [
-                      {
-                        "key": "10",
-                        "value": "Piccolo - fino a 2kg",
-                        "weight": 0
-                      }
-                    ]
-                  },
-                  "/item_shipping_cost_tuttosubito": {
-                    "type": "number",
-                    "uri": "/item_shipping_cost_tuttosubito",
-                    "label": "Costo della spedizione",
-                    "values": [
-                      {
-                        "key": "5,99",
-                        "value": "5,99 \u20ac"
-                      }
-                    ]
-                  },
-                  "/price": {
-                    "type": "number",
-                    "uri": "/price",
-                    "label": "Prezzo",
-                    "values": [
-                      {
-                        "key": "170",
-                        "value": "170 \u20ac"
-                      }
-                    ]
-                  },
-                  "/item_condition": {
-                    "type": "list",
-                    "uri": "/item_condition",
-                    "label": "Condizione",
-                    "values": [
-                      {
-                        "key": "20",
-                        "value": "Come nuovo - perfetto o ricondizionato",
-                        "weight": 2,
-                        "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                      }
-                    ]
-                  },
-                  "/shipping_carriers": {
-                    "type": "list",
-                    "uri": "/shipping_carriers",
-                    "label": "Corrieri per la spedizione",
-                    "values": [
-                      {
-                        "key": "poste_italiane",
-                        "value": "poste_italiane"
-                      },
-                      {
-                        "key": "ups",
-                        "value": "ups"
-                      },
-                      {
-                        "key": "inpost",
-                        "value": "inpost"
-                      },
-                      {
-                        "key": "bartolini",
-                        "value": "bartolini"
-                      }
-                    ]
-                  },
-                  "/item_shipping_type": {
-                    "type": "list",
-                    "uri": "/item_shipping_type",
-                    "label": "Metodo di spedizione",
-                    "values": [
-                      {
-                        "key": "0",
-                        "value": "Spedizione con TuttoSubito",
-                        "weight": 1
-                      }
-                    ]
-                  }
-                },
-                "advertiser": {
-                  "name": "",
-                  "type": 0,
-                  "userId": "113468974",
-                  "company": false
-                },
-                "geo": {
-                  "uri": "/geo",
-                  "type": "geo",
-                  "label": "Comune",
-                  "region": {
-                    "uri": "/geo/region",
-                    "id": "4",
-                    "value": "Lombardia",
-                    "friendlyName": "lombardia",
-                    "label": "Regione",
-                    "level": 0,
-                    "neighbors": "4,2,5,6,8"
-                  },
-                  "city": {
-                    "uri": "/geo/city",
-                    "id": "2",
-                    "value": "Brescia",
-                    "label": "Provincia",
-                    "level": 1,
-                    "friendlyName": "brescia",
-                    "istat": "017",
-                    "regionId": "4",
-                    "shortName": "BS"
-                  },
-                  "town": {
-                    "uri": "/geo/town",
-                    "id": "017029",
-                    "value": "Brescia",
-                    "label": "Comune",
-                    "level": 2,
-                    "friendlyName": "brescia",
-                    "istat": "017029",
-                    "cityId": "2",
-                    "hasZone": false,
-                    "regionId": "4"
-                  }
-                },
-                "visibilityOptions": {
-                  "gallery": true,
-                  "urgent": false
-                },
-                "urls": {
-                  "default": "https://www.subito.it/videogiochi/ps4-pro1tb-stile-the-last-con-4-controler-e-giochi-brescia-598666637.htm",
-                  "mobile": "https://www.subito.it/videogiochi/ps4-pro1tb-stile-the-last-con-4-controler-e-giochi-brescia-598666637.htm"
-                },
-                "gallerized": true
-              },
-              "kind": "GalleryItem"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            }
-          },
-          {
-            "model": {
-              "kind": "GalleryCTAItem"
+              "msite": null,
+              "kind": "SmartADVItem"
             },
             "categories": {
               "elements": [],
@@ -1430,50 +2175,15 @@
             }
           ],
           "features": {
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "50",
-                  "value": "50 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
+            "/item_shipping_package_size": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
                 }
               ]
             },
@@ -1511,15 +2221,50 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "50",
+                  "value": "50 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
                 }
               ]
             }
@@ -1575,17 +2320,18 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-middle-1",
                 "style": {
-                  "minHeight": "202px",
-                  "display": "flex",
+                  "minHeight": "200px",
+                  "alignItems": "center",
                   "justifyContent": "center",
-                  "flexDirection": "column"
-                }
+                  "display": "flex",
+                  "flexWrap": "wrap"
+                },
+                "id": "listing-native-2"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
@@ -1628,14 +2374,14 @@
             }
           ],
           "features": {
-            "/price": {
+            "/item_shipping_cost_tuttosubito": {
               "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
               "values": [
                 {
-                  "key": "100",
-                  "value": "100 \u20ac"
+                  "key": "15,99",
+                  "value": "15,99 \u20ac"
                 }
               ]
             },
@@ -1651,14 +2397,14 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
               "values": [
                 {
-                  "key": "1",
-                  "value": "S\u00ec"
+                  "key": "100",
+                  "value": "100 \u20ac"
                 }
               ]
             },
@@ -1675,29 +2421,14 @@
                 }
               ]
             },
-            "/shipping_carriers": {
-              "type": "list",
-              "uri": "/shipping_carriers",
-              "label": "Corrieri per la spedizione",
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
               "values": [
                 {
-                  "key": "ups",
-                  "value": "ups"
-                },
-                {
-                  "key": "bartolini",
-                  "value": "bartolini"
-                }
-              ]
-            },
-            "/item_shipping_cost_tuttosubito": {
-              "type": "number",
-              "uri": "/item_shipping_cost_tuttosubito",
-              "label": "Costo della spedizione",
-              "values": [
-                {
-                  "key": "15,99",
-                  "value": "15,99 \u20ac"
+                  "key": "1",
+                  "value": "S\u00ec"
                 }
               ]
             },
@@ -1710,6 +2441,21 @@
                   "key": "30",
                   "value": "Grande - fino a 15kg",
                   "weight": 0
+                }
+              ]
+            },
+            "/shipping_carriers": {
+              "type": "list",
+              "uri": "/shipping_carriers",
+              "label": "Corrieri per la spedizione",
+              "values": [
+                {
+                  "key": "ups",
+                  "value": "ups"
+                },
+                {
+                  "key": "bartolini",
+                  "value": "bartolini"
                 }
               ]
             }
@@ -1762,31 +2508,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-pro-milano-600582533.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "150px",
-                  "display": "flex",
-                  "justifyContent": "center",
-                  "flexDirection": "column"
-                },
-                "id": "listing-middle-1"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -1829,17 +2551,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -1850,6 +2561,17 @@
                   "value": "Ottimo - poco usato e ben conservato",
                   "weight": 3,
                   "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -1902,7 +2624,31 @@
             "mobile": "https://www.subito.it/videogiochi/playstation4-napoli-600582427.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "style": {
+                  "minHeight": "202px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-2"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -1946,6 +2692,18 @@
             }
           ],
           "features": {
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -1972,15 +2730,15 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "30",
-                  "value": "Grande - fino a 15kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
                 }
               ]
             },
@@ -1995,15 +2753,16 @@
                 }
               ]
             },
-            "/item_shipping_type": {
+            "/item_condition": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_condition",
+              "label": "Condizione",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
                 }
               ]
             },
@@ -2015,19 +2774,6 @@
                 {
                   "key": "1",
                   "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
                 }
               ]
             }
@@ -2083,16 +2829,18 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
                 "style": {
-                  "minHeight": "150px",
+                  "minHeight": "200px",
                   "alignItems": "center",
-                  "display": "flex"
+                  "justifyContent": "center",
+                  "display": "flex",
+                  "flexWrap": "wrap"
                 },
-                "id": "listing-native-2"
+                "id": "listing-box-2"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
@@ -2138,14 +2886,14 @@
             }
           ],
           "features": {
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
               "values": [
                 {
-                  "key": "0",
-                  "value": "No"
+                  "key": "250",
+                  "value": "250 \u20ac"
                 }
               ]
             },
@@ -2162,14 +2910,14 @@
                 }
               ]
             },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
               "values": [
                 {
-                  "key": "250",
-                  "value": "250 \u20ac"
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -2222,32 +2970,7 @@
             "mobile": "https://www.subito.it/videogiochi/volate-pedali-della-ps4-ps3-trieste-600582163.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "200px",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "display": "flex",
-                  "flexWrap": "wrap"
-                },
-                "id": "listing-native-2"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -2285,6 +3008,53 @@
             }
           ],
           "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "20 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -2307,29 +3077,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "20 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -2339,30 +3086,6 @@
                   "key": "0",
                   "value": "Spedizione con TuttoSubito",
                   "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
                 }
               ]
             }
@@ -2416,7 +3139,48 @@
             "mobile": "https://www.subito.it/videogiochi/assetto-corsa-utimate-edition-ps4-e-ps5-piacenza-600582113.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-3"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -2454,50 +3218,15 @@
             }
           ],
           "features": {
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "35",
-                  "value": "35 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
+            "/item_shipping_package_size": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
                 }
               ]
             },
@@ -2527,15 +3256,50 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "35",
+                  "value": "35 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
                 }
               ]
             }
@@ -2591,17 +3355,18 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
                 "style": {
-                  "minHeight": "202px",
-                  "display": "flex",
+                  "minHeight": "200px",
+                  "alignItems": "center",
                   "justifyContent": "center",
-                  "flexDirection": "column"
+                  "display": "flex",
+                  "flexWrap": "wrap"
                 },
-                "id": "listing-middle-2"
+                "id": "listing-box-3"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
@@ -2667,17 +3432,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -2688,6 +3442,17 @@
                   "value": "Buono - usato ma ben conservato",
                   "weight": 4,
                   "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -2740,32 +3505,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-slim-1tb-udine-600581176.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "200px",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "display": "flex",
-                  "flexWrap": "wrap"
-                },
-                "id": "listing-box-2"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -2809,6 +3549,53 @@
             }
           ],
           "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "1 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -2843,29 +3630,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "1 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -2875,30 +3639,6 @@
                   "key": "0",
                   "value": "Spedizione con TuttoSubito",
                   "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "30",
-                  "value": "Ottimo - poco usato e ben conservato",
-                  "weight": 3,
-                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
                 }
               ]
             }
@@ -2951,7 +3691,48 @@
             "mobile": "https://www.subito.it/videogiochi/giochi-ps4-ps5-caltanissetta-600580593.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-4"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -2995,6 +3776,42 @@
             }
           ],
           "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "30",
+                  "value": "Ottimo - poco usato e ben conservato",
+                  "weight": 3,
+                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -3029,29 +3846,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "45",
-                  "value": "45 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -3064,27 +3858,14 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
               "values": [
                 {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "30",
-                  "value": "Ottimo - poco usato e ben conservato",
-                  "weight": 3,
-                  "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                  "key": "45",
+                  "value": "45 \u20ac"
                 }
               ]
             }
@@ -3140,38 +3921,21 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-middle-3"
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-2"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
-              "elements": [
-                "9",
-                "10",
-                "44",
-                "11",
-                "40",
-                "12",
-                "13",
-                "14",
-                "37",
-                "15",
-                "16",
-                "17",
-                "18",
-                "23",
-                "100",
-                "19",
-                "38",
-                "39",
-                "20",
-                "41",
-                "21",
-                "28"
-              ],
+              "elements": [],
               "kind": "ExcludedMatcher"
             },
             "position": {
@@ -3207,16 +3971,15 @@
             }
           ],
           "features": {
-            "/item_condition": {
+            "/item_shipping_package_size": {
               "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
               "values": [
                 {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                  "key": "30",
+                  "value": "Grande - fino a 15kg",
+                  "weight": 0
                 }
               ]
             },
@@ -3246,15 +4009,15 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
+            "/item_shipping_type": {
               "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
               "values": [
                 {
-                  "key": "30",
-                  "value": "Grande - fino a 15kg",
-                  "weight": 0
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
                 }
               ]
             },
@@ -3269,15 +4032,16 @@
                 }
               ]
             },
-            "/item_shipping_type": {
+            "/item_condition": {
               "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
+              "uri": "/item_condition",
+              "label": "Condizione",
               "values": [
                 {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
+                  "key": "20",
+                  "value": "Come nuovo - perfetto o ricondizionato",
+                  "weight": 2,
+                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
                 }
               ]
             },
@@ -3342,32 +4106,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-pro-lecce-600579097.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "200px",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "display": "flex",
-                  "flexWrap": "wrap"
-                },
-                "id": "listing-box-3"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -3411,6 +4150,76 @@
             }
           ],
           "features": {
+            "/item_shipping_cost_tuttosubito": {
+              "type": "number",
+              "uri": "/item_shipping_cost_tuttosubito",
+              "label": "Costo della spedizione",
+              "values": [
+                {
+                  "key": "7,99",
+                  "value": "7,99 \u20ac"
+                }
+              ]
+            },
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "100",
+                  "value": "100 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "20",
+                  "value": "Medio - fino a 5kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -3431,76 +4240,6 @@
                 {
                   "key": "bartolini",
                   "value": "bartolini"
-                }
-              ]
-            },
-            "/item_shipping_cost_tuttosubito": {
-              "type": "number",
-              "uri": "/item_shipping_cost_tuttosubito",
-              "label": "Costo della spedizione",
-              "values": [
-                {
-                  "key": "7,99",
-                  "value": "7,99 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Medio - fino a 5kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "100",
-                  "value": "100 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
-              "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "40",
-                  "value": "Buono - usato ma ben conservato",
-                  "weight": 4,
-                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
                 }
               ]
             }
@@ -3553,7 +4292,25 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-slim-white-joystick-gorizia-600579959.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-5"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -3593,17 +4350,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -3614,6 +4360,17 @@
                   "value": "Come nuovo - perfetto o ricondizionato",
                   "weight": 2,
                   "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -3670,38 +4427,21 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-middle-4"
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-3"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
-              "elements": [
-                "9",
-                "10",
-                "44",
-                "11",
-                "40",
-                "12",
-                "13",
-                "14",
-                "37",
-                "15",
-                "16",
-                "17",
-                "18",
-                "23",
-                "100",
-                "19",
-                "38",
-                "39",
-                "20",
-                "41",
-                "21",
-                "28"
-              ],
+              "elements": [],
               "kind": "ExcludedMatcher"
             },
             "position": {
@@ -3748,17 +4488,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -3769,6 +4498,17 @@
                   "value": "Come nuovo - perfetto o ricondizionato",
                   "weight": 2,
                   "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -3822,31 +4562,7 @@
             "mobile": "https://www.subito.it/videogiochi/tomb-raider-definitive-edition-ps4-roma-549618672.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "150px",
-                  "display": "flex",
-                  "justifyContent": "center",
-                  "flexDirection": "column"
-                },
-                "id": "listing-middle-2"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -3881,6 +4597,53 @@
             }
           ],
           "features": {
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "35",
+                  "value": "35 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -3915,29 +4678,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "35",
-                  "value": "35 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -3947,30 +4687,6 @@
                   "key": "0",
                   "value": "Spedizione con TuttoSubito",
                   "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "40",
-                  "value": "Buono - usato ma ben conservato",
-                  "weight": 4,
-                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
                 }
               ]
             }
@@ -4023,7 +4739,48 @@
             "mobile": "https://www.subito.it/videogiochi/brothers-ps4-playstation-4-tale-of-a-two-sons-ravenna-600579449.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-6"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -4068,14 +4825,25 @@
                 }
               ]
             },
-            "/transaction_status": {
-              "type": "list",
-              "uri": "/transaction_status",
-              "label": "Stato della transazione",
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
               "values": [
                 {
-                  "key": "CLOSED",
-                  "value": "SOLD",
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
                   "weight": 0
                 }
               ]
@@ -4102,29 +4870,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "16",
-                  "value": "16 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -4137,14 +4882,26 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/transaction_status": {
+              "type": "list",
+              "uri": "/transaction_status",
+              "label": "Stato della transazione",
               "values": [
                 {
-                  "key": "1",
-                  "value": "S\u00ec"
+                  "key": "CLOSED",
+                  "value": "SOLD",
+                  "weight": 0
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "16",
+                  "value": "16 \u20ac"
                 }
               ]
             }
@@ -4200,11 +4957,17 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-middle-5"
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-4"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
@@ -4261,17 +5024,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -4282,6 +5034,17 @@
                   "value": "Buono - usato ma ben conservato",
                   "weight": 4,
                   "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -4335,31 +5098,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-500-gb-gioco-fi-2024-bergamo-600576448.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "150px",
-                  "display": "flex",
-                  "justifyContent": "center",
-                  "flexDirection": "column"
-                },
-                "id": "listing-middle-3"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -4397,6 +5136,65 @@
             }
           ],
           "features": {
+            "/item_shipping_type": {
+              "type": "list",
+              "uri": "/item_shipping_type",
+              "label": "Metodo di spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "Spedizione con TuttoSubito",
+                  "weight": 1
+                }
+              ]
+            },
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
+              "values": [
+                {
+                  "key": "85",
+                  "value": "85 \u20ac"
+                }
+              ]
+            },
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -4428,65 +5226,6 @@
                 {
                   "key": "5,99",
                   "value": "5,99 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "85",
-                  "value": "85 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
-              "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "40",
-                  "value": "Buono - usato ma ben conservato",
-                  "weight": 4,
-                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
                 }
               ]
             }
@@ -4539,7 +5278,48 @@
             "mobile": "https://www.subito.it/videogiochi/kirby-super-star-ultra-nintendo-ds-3ds-pal-ita-cremona-600578811.htm"
           }
         },
-        "after": [],
+        "after": [
+          {
+            "model": {
+              "desktop": {
+                "source": "lira",
+                "id": "listing-middle-7"
+              },
+              "msite": null,
+              "kind": "SmartADVItem"
+            },
+            "categories": {
+              "elements": [
+                "9",
+                "10",
+                "44",
+                "11",
+                "40",
+                "12",
+                "13",
+                "14",
+                "37",
+                "15",
+                "16",
+                "17",
+                "18",
+                "23",
+                "100",
+                "19",
+                "38",
+                "39",
+                "20",
+                "41",
+                "21",
+                "28"
+              ],
+              "kind": "ExcludedMatcher"
+            },
+            "position": {
+              "kind": "AfterPosition"
+            }
+          }
+        ],
         "kind": "DecoratedItem"
       },
       {
@@ -4577,6 +5357,42 @@
             }
           ],
           "features": {
+            "/item_condition": {
+              "type": "list",
+              "uri": "/item_condition",
+              "label": "Condizione",
+              "values": [
+                {
+                  "key": "40",
+                  "value": "Buono - usato ma ben conservato",
+                  "weight": 4,
+                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "1",
+                  "value": "S\u00ec"
+                }
+              ]
+            },
+            "/item_shipping_package_size": {
+              "type": "list",
+              "uri": "/item_shipping_package_size",
+              "label": "Peso del pacco",
+              "values": [
+                {
+                  "key": "10",
+                  "value": "Piccolo - fino a 2kg",
+                  "weight": 0
+                }
+              ]
+            },
             "/shipping_carriers": {
               "type": "list",
               "uri": "/shipping_carriers",
@@ -4611,29 +5427,6 @@
                 }
               ]
             },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "120",
-                  "value": "120 \u20ac"
-                }
-              ]
-            },
             "/item_shipping_type": {
               "type": "list",
               "uri": "/item_shipping_type",
@@ -4646,27 +5439,14 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
               "values": [
                 {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "40",
-                  "value": "Buono - usato ma ben conservato",
-                  "weight": 4,
-                  "description": "Oggetto usato che potrebbe presentare segni di usura ma ben conservato."
+                  "key": "120",
+                  "value": "120 \u20ac"
                 }
               ]
             }
@@ -4722,38 +5502,21 @@
         "after": [
           {
             "model": {
-              "desktop": {
+              "desktop": null,
+              "msite": {
                 "source": "lira",
-                "id": "listing-middle-6"
+                "style": {
+                  "minHeight": "150px",
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "flexDirection": "column"
+                },
+                "id": "listing-middle-5"
               },
-              "msite": null,
               "kind": "SmartADVItem"
             },
             "categories": {
-              "elements": [
-                "9",
-                "10",
-                "44",
-                "11",
-                "40",
-                "12",
-                "13",
-                "14",
-                "37",
-                "15",
-                "16",
-                "17",
-                "18",
-                "23",
-                "100",
-                "19",
-                "38",
-                "39",
-                "20",
-                "41",
-                "21",
-                "28"
-              ],
+              "elements": [],
               "kind": "ExcludedMatcher"
             },
             "position": {
@@ -4789,14 +5552,14 @@
             }
           ],
           "features": {
-            "/price": {
+            "/item_shipping_cost": {
               "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
+              "uri": "/item_shipping_cost",
+              "label": "Costo della spedizione",
               "values": [
                 {
-                  "key": "150",
-                  "value": "150 \u20ac"
+                  "key": "15",
+                  "value": "15 \u20ac"
                 }
               ]
             },
@@ -4812,14 +5575,14 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
+            "/price": {
+              "type": "number",
+              "uri": "/price",
+              "label": "Prezzo",
               "values": [
                 {
-                  "key": "1",
-                  "value": "S\u00ec"
+                  "key": "150",
+                  "value": "150 \u20ac"
                 }
               ]
             },
@@ -4836,14 +5599,14 @@
                 }
               ]
             },
-            "/item_shipping_cost": {
-              "type": "number",
-              "uri": "/item_shipping_cost",
-              "label": "Costo della spedizione",
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
               "values": [
                 {
-                  "key": "15",
-                  "value": "15 \u20ac"
+                  "key": "1",
+                  "value": "S\u00ec"
                 }
               ]
             }
@@ -4896,31 +5659,7 @@
             "mobile": "https://www.subito.it/videogiochi/ps4-pro-1-tb-dark-souls-3-livorno-600578054.htm"
           }
         },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "150px",
-                  "display": "flex",
-                  "justifyContent": "center",
-                  "flexDirection": "column"
-                },
-                "id": "listing-middle-4"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
+        "after": [],
         "kind": "DecoratedItem"
       },
       {
@@ -4960,17 +5699,6 @@
                 }
               ]
             },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
             "/item_condition": {
               "type": "list",
               "uri": "/item_condition",
@@ -4981,6 +5709,17 @@
                   "value": "Ottimo - poco usato e ben conservato",
                   "weight": 3,
                   "description": "Oggetto usato poche volte che potrebbe presentare piccole imperfezioni."
+                }
+              ]
+            },
+            "/item_shippable": {
+              "type": "bool",
+              "uri": "/item_shippable",
+              "label": "Disponibile alla spedizione",
+              "values": [
+                {
+                  "key": "0",
+                  "value": "No"
                 }
               ]
             }
@@ -5036,669 +5775,40 @@
         },
         "after": [],
         "kind": "DecoratedItem"
-      },
-      {
-        "before": [],
-        "item": {
-          "kind": "AdItem",
-          "urn": "id:ad:3ea37394-0684-433b-83fb-9185f41b2471:list:600577353",
-          "type": {
-            "key": "s",
-            "value": "In vendita",
-            "weight": 0
-          },
-          "category": {
-            "id": "44",
-            "label": "Console e Videogiochi",
-            "parentId": "9",
-            "friendlyName": "videogiochi",
-            "weight": 24
-          },
-          "subject": "Giochi ps4",
-          "body": "Vendo giochi ps4 ij perfette condizioni , per 80 euro no perditempo",
-          "date": "2025-05-03 21:51:32",
-          "images": [
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/2f/2f185648-09df-4379-b30a-d88476d34984"
-            }
-          ],
-          "features": {
-            "/shipping_carriers": {
-              "type": "list",
-              "uri": "/shipping_carriers",
-              "label": "Corrieri per la spedizione",
-              "values": [
-                {
-                  "key": "poste_italiane",
-                  "value": "poste_italiane"
-                },
-                {
-                  "key": "ups",
-                  "value": "ups"
-                },
-                {
-                  "key": "inpost",
-                  "value": "inpost"
-                },
-                {
-                  "key": "bartolini",
-                  "value": "bartolini"
-                }
-              ]
-            },
-            "/item_shipping_cost_tuttosubito": {
-              "type": "number",
-              "uri": "/item_shipping_cost_tuttosubito",
-              "label": "Costo della spedizione",
-              "values": [
-                {
-                  "key": "5,99",
-                  "value": "5,99 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "Piccolo - fino a 2kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "80",
-                  "value": "80 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
-              "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                }
-              ]
-            }
-          },
-          "advertiser": {
-            "name": "",
-            "type": 0,
-            "userId": "12953728",
-            "company": false
-          },
-          "geo": {
-            "uri": "/geo",
-            "type": "geo",
-            "label": "Comune",
-            "region": {
-              "uri": "/geo/region",
-              "id": "8",
-              "value": "Emilia-Romagna",
-              "friendlyName": "emilia-romagna",
-              "label": "Regione",
-              "level": 0,
-              "neighbors": "8,12,2,3,4,6,9"
-            },
-            "city": {
-              "uri": "/geo/city",
-              "id": "6",
-              "value": "Piacenza",
-              "label": "Provincia",
-              "level": 1,
-              "friendlyName": "piacenza",
-              "istat": "033",
-              "regionId": "8",
-              "shortName": "PC"
-            },
-            "town": {
-              "uri": "/geo/town",
-              "id": "033032",
-              "value": "Piacenza",
-              "label": "Comune",
-              "level": 2,
-              "friendlyName": "piacenza",
-              "istat": "033032",
-              "cityId": "6",
-              "hasZone": false,
-              "regionId": "8"
-            }
-          },
-          "urls": {
-            "default": "https://www.subito.it/videogiochi/giochi-ps4-piacenza-600577353.htm",
-            "mobile": "https://www.subito.it/videogiochi/giochi-ps4-piacenza-600577353.htm"
-          }
-        },
-        "after": [
-          {
-            "model": {
-              "desktop": {
-                "source": "lira",
-                "id": "listing-middle-7"
-              },
-              "msite": null,
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [
-                "9",
-                "10",
-                "44",
-                "11",
-                "40",
-                "12",
-                "13",
-                "14",
-                "37",
-                "15",
-                "16",
-                "17",
-                "18",
-                "23",
-                "100",
-                "19",
-                "38",
-                "39",
-                "20",
-                "41",
-                "21",
-                "28"
-              ],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
-        "kind": "DecoratedItem"
-      },
-      {
-        "before": [],
-        "item": {
-          "kind": "AdItem",
-          "urn": "id:ad:079516b0-198a-463b-9c42-3b2cf9c1ce58:list:600577165",
-          "type": {
-            "key": "s",
-            "value": "In vendita",
-            "weight": 0
-          },
-          "category": {
-            "id": "44",
-            "label": "Console e Videogiochi",
-            "parentId": "9",
-            "friendlyName": "videogiochi",
-            "weight": 24
-          },
-          "subject": "Volante e pedali Hori RWA Racing Apex PS3 PS4 PC",
-          "body": "Vendo causa inutilizzo volante e pedali Hori Rwa Racing\nWhee Apex per PS3/PS4/ PC ufficiale Sony praticamente nuovo, senza segni di usura e perfettamente funzionante.",
-          "date": "2025-05-03 21:48:26",
-          "images": [
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/4b/4b448f42-9b7d-4cda-a34b-6244be361253"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d7/d74abb11-1719-4c0a-88b2-5857924a3186"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/fb/fb8d8028-ef8e-4c57-af5e-fb6ae9c85857"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/c6/c62fc124-cb3a-4ddc-af7e-6ae2f93795f1"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/9f/9fc7c348-ef22-4cec-97f5-10a2240a88e9"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/21/21a19fae-02bb-4b3c-b80b-ade47bacffcd"
-            }
-          ],
-          "features": {
-            "/shipping_carriers": {
-              "type": "list",
-              "uri": "/shipping_carriers",
-              "label": "Corrieri per la spedizione",
-              "values": [
-                {
-                  "key": "poste_italiane",
-                  "value": "poste_italiane"
-                },
-                {
-                  "key": "ups",
-                  "value": "ups"
-                },
-                {
-                  "key": "inpost",
-                  "value": "inpost"
-                },
-                {
-                  "key": "bartolini",
-                  "value": "bartolini"
-                }
-              ]
-            },
-            "/item_shipping_cost_tuttosubito": {
-              "type": "number",
-              "uri": "/item_shipping_cost_tuttosubito",
-              "label": "Costo della spedizione",
-              "values": [
-                {
-                  "key": "7,99",
-                  "value": "7,99 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_package_size": {
-              "type": "list",
-              "uri": "/item_shipping_package_size",
-              "label": "Peso del pacco",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Medio - fino a 5kg",
-                  "weight": 0
-                }
-              ]
-            },
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "70",
-                  "value": "70 \u20ac"
-                }
-              ]
-            },
-            "/item_shipping_type": {
-              "type": "list",
-              "uri": "/item_shipping_type",
-              "label": "Metodo di spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "Spedizione con TuttoSubito",
-                  "weight": 1
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "S\u00ec"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                }
-              ]
-            }
-          },
-          "advertiser": {
-            "name": "",
-            "type": 0,
-            "userId": "10931121",
-            "company": false
-          },
-          "geo": {
-            "uri": "/geo",
-            "type": "geo",
-            "label": "Comune",
-            "region": {
-              "uri": "/geo/region",
-              "id": "8",
-              "value": "Emilia-Romagna",
-              "friendlyName": "emilia-romagna",
-              "label": "Regione",
-              "level": 0,
-              "neighbors": "8,12,2,3,4,6,9"
-            },
-            "city": {
-              "uri": "/geo/city",
-              "id": "1",
-              "value": "Bologna",
-              "label": "Provincia",
-              "level": 1,
-              "friendlyName": "bologna",
-              "istat": "037",
-              "regionId": "8",
-              "shortName": "BO"
-            },
-            "town": {
-              "uri": "/geo/town",
-              "id": "037006",
-              "value": "Bologna",
-              "label": "Comune",
-              "level": 2,
-              "friendlyName": "bologna",
-              "istat": "037006",
-              "cityId": "1",
-              "hasZone": false,
-              "regionId": "8"
-            }
-          },
-          "urls": {
-            "default": "https://www.subito.it/videogiochi/volante-e-pedali-hori-rwa-racing-apex-ps3-ps4-pc-bologna-600577165.htm",
-            "mobile": "https://www.subito.it/videogiochi/volante-e-pedali-hori-rwa-racing-apex-ps3-ps4-pc-bologna-600577165.htm"
-          }
-        },
-        "after": [
-          {
-            "model": {
-              "desktop": null,
-              "msite": {
-                "source": "lira",
-                "style": {
-                  "minHeight": "150px",
-                  "display": "flex",
-                  "justifyContent": "center",
-                  "flexDirection": "column"
-                },
-                "id": "listing-middle-5"
-              },
-              "kind": "SmartADVItem"
-            },
-            "categories": {
-              "elements": [],
-              "kind": "ExcludedMatcher"
-            },
-            "position": {
-              "kind": "AfterPosition"
-            }
-          }
-        ],
-        "kind": "DecoratedItem"
-      },
-      {
-        "before": [],
-        "item": {
-          "kind": "AdItem",
-          "urn": "id:ad:9e75cf3c-8622-4b27-b7c6-ae84940b6527:list:600576190",
-          "type": {
-            "key": "s",
-            "value": "In vendita",
-            "weight": 0
-          },
-          "category": {
-            "id": "44",
-            "label": "Console e Videogiochi",
-            "parentId": "9",
-            "friendlyName": "videogiochi",
-            "weight": 24
-          },
-          "subject": "GIOCHI PS4/PS5",
-          "body": "Giochi PS4/PS5. Come nuovi. Consegna a mano a Lucca. Euro 10 a gioco",
-          "date": "2025-05-03 21:33:07",
-          "images": [
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/67/67c654c9-0670-4b26-b192-83b266db7b05"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/df/df8afa99-7453-4da7-a533-60d8155ce392"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/d4/d459cf00-55bd-4478-a003-d2c2368e5cbf"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/b7/b76a85b0-ff4a-435c-9239-ec2cbd059ce2"
-            },
-            {
-              "cdnBaseUrl": "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/6d/6d5e8894-cb31-4b99-99a6-366e564a207a"
-            }
-          ],
-          "features": {
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "10",
-                  "value": "10 \u20ac"
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                }
-              ]
-            }
-          },
-          "advertiser": {
-            "name": "",
-            "type": 0,
-            "userId": "6609617",
-            "company": false
-          },
-          "geo": {
-            "uri": "/geo",
-            "type": "geo",
-            "label": "Comune",
-            "region": {
-              "uri": "/geo/region",
-              "id": "9",
-              "value": "Toscana",
-              "friendlyName": "toscana",
-              "label": "Regione",
-              "level": 0,
-              "neighbors": "9,10,11,12,3,8"
-            },
-            "city": {
-              "uri": "/geo/city",
-              "id": "5",
-              "value": "Lucca",
-              "label": "Provincia",
-              "level": 1,
-              "friendlyName": "lucca",
-              "istat": "046",
-              "regionId": "9",
-              "shortName": "LU"
-            },
-            "town": {
-              "uri": "/geo/town",
-              "id": "046017",
-              "value": "Lucca",
-              "label": "Comune",
-              "level": 2,
-              "friendlyName": "lucca",
-              "istat": "046017",
-              "cityId": "5",
-              "hasZone": false,
-              "regionId": "9"
-            }
-          },
-          "urls": {
-            "default": "https://www.subito.it/videogiochi/giochi-ps4-ps5-lucca-600576190.htm",
-            "mobile": "https://www.subito.it/videogiochi/giochi-ps4-ps5-lucca-600576190.htm"
-          }
-        },
-        "after": [],
-        "kind": "DecoratedItem"
-      },
-      {
-        "before": [],
-        "item": {
-          "kind": "AdItem",
-          "urn": "id:ad:4180a40c-a49a-46e4-89f6-8677cd0bd9a9:list:600576109",
-          "type": {
-            "key": "s",
-            "value": "In vendita",
-            "weight": 0
-          },
-          "category": {
-            "id": "44",
-            "label": "Console e Videogiochi",
-            "parentId": "9",
-            "friendlyName": "videogiochi",
-            "weight": 24
-          },
-          "subject": "giochi per ps4",
-          "body": "Cerco giochi per ps4 ; grid, new super Lucy\u2019s , sackboy. E ratchet and clank .",
-          "date": "2025-05-03 21:33:05",
-          "images": [],
-          "features": {
-            "/price": {
-              "type": "number",
-              "uri": "/price",
-              "label": "Prezzo",
-              "values": [
-                {
-                  "key": "1",
-                  "value": "1 \u20ac"
-                }
-              ]
-            },
-            "/item_shippable": {
-              "type": "bool",
-              "uri": "/item_shippable",
-              "label": "Disponibile alla spedizione",
-              "values": [
-                {
-                  "key": "0",
-                  "value": "No"
-                }
-              ]
-            },
-            "/item_condition": {
-              "type": "list",
-              "uri": "/item_condition",
-              "label": "Condizione",
-              "values": [
-                {
-                  "key": "20",
-                  "value": "Come nuovo - perfetto o ricondizionato",
-                  "weight": 2,
-                  "description": "Oggetto in perfette condizioni oppure rigenerato con parti sostitutive senza difetti."
-                }
-              ]
-            }
-          },
-          "advertiser": {
-            "name": "",
-            "type": 0,
-            "phone": "0",
-            "userId": "109905564",
-            "company": false
-          },
-          "geo": {
-            "uri": "/geo",
-            "type": "geo",
-            "label": "Comune",
-            "region": {
-              "uri": "/geo/region",
-              "id": "20",
-              "value": "Sicilia",
-              "friendlyName": "sicilia",
-              "label": "Regione",
-              "level": 0,
-              "neighbors": "20,18"
-            },
-            "city": {
-              "uri": "/geo/city",
-              "id": "3",
-              "value": "Catania",
-              "label": "Provincia",
-              "level": 1,
-              "friendlyName": "catania",
-              "istat": "087",
-              "regionId": "20",
-              "shortName": "CT"
-            },
-            "town": {
-              "uri": "/geo/town",
-              "id": "087003",
-              "value": "Aci Catena",
-              "label": "Comune",
-              "level": 2,
-              "friendlyName": "aci-catena",
-              "istat": "087003",
-              "cityId": "3",
-              "hasZone": false,
-              "regionId": "20"
-            }
-          },
-          "urls": {
-            "default": "https://www.subito.it/videogiochi/giochi-per-ps4-catania-600576109.htm",
-            "mobile": "https://www.subito.it/videogiochi/giochi-per-ps4-catania-600576109.htm"
-          }
-        },
-        "after": [],
-        "kind": "DecoratedItem"
       }
     ],
     "rankedList": [
       {
         "kind": "AdItem",
+        "urn": "id:ad:045940b0-245e-4a84-b9cb-dfb95ea6f859:list:600586410"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:ae59979c-589a-44a5-905d-87e09681c44a:list:600586250"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:b37ff35f-d4d6-49a4-9618-66a1a63f34fb:list:600585577"
+      },
+      {
+        "kind": "AdItem",
+        "urn": "id:ad:6d2db8c8-6a2e-447c-bc1e-8f0510a6a3ee:list:600584715"
+      },
+      {
+        "kind": "AdItem",
         "urn": "id:ad:78ae90f5-edad-4f88-b0b1-64600d10226e:list:600584379"
+      },
+      {
+        "kind": "GalleryItem",
+        "urn": "id:ad:f224126c-60f9-4bda-b25f-7a1d7972f674:list:596170944"
+      },
+      {
+        "kind": "GalleryItem",
+        "urn": "id:ad:91157378-bc37-47a4-bba0-9155ef5a50b7:list:583408366"
+      },
+      {
+        "kind": "GalleryItem",
+        "urn": "id:ad:c4d3a3d2-3d2c-4f4a-a750-77c7cbb4b45e:list:593544790"
       },
       {
         "kind": "AdItem",
@@ -5715,18 +5825,6 @@
       {
         "kind": "AdItem",
         "urn": "id:ad:e0c7dd78-8b3a-495d-b332-6513ec37ad9f:list:549619513"
-      },
-      {
-        "kind": "GalleryItem",
-        "urn": "id:ad:80b9b451-4101-4585-9cf1-00b6a454c5a7:list:595042182"
-      },
-      {
-        "kind": "GalleryItem",
-        "urn": "id:ad:eb39d14d-cb59-4cf6-b6cf-bfe70335619b:list:563007270"
-      },
-      {
-        "kind": "GalleryItem",
-        "urn": "id:ad:4dc182b9-f85e-4201-beda-6f143ed8aaf3:list:598666637"
       },
       {
         "kind": "AdItem",
@@ -5811,25 +5909,9 @@
       {
         "kind": "AdItem",
         "urn": "id:ad:d299bdcf-81f3-46c4-9b4a-fcd8310f3dc1:list:600577905"
-      },
-      {
-        "kind": "AdItem",
-        "urn": "id:ad:3ea37394-0684-433b-83fb-9185f41b2471:list:600577353"
-      },
-      {
-        "kind": "AdItem",
-        "urn": "id:ad:079516b0-198a-463b-9c42-3b2cf9c1ce58:list:600577165"
-      },
-      {
-        "kind": "AdItem",
-        "urn": "id:ad:9e75cf3c-8622-4b27-b7c6-ae84940b6527:list:600576190"
-      },
-      {
-        "kind": "AdItem",
-        "urn": "id:ad:4180a40c-a49a-46e4-89f6-8677cd0bd9a9:list:600576109"
       }
     ],
-    "total": 45950,
+    "total": 45946,
     "totalPages": 1532,
     "hasError": false,
     "loading": false

@@ -215,7 +215,7 @@ st.sidebar.image("https://img.icons8.com/color/96/000000/price-tag--v1.png", wid
 # Menu nella barra laterale
 menu = st.sidebar.radio(
     "Menu",
-    ["Dashboard", "Risultati", "Gestione Campagne", "Log Scraper", "Ricerche Programmate", "Impostazioni", "Log Sistema", "Seen Ads"]
+    ["Dashboard", "Risultati", "Gestione Campagne", "Log Scraper", "Log Cronjob", "Job Logs", "Impostazioni", "Log Sistema", "Seen Ads"]
 )
 
 # Ottieni tutti i risultati nel database
@@ -310,7 +310,7 @@ elif menu == "Risultati":
         sold_filter = st.radio("Stato:", ["Tutti", "Venduti", "Non venduti"], horizontal=True)
         
         # Ordinamento
-        sort_by = st.selectbox("Ordina per:", ["Data (più recenti)", "Data (più vecchi)", "Prezzo (crescente)", "Prezzo (decrescente)"])
+        sort_by = st.selectbox("Ordina per:", ["Data (più recenti)", "Data (più vecchi)", "Prezzo (crescente)", "Prezzo (decrescente)"], index=1)
         
         # Costruisci la query in base ai filtri
         query = session.query(Risultato)
@@ -354,14 +354,11 @@ elif menu == "Risultati":
             # Crea una tabella per visualizzare i risultati
             data = []
             for res in results:
-                # Ottieni il nome della keyword
                 keyword = session.query(Keyword).filter(Keyword.id == res.keyword_id).first()
                 keyword_name = keyword.keyword if keyword else "N/A"
-                
-                # Converte l'URL in un link cliccabile
                 link = f'<a href="{res.url}" target="_blank">Apri annuncio</a>'
-                
-                # Crea il record per la tabella
+                # Bottone per mostrare dati raw
+                log_button = f'<button id="show_raw_{res.id}" onclick="var e=document.getElementById(\'raw_{res.id}\');e.style.display=e.style.display==\'none\'?\'block\':\'none\';">Mostra Raw</button>'
                 data.append({
                     "ID": res.id,
                     "Campagna": keyword_name,
@@ -372,17 +369,23 @@ elif menu == "Risultati":
                     "Venduto": "✅" if res.venduto else "❌",
                     "Notificato": "✅" if res.notificato else "❌",
                     "Link": link,
-                    "Data Creazione": res.created_at
+                    "Data Creazione": res.created_at,
+                    "Log Scraper": log_button
                 })
-            
-            # Converti in DataFrame
+            import pandas as pd
             df = pd.DataFrame(data)
-            
-            # Informazioni sulla paginazione
             st.info(f"Visualizzazione risultati {offset+1}-{min(offset+page_size, total_results)} di {total_results}")
-            
-            # Visualizza i dati con HTML per i link cliccabili
-            st.write(df.to_html(escape=False, index=False), unsafe_allow_html=True)
+            # Visualizza la tabella senza la colonna Log Scraper
+            st.write(df.drop(columns=["Log Scraper"]).to_html(escape=False, index=False), unsafe_allow_html=True)
+            # Sotto la tabella, mostra un expander per ogni risultato con la textarea dei dati raw
+            st.subheader("Dati Raw per ogni annuncio")
+            for res in results:
+                raw_data = res.raw_data if hasattr(res, 'raw_data') else None
+                with st.expander(f"Raw ID {res.id} | {res.titolo[:40]}..."):
+                    if raw_data:
+                        st.text_area("Dati Raw", raw_data, height=200, key=f"raw_text_{res.id}")
+                    else:
+                        st.info("Nessun dato raw disponibile per questo annuncio.")
             
             # Pulsanti di navigazione per la paginazione
             col1, col2, col3 = st.columns([1, 3, 1])
@@ -421,6 +424,7 @@ elif menu == "Gestione Campagne":
                 # Campi per i parametri
                 keyword = st.text_input("KEYWORD", placeholder="es PS4")
                 limite_prezzo = st.number_input("LIMITE PREZZO", min_value=0, max_value=10000, value=200, step=50)
+                limite_prezzo_min = st.number_input("LIMITE PREZZO MINIMO", min_value=0, max_value=10000, value=0, step=10)
                 applica_limite_prezzo = st.checkbox("APPLICA LIMITE PREZZO", value=False)
                 limite_pagine = st.number_input("LIMITE PAGINE", min_value=1, max_value=10, value=2, step=1)
                 intervallo_minuti = st.number_input("INTERVALLO MINUTI", min_value=1, max_value=60, value=2, step=1)
@@ -435,6 +439,7 @@ elif menu == "Gestione Campagne":
                         new_keyword = Keyword(
                             keyword=keyword,
                             limite_prezzo=limite_prezzo,
+                            limite_prezzo_min=limite_prezzo_min,
                             applica_limite_prezzo=applica_limite_prezzo,
                             limite_pagine=limite_pagine,
                             intervallo_minuti=intervallo_minuti,
@@ -443,6 +448,19 @@ elif menu == "Gestione Campagne":
                         session.add(new_keyword)
                         session.commit()
                         logger.info(f"Aggiunta nuova campagna: {keyword}")
+                        
+                        # Avvia immediatamente la ricerca e il job in background
+                        try:
+                            adapter = scraper_adapter
+                            # Esegui la prima ricerca immediatamente
+                            search_result = adapter.search_for_keyword(new_keyword.id)
+                            logger.info(f"Prima ricerca completata: {search_result}")
+                            
+                            # Avvia il job in background
+                            job_result = adapter.start_background_job(new_keyword.id)
+                            logger.info(f"Job in background avviato: {job_result}")
+                        except Exception as e:
+                            logger.error(f"Errore nell'avvio della ricerca automatica: {str(e)}")
                         
                         st.success(f"Campagna '{keyword}' aggiunta con successo!")
                         # Ricarica la pagina per aggiornare la tabella
@@ -471,12 +489,23 @@ elif menu == "Gestione Campagne":
                         status = "✅ Attivo" if kw.attivo else "⏸️ Pausa"
                         
                         # Indica se il limite di prezzo è applicato
-                        prezzo_txt = f"{kw.limite_prezzo} {'✓' if kw.applica_limite_prezzo else '✗'}"
+                        prezzo_txt = f"{kw.limite_prezzo_min}-{kw.limite_prezzo} {'✓' if kw.applica_limite_prezzo else '✗'}"
+                        
+                        # Verifica se il job è in esecuzione
+                        adapter = scraper_adapter
+                        if kw.attivo:
+                            if adapter.is_job_running(kw.id):
+                                job_status = "🔄 In esecuzione"
+                            else:
+                                job_status = "⚠️ Non in esecuzione"
+                        else:
+                            job_status = "⏸️ In attesa"
                         
                         data.append({
                             "ID": kw.id,
                             "Keyword": kw.keyword,
                             "Stato": status,
+                            "Job": job_status,
                             "Limite Prezzo": prezzo_txt,
                             "Max Pages": kw.limite_pagine,
                             "Intervallo": kw.intervallo_minuti,
@@ -509,6 +538,11 @@ elif menu == "Gestione Campagne":
                                                                 max_value=10000, 
                                                                 value=selected_kw.limite_prezzo, 
                                                                 step=50)
+                                    edit_limite_prezzo_min = st.number_input("Limite Prezzo Minimo", 
+                                                                min_value=0, 
+                                                                max_value=10000, 
+                                                                value=getattr(selected_kw, 'limite_prezzo_min', 0), 
+                                                                step=10)
                                     edit_applica_limite = st.checkbox("Applica Limite Prezzo", 
                                                                value=selected_kw.applica_limite_prezzo)
                                     edit_limite_pagine = st.number_input("Limite Pagine", 
@@ -529,6 +563,7 @@ elif menu == "Gestione Campagne":
                                         # Aggiorna i dati nel database
                                         selected_kw.keyword = edit_keyword
                                         selected_kw.limite_prezzo = edit_limite_prezzo
+                                        selected_kw.limite_prezzo_min = edit_limite_prezzo_min
                                         selected_kw.applica_limite_prezzo = edit_applica_limite
                                         selected_kw.limite_pagine = edit_limite_pagine
                                         selected_kw.intervallo_minuti = edit_intervallo
@@ -543,7 +578,7 @@ elif menu == "Gestione Campagne":
                             button_col1, button_col2, button_col3 = st.columns(3)
                             
                             with button_col1:
-                                # Pulsante per avviare/mettere in pausa
+                                # Pulsante per avviare/mettere in pausa e attivare job
                                 if selected_kw.attivo:
                                     if st.button("Metti in Pausa"):
                                         result = scraper_adapter.stop_background_job(selected_id)
@@ -551,8 +586,16 @@ elif menu == "Gestione Campagne":
                                         st.info(result["message"])
                                         time.sleep(1)
                                         st.experimental_rerun()
+                                    # Se la campagna è attiva ma il job non è in esecuzione, mostra il bottone per avviare il job
+                                    if not scraper_adapter.is_job_running(selected_id):
+                                        if st.button("Avvia Job", key=f"start_job_{selected_id}"):
+                                            result = scraper_adapter.start_background_job(selected_id)
+                                            logger.info(f"Avviato job manualmente per la campagna: {selected_kw.keyword}")
+                                            st.info(result["message"])
+                                            time.sleep(1)
+                                            st.experimental_rerun()
                                 else:
-                                    if st.button("Avvia"):
+                                    if st.button("Attiva"):
                                         selected_kw.attivo = True
                                         session.commit()
                                         result = scraper_adapter.start_background_job(selected_id)
@@ -750,18 +793,18 @@ elif menu == "Log Scraper":
         logger.error(f"Errore nella pagina Log Scraper: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
     
-elif menu == "Ricerche Programmate":
-    st.title("Log delle Ricerche Programmate")
+elif menu == "Log Cronjob":
+    st.title("Log dei Cronjob")
     
     try:
         # Ottieni i log dei cronjob
         cronjob_logs = scraper_adapter.get_cronjob_logs()
         
         if not cronjob_logs:
-            st.info("Nessun log delle ricerche programmate disponibile.")
+            st.info("Nessun log dei cronjob disponibile.")
         else:
             # Crea un formato più leggibile
-            st.subheader(f"Log delle Ricerche Programmate ({len(cronjob_logs)} eventi)")
+            st.subheader(f"Log dei Cronjob ({len(cronjob_logs)} eventi)")
             
             # Opzioni di filtro
             log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
@@ -782,10 +825,6 @@ elif menu == "Ricerche Programmate":
             finally:
                 session.close()
             
-            # Filtra per parole chiave rilevanti che indicano ricerche programmate
-            show_only_executions = st.checkbox("Mostra solo le esecuzioni programmate", value=True, 
-                                              help="Mostra solo i messaggi relativi all'avvio e completamento delle ricerche programmate")
-            
             # Filtra i log
             if selected_level != "Tutti":
                 filtered_logs = [log for log in cronjob_logs if log["level"] == selected_level]
@@ -795,11 +834,6 @@ elif menu == "Ricerche Programmate":
             # Applica filtro per keyword
             if selected_keyword_id != 0:
                 filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
-            
-            # Applica filtro per ricerche programmate
-            if show_only_executions:
-                execution_keywords = ["Esecuzione ricerca", "Avviato job", "Terminato job", "Prossima ricerca programmata"]
-                filtered_logs = [log for log in filtered_logs if any(keyword in log["message"] for keyword in execution_keywords)]
             
             # Mostra numero di log per tipo
             error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
@@ -836,56 +870,96 @@ elif menu == "Ricerche Programmate":
                     elif val == "WARNING":
                         color = "background-color: rgba(255, 165, 0, 0.2)"
                     elif val == "INFO":
-                        if any(keyword in val for keyword in ["Esecuzione ricerca", "Avviato job"]):
-                            color = "background-color: rgba(0, 128, 0, 0.3)"
-                        else:
-                            color = "background-color: rgba(0, 128, 0, 0.1)"
+                        color = "background-color: rgba(0, 128, 0, 0.1)"
                     return color
                 
-                # Converti messaggi specifici per maggiore chiarezza
-                def format_message(row):
-                    message = row["Messaggio"]
-                    
-                    # Ricerca iniziale
-                    if "Esecuzione ricerca iniziale" in message:
-                        return "🚀 Ricerca iniziale avviata"
-                    
-                    # Ricerca programmata
-                    elif "Esecuzione ricerca programmata" in message:
-                        return "⏰ Ricerca programmata avviata"
-                    
-                    # Prossima ricerca
-                    elif "Prossima ricerca programmata" in message:
-                        minutes = message.split("tra")[1].strip().split(" ")[0]
-                        return f"⏳ Prossima ricerca tra {minutes} minuti"
-                    
-                    # Avvio job
-                    elif "Avviato job in background" in message:
-                        return "▶️ Avviato monitoraggio automatico"
-                    
-                    # Termine job
-                    elif "Terminato job in background" in message:
-                        return "⏹️ Terminato monitoraggio automatico"
-                    
-                    return message
-                
-                # Applica la formattazione dei messaggi
-                df["Messaggio"] = df.apply(format_message, axis=1)
-                
-                # Applica stili per evidenziare i livelli di log
                 styled_df = df.style.applymap(highlight_level, subset=["Livello"])
                 st.dataframe(styled_df, height=400)
                 
                 # Pulsante per cancellare i log
-                if st.button("Cancella Log delle Ricerche Programmate"):
+                if st.button("Cancella Log dei Cronjob"):
                     scraper_adapter.cronjob_logs = []
-                    st.success("Log cancellati con successo.")
+                    st.success("Log dei cronjob cancellati con successo.")
                     st.experimental_rerun()
             else:
                 st.info(f"Nessun log disponibile con i filtri selezionati.")
             
     except Exception as e:
-        logger.error(f"Errore nella visualizzazione dei log delle ricerche programmate: {str(e)}")
+        logger.error(f"Errore nella visualizzazione dei log dei cronjob: {str(e)}")
+        st.error(f"Si è verificato un errore: {str(e)}")
+
+elif menu == "Job Logs":
+    st.title("Job Logs - Esecuzione in Background")
+    try:
+        # Ottieni i log dei cronjob
+        cronjob_logs = scraper_adapter.get_cronjob_logs(1000)
+        if not cronjob_logs:
+            st.info("Nessun log dei job in background disponibile.")
+        else:
+            st.subheader(f"Log dei Job in Background ({len(cronjob_logs)} eventi)")
+            # Opzioni di filtro
+            log_levels = ["Tutti", "ERROR", "WARNING", "INFO"]
+            selected_level = st.selectbox("Filtra per livello", log_levels, key="joblogs_level")
+            # Filtro per campagna
+            session = get_session()
+            try:
+                keywords = session.query(Keyword).all()
+                keyword_options = [(0, "Tutte le campagne")] + [(kw.id, kw.keyword) for kw in keywords]
+                selected_keyword_id = st.selectbox(
+                    "Filtra per campagna:",
+                    options=[id for id, _ in keyword_options],
+                    format_func=lambda x: next((name for id, name in keyword_options if id == x), ""),
+                    key="joblogs_keyword_filter"
+                )
+            finally:
+                session.close()
+            # Filtra i log
+            filtered_logs = cronjob_logs
+            if selected_level != "Tutti":
+                filtered_logs = [log for log in filtered_logs if log["level"] == selected_level]
+            if selected_keyword_id != 0:
+                filtered_logs = [log for log in filtered_logs if log.get("keyword_id") == selected_keyword_id]
+            # Mostra numero di log per tipo
+            error_count = len([log for log in filtered_logs if log["level"] == "ERROR"])
+            warning_count = len([log for log in filtered_logs if log["level"] == "WARNING"])
+            info_count = len([log for log in filtered_logs if log["level"] == "INFO"])
+            counts_col1, counts_col2, counts_col3 = st.columns(3)
+            counts_col1.metric("Errori", error_count)
+            counts_col2.metric("Avvisi", warning_count)
+            counts_col3.metric("Info", info_count)
+            # Tabella log
+            if filtered_logs:
+                log_data = []
+                for log in filtered_logs:
+                    keyword_id = log.get("keyword_id")
+                    keyword_name = next((name for id, name in keyword_options if id == keyword_id), "N/A")
+                    log_data.append({
+                        "Timestamp": log["timestamp"],
+                        "Livello": log["level"],
+                        "Campagna": keyword_name,
+                        "Messaggio": log["message"]
+                    })
+                df = pd.DataFrame(log_data)
+                def highlight_level(val):
+                    color = ""
+                    if val == "ERROR":
+                        color = "background-color: rgba(255, 0, 0, 0.2)"
+                    elif val == "WARNING":
+                        color = "background-color: rgba(255, 165, 0, 0.2)"
+                    elif val == "INFO":
+                        color = "background-color: rgba(0, 128, 0, 0.1)"
+                    return color
+                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
+                st.dataframe(styled_df, height=500)
+                # Pulsante per cancellare i log
+                if st.button("Cancella Job Logs"):
+                    scraper_adapter.cronjob_logs = []
+                    st.success("Log dei job in background cancellati con successo.")
+                    st.experimental_rerun()
+            else:
+                st.info(f"Nessun log disponibile con i filtri selezionati.")
+    except Exception as e:
+        logger.error(f"Errore nella visualizzazione dei job logs: {str(e)}")
         st.error(f"Si è verificato un errore: {str(e)}")
 
 elif menu == "Impostazioni":
@@ -978,6 +1052,7 @@ elif menu == "Impostazioni":
                             "id": kw.id,
                             "keyword": kw.keyword,
                             "limite_prezzo": kw.limite_prezzo,
+                            "limite_prezzo_min": kw.limite_prezzo_min,
                             "applica_limite_prezzo": kw.applica_limite_prezzo,
                             "limite_pagine": kw.limite_pagine,
                             "intervallo_minuti": kw.intervallo_minuti,
@@ -1033,45 +1108,61 @@ elif menu == "Log Sistema":
     try:
         # File di log
         log_file = "data/snipedeal.log"
-        
         # Verifica se il file di log esiste
         if os.path.exists(log_file):
-            # Leggi le ultime righe del file di log
+            # Leggi tutte le righe e prendi le ultime 200
             with open(log_file, 'r') as f:
-                # Leggi tutte le righe e prendi le ultime 100
                 lines = f.readlines()
-                last_lines = lines[-100:] if len(lines) > 100 else lines
-                
-                # Visualizza il log con formattazione
-                st.subheader("Ultimi eventi di log")
-                
-                # Crea un formato più leggibile
-                formatted_log = ""
-                for line in last_lines:
-                    # Colora le righe in base al livello di log
-                    if "ERROR" in line:
-                        formatted_log += f"<span style='color:red'>{line}</span>\n"
-                    elif "WARNING" in line:
-                        formatted_log += f"<span style='color:orange'>{line}</span>\n"
-                    elif "INFO" in line:
-                        formatted_log += f"<span style='color:green'>{line}</span>\n"
-                    else:
-                        formatted_log += f"{line}\n"
-                
-                # Visualizza il log formattato
-                st.markdown(f"<pre>{formatted_log}</pre>", unsafe_allow_html=True)
-                
-                # Pulsante per scaricare il file di log completo
-                with open(log_file, 'r') as log_file_handle:
-                    st.download_button(
-                        label="Scarica File di Log Completo",
-                        data=log_file_handle,
-                        file_name="snipedeal_log.txt",
-                        mime="text/plain"
-                    )
+                last_lines = lines[-200:] if len(lines) > 200 else lines
+            # Parsing log: separa timestamp, livello, messaggio
+            log_rows = []
+            for line in last_lines:
+                # Esempio formato: 2025-05-04 01:34:20,301 - SnipeDeal.Scraper - INFO - Messaggio
+                parts = line.strip().split(' - ', 3)
+                if len(parts) == 4:
+                    timestamp, logger_name, level, message = parts
+                else:
+                    timestamp, level, message = '', '', line.strip()
+                log_rows.append({
+                    "Timestamp": timestamp,
+                    "Livello": level,
+                    "Messaggio": message
+                })
+            if log_rows:
+                import pandas as pd
+                df = pd.DataFrame(log_rows)
+                # Ordina per timestamp decrescente se possibile
+                if 'Timestamp' in df.columns and df['Timestamp'].str.len().max() > 0:
+                    try:
+                        df['Timestamp_dt'] = pd.to_datetime(df['Timestamp'], errors='coerce')
+                        df = df.sort_values('Timestamp_dt', ascending=False).drop(columns=['Timestamp_dt'])
+                    except Exception:
+                        df = df.iloc[::-1]  # fallback: inverti solo l'ordine
+                else:
+                    df = df.iloc[::-1]
+                def highlight_level(val):
+                    color = ""
+                    if val == "ERROR":
+                        color = "background-color: rgba(255, 0, 0, 0.2)"
+                    elif val == "WARNING":
+                        color = "background-color: rgba(255, 165, 0, 0.2)"
+                    elif val == "INFO":
+                        color = "background-color: rgba(0, 128, 0, 0.1)"
+                    return color
+                styled_df = df.style.applymap(highlight_level, subset=["Livello"])
+                st.dataframe(styled_df, height=600)
+            else:
+                st.info("Nessun evento di log trovato.")
+            # Pulsante per scaricare il file di log completo
+            with open(log_file, 'r') as log_file_handle:
+                st.download_button(
+                    label="Scarica File di Log Completo",
+                    data=log_file_handle,
+                    file_name="snipedeal_log.txt",
+                    mime="text/plain"
+                )
         else:
             st.info("Nessun file di log trovato. Il file verrà creato automaticamente quando si verificheranno eventi da registrare.")
-            
         # Pulsante per cancellare i log
         if st.button("Cancella Log"):
             try:
@@ -1082,11 +1173,9 @@ elif menu == "Log Sistema":
                     backup_file = f"{backup_dir}/snipedeal_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
                     with open(log_file, 'r') as src, open(backup_file, 'w') as dst:
                         dst.write(src.read())
-                    
                     # Cancella il file di log
                     with open(log_file, 'w') as f:
                         f.write("")
-                    
                     logger.info("File di log cancellato e salvato come backup")
                     st.success("File di log cancellato con successo. Un backup è stato salvato.")
                 else:
@@ -1094,7 +1183,6 @@ elif menu == "Log Sistema":
             except Exception as e:
                 logger.error(f"Errore durante la cancellazione del log: {str(e)}")
                 st.error(f"Si è verificato un errore durante la cancellazione del log: {str(e)}")
-                
         # Mostra i backup disponibili
         backup_dir = "data/log_backups"
         if os.path.exists(backup_dir):

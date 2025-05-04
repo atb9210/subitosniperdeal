@@ -20,6 +20,7 @@ class SubitoScraper:
     def __init__(self, 
                  keywords=None, 
                  prezzo_max=None, 
+                 prezzo_min=None,
                  apply_price_limit=False, 
                  max_pages=3, 
                  telegram_token=None, 
@@ -35,6 +36,7 @@ class SubitoScraper:
         # Parametri di configurazione
         self.keywords = keywords or ["ps5"]
         self.prezzo_max = prezzo_max or 600
+        self.prezzo_min = prezzo_min if prezzo_min is not None else 0
         self.apply_price_limit = apply_price_limit
         self.max_pages = max_pages
         self.telegram_token = telegram_token
@@ -110,7 +112,7 @@ class SubitoScraper:
         self.seen_items = set()
         self.load_seen_items()
         
-        self.logger.info(f"SubitoScraper inizializzato. Keywords: {self.keywords}, Max prezzo: {self.prezzo_max}, Max pagine: {self.max_pages}")
+        self.logger.info(f"SubitoScraper inizializzato. Keywords: {self.keywords}, Min prezzo: {self.prezzo_min}, Max prezzo: {self.prezzo_max}, Max pagine: {self.max_pages}")
     
     def calculate_statistics(self, results):
         """
@@ -310,6 +312,10 @@ class SubitoScraper:
                     url = self._extract_url(ad_item)
                     item_id = self._extract_id(ad_item)
                     
+                    # Dopo aver estratto i dati di ogni annuncio, aggiungi un log dettagliato
+                    logger = logging.getLogger("SnipeDeal.SubitoScraper")
+                    logger.info(f"Estratto annuncio: titolo={titolo}, prezzo={prezzo_raw}, url={url}, data={data}, città={luogo}, id={item_id}")
+                    
                     # Controlla se rispetta i limiti di prezzo
                     if self.apply_price_limit and prezzo_raw > self.prezzo_max:
                         continue
@@ -327,6 +333,12 @@ class SubitoScraper:
         except Exception as e:
             self.logger.error(f"Errore nell'estrazione dei risultati JSON: {str(e)}")
             traceback.print_exc()
+        
+        # Dopo aver aggiornato i risultati con i dati raw, applica il filtro prezzo tra minimo e massimo
+        if self.apply_price_limit:
+            min_price = getattr(self, 'prezzo_min', 0) if hasattr(self, 'prezzo_min') else 0
+            max_price = self.prezzo_max
+            results[:] = [r for r in results if (isinstance(r.get('prezzo'), (int, float)) and min_price <= r['prezzo'] <= max_price)]
         
         return results
     
@@ -452,6 +464,47 @@ class SubitoScraper:
                     
                     # Estrai i risultati dal JSON
                     page_results = self._get_results_from_json(json_data)
+                    
+                    # --- Estrazione RAW da HTML visibile ---
+                    soup = BeautifulSoup(response.text, 'html.parser')
+                    cards = soup.select('div.items__item')
+                    for card in cards:
+                        # Estrai URL per match con risultato
+                        link_el = card.select_one('a')
+                        url = link_el['href'] if link_el and 'href' in link_el.attrs else None
+                        # Estrai data visibile
+                        date_el = card.select_one('div.AdInfo-module_date__jR3v2, span.AdInfo-module_date__jR3v2')
+                        date_raw = date_el.text.strip() if date_el else None
+                        # Estrai luogo visibile
+                        luogo_el = card.select_one('span.AdInfo-module_location__XY6Rs, span.AdInfo-module_town__nH89d')
+                        luogo_raw = luogo_el.text.strip() if luogo_el else None
+                        # Estrai stato venduto (badge o testo)
+                        venduto = False
+                        badge_venduto = card.find(string=lambda t: t and 'venduto' in t.lower())
+                        if badge_venduto:
+                            venduto = True
+                        # Trova il risultato corrispondente per URL e aggiorna
+                        for res in page_results:
+                            if url and res.get('url') and url in res['url']:
+                                if date_raw:
+                                    res['data'] = date_raw
+                                if luogo_raw:
+                                    res['luogo'] = luogo_raw
+                                res['data_raw_html'] = date_raw
+                                res['luogo_raw_html'] = luogo_raw
+                                res['venduto_html'] = venduto
+                                res['venduto'] = venduto
+                                # Aggiorna anche il prezzo se visibile
+                                price_el = card.select_one('p.index-module_price__N7M2x')
+                                if price_el:
+                                    try:
+                                        price_text = price_el.text.strip()
+                                        prezzo_html = float(''.join(c for c in price_text if c.isdigit() or c == ',').replace(',', '.'))
+                                        res['prezzo'] = prezzo_html
+                                        res['prezzo_raw_html'] = prezzo_html
+                                    except Exception:
+                                        pass
+                                break
                     
                     if not page_results:
                         self.logger.warning(f"Nessun risultato trovato nella pagina {page}")
@@ -805,6 +858,7 @@ if __name__ == "__main__":
     scraper = SubitoScraper(
         keywords=["ps5"],
         prezzo_max=500,
+        prezzo_min=0,
         apply_price_limit=False,
         max_pages=2,
         debug=True,

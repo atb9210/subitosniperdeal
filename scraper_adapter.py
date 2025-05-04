@@ -135,6 +135,7 @@ class ScraperAdapter:
                 params.update({
                     "keywords": [keyword_record.keyword],
                     "prezzo_max": keyword_record.limite_prezzo if keyword_record.applica_limite_prezzo else None,
+                    "prezzo_min": keyword_record.limite_prezzo_min if keyword_record.applica_limite_prezzo else None,
                     "apply_price_limit": keyword_record.applica_limite_prezzo,
                     "max_pages": keyword_record.limite_pagine,
                     "keyword_id": keyword_record.id,
@@ -223,16 +224,13 @@ class ScraperAdapter:
         if len(self.cronjob_logs) > 1000:
             self.cronjob_logs = self.cronjob_logs[-1000:]
         
-        # Log anche nel sistema principale solo per errori o informazioni importanti sul cronjob
-        prefix = f"[CRONJOB-{keyword_id}]" if keyword_id else "[CRONJOB]"
+        # Log anche nel sistema principale
         if level == "ERROR":
-            logger.error(f"{prefix} {message}")
+            logger.error(f"[CRONJOB] {message}")
         elif level == "WARNING":
-            logger.warning(f"{prefix} {message}")
-        elif "Avviato job" in message or "Terminato job" in message or "Esecuzione ricerca" in message:
-            # Logga solo i messaggi importanti relativi all'esecuzione delle ricerche programmate
-            logger.info(f"{prefix} {message}")
-        # Gli altri messaggi di dettaglio non vengono loggati nel log principale
+            logger.warning(f"[CRONJOB] {message}")
+        else:
+            logger.info(f"[CRONJOB] {message}")
     
     def get_logs(self, limit=100):
         """Restituisce gli ultimi N log dello scraper"""
@@ -264,6 +262,7 @@ class ScraperAdapter:
             search_params = {
                 "keyword": keyword_record.keyword,
                 "prezzo_max": keyword_record.limite_prezzo if keyword_record.applica_limite_prezzo else None,
+                "prezzo_min": keyword_record.limite_prezzo_min if keyword_record.applica_limite_prezzo else None,
                 "max_pages": keyword_record.limite_pagine
             }
             
@@ -285,6 +284,7 @@ class ScraperAdapter:
                         self._add_log("INFO", f"Verifico i parametri impostati nello scraper:")
                         self._add_log("INFO", f"  - max_pages: {self.scraper.max_pages}")
                         self._add_log("INFO", f"  - prezzo_max: {self.scraper.prezzo_max}")
+                        self._add_log("INFO", f"  - prezzo_min: {getattr(self.scraper, 'prezzo_min', None)}")
                         self._add_log("INFO", f"  - apply_price_limit: {self.scraper.apply_price_limit}")
                         
                         # Esegui la ricerca
@@ -575,6 +575,29 @@ class ScraperAdapter:
         try:
             self._add_log("INFO", f"Inizio salvataggio di {len(ads)} risultati per keyword_id {keyword_id}")
             
+            # Ottieni i limiti di prezzo dalla keyword
+            keyword = session.query(Keyword).filter(Keyword.id == keyword_id).first()
+            if keyword and keyword.applica_limite_prezzo:
+                min_price = keyword.limite_prezzo_min if hasattr(keyword, 'limite_prezzo_min') else 0
+                max_price = keyword.limite_prezzo
+                self._add_log("INFO", f"Applico filtro prezzi: min={min_price}, max={max_price}")
+                
+                filtered_ads = []
+                for ad in ads:
+                    prezzo = ad.get('prezzo')
+                    try:
+                        prezzo_float = float(prezzo)
+                    except (TypeError, ValueError):
+                        self._add_log("WARNING", f"Annuncio scartato per prezzo non numerico: {ad}")
+                        continue
+                    if min_price <= prezzo_float <= max_price:
+                        ad['prezzo'] = prezzo_float
+                        filtered_ads.append(ad)
+                    else:
+                        self._add_log("INFO", f"Annuncio scartato per prezzo fuori range: {ad}")
+                ads = filtered_ads
+                self._add_log("INFO", f"Dopo filtro prezzi robusto: {len(ads)} risultati rimasti")
+            
             # Per ogni annuncio trovato
             for ad in ads:
                 # Normalizza le chiavi del dizionario
@@ -603,6 +626,14 @@ class ScraperAdapter:
                         Risultato.url == normalized_ad["url"]
                     ).first()
                 
+                # Salva i dati raw come JSON
+                raw_data_json = None
+                try:
+                    import json
+                    raw_data_json = json.dumps(ad, ensure_ascii=False)
+                except Exception:
+                    raw_data_json = str(ad)
+                
                 if not existing:
                     # Crea un nuovo record
                     new_result = Risultato(
@@ -614,7 +645,8 @@ class ScraperAdapter:
                         luogo=normalized_ad.get("luogo", ""),
                         venduto=normalized_ad.get("venduto", False),
                         notificato=False,
-                        id_annuncio=str(normalized_ad.get("id", ""))
+                        id_annuncio=str(normalized_ad.get("id", "")),
+                        raw_data=raw_data_json
                     )
                     session.add(new_result)
                     new_results_count += 1
@@ -624,11 +656,13 @@ class ScraperAdapter:
                     if normalized_ad.get("venduto", False) and not existing.venduto:
                         existing.venduto = True
                         self._add_log("INFO", f"Annuncio aggiornato come venduto: {existing.titolo}")
-                    
                     # Aggiorna l'ID dell'annuncio se non era impostato
                     if 'id' in normalized_ad and normalized_ad['id'] and not existing.id_annuncio:
                         existing.id_annuncio = str(normalized_ad["id"])
                         self._add_log("DEBUG", f"Aggiornato ID annuncio per {existing.titolo}: {existing.id_annuncio}")
+                    # Aggiorna i dati raw se non presenti
+                    if not getattr(existing, 'raw_data', None):
+                        existing.raw_data = raw_data_json
             
             session.commit()
             self._add_log("INFO", f"Salvati {new_results_count} nuovi risultati su {len(ads)} totali")
@@ -898,34 +932,66 @@ class ScraperAdapter:
                 self._add_log("INFO", start_msg)
                 self._add_cronjob_log("INFO", start_msg, keyword_id)
                 
-                # Esegui immediatamente la prima ricerca all'avvio del job
-                self._add_cronjob_log("INFO", f"Esecuzione ricerca iniziale per: {keyword.keyword}", keyword_id)
-                # Esegui la prima ricerca senza inviarla al log principale
-                self.search_for_keyword(keyword_id)
-                
-                # Loop principale del cronjob
                 while keyword.attivo:
+                    # Log dell'esecuzione pianificata
+                    exec_msg = f"Esecuzione pianificata per keyword: {keyword.keyword} (ID: {keyword_id})"
+                    self._add_log("INFO", exec_msg)
+                    self._add_cronjob_log("INFO", exec_msg, keyword_id)
+                    
+                    # Esegui la ricerca
+                    search_start_msg = f"Inizio ricerca per keyword: {keyword.keyword} (ID: {keyword_id})"
+                    self._add_log("INFO", search_start_msg)
+                    self._add_cronjob_log("INFO", search_start_msg, keyword_id)
+                    
+                    result = self.search_for_keyword(keyword_id)
+                    
+                    if result["status"] == "error":
+                        error_msg = f"Errore nella ricerca per job in background: {result['message']}"
+                        self._add_log("ERROR", error_msg)
+                        self._add_cronjob_log("ERROR", error_msg, keyword_id)
+                    else:
+                        success_msg = f"Ricerca completata: {result['message']}"
+                        self._add_log("INFO", success_msg)
+                        self._add_cronjob_log("INFO", success_msg, keyword_id)
+                    
+                    # Invia notifiche per i nuovi risultati non notificati
+                    try:
+                        nuovi_risultati = session.query(Risultato).filter(
+                            Risultato.keyword_id == keyword_id,
+                            Risultato.notificato == False
+                        ).all()
+                        
+                        if nuovi_risultati:
+                            notify_msg = f"Trovati {len(nuovi_risultati)} nuovi risultati da notificare"
+                            self._add_cronjob_log("INFO", notify_msg, keyword_id)
+                            
+                            for risultato in nuovi_risultati:
+                                result = self.notify_telegram(risultato.id)
+                                if result:
+                                    self._add_cronjob_log("INFO", f"Notifica inviata per risultato ID {risultato.id}", keyword_id)
+                                else:
+                                    self._add_cronjob_log("ERROR", f"Fallito invio notifica per risultato ID {risultato.id}", keyword_id)
+                        else:
+                            self._add_cronjob_log("INFO", "Nessun nuovo risultato da notificare", keyword_id)
+                    except Exception as e:
+                        error_msg = f"Errore nell'invio delle notifiche: {str(e)}"
+                        self._add_log("ERROR", error_msg)
+                        self._add_cronjob_log("ERROR", error_msg, keyword_id)
+                    
                     # Attendi l'intervallo configurato
-                    wait_msg = f"Prossima ricerca programmata tra {keyword.intervallo_minuti} minuti"
+                    wait_msg = f"Attesa di {keyword.intervallo_minuti} minuti prima della prossima ricerca"
+                    self._add_log("INFO", wait_msg)
                     self._add_cronjob_log("INFO", wait_msg, keyword_id)
                     time.sleep(keyword.intervallo_minuti * 60)
                     
-                    # Ricarica lo stato della keyword per verificare se è ancora attiva
+                    # Ricarica lo stato della keyword
                     session.refresh(keyword)
-                    if not keyword.attivo:
-                        break
-                    
-                    # Log dell'esecuzione programmata (solo nel log cronjob)
-                    self._add_cronjob_log("INFO", f"Esecuzione ricerca programmata per: {keyword.keyword}", keyword_id)
-                    
-                    # Esegui la ricerca (senza duplicare i messaggi nel log cronjob)
-                    self.search_for_keyword(keyword_id)
-                    
             except Exception as e:
                 error_msg = f"Errore nel job in background: {str(e)}"
                 self._add_log("ERROR", error_msg)
                 self._add_log("ERROR", traceback.format_exc())
                 self._add_cronjob_log("ERROR", error_msg, keyword_id)
+                self._add_cronjob_log("ERROR", traceback.format_exc(), keyword_id)
                 logger.error(error_msg)
                 logger.error(traceback.format_exc())
             finally:
@@ -1005,6 +1071,22 @@ class ScraperAdapter:
             return None
         finally:
             session.close()
+
+    def is_job_running(self, keyword_id: int) -> bool:
+        """
+        Verifica se un job in background è attivo per una keyword specifica
+        
+        Args:
+            keyword_id: ID della keyword da verificare
+            
+        Returns:
+            bool: True se il job è attivo, False altrimenti
+        """
+        if keyword_id not in self.running_tasks:
+            return False
+            
+        thread = self.running_tasks[keyword_id]
+        return thread.is_alive()
 
     # Classe di fallback per simulare i risultati dello scraper
     class FallbackScraper:
